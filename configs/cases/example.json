@@ -1,0 +1,46 @@
+{
+  "enabled": false,
+  "case_id": "example-project-consume-hit-miss",
+  "name": "Example project consume rule",
+  "modes": [
+    "hit",
+    "miss"
+  ],
+  "rule": {
+    "dataType": "project",
+    "createType": 1,
+    "plineForm": "cpsdy",
+    "releaseVer": 2,
+    "conditionList": [
+      {
+        "reduceType": "total",
+        "timeType": "0",
+        "column": "consume",
+        "compareType": "ge",
+        "val1": 10,
+        "val2": ""
+      }
+    ],
+    "optStatus": 1,
+    "projectStatus": 1,
+    "doType": 1
+  },
+  "seed": {
+    "table": "ad_advertiser_online_pay_project_hour",
+    "rows": [
+      {
+        "project_id": "REPLACE_WITH_TEST_PROJECT",
+        "consume": 20
+      }
+    ],
+    "hit_patch": {
+      "consume": 20
+    },
+    "miss_patch": {
+      "consume": 0
+    },
+    "cleanup_columns": [
+      "channel_code"
+    ]
+  }
+}
