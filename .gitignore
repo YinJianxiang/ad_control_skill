@@ -1,0 +1,18 @@
+.env
+.artifacts/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+.venv/
+allure-results/
+allure-report/
+reports/
+*.log
+
+# Generated / rule-specific case JSON (keep only example template if present)
+configs/cases/**
+!configs/cases/example.json
+!configs/cases/.gitkeep
+
+# Local knowledge backups from failed writes
+*.corrupt-backup
