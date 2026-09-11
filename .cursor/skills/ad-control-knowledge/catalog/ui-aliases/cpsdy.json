@@ -1,0 +1,1372 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsdy",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "convert_num": [
+      {
+        "desc": "转化数",
+        "uiAliases": [
+          "转化数",
+          "分日转化数"
+        ]
+      }
+    ],
+    "convert_cost": [
+      {
+        "desc": "转化成本"
+      },
+      {
+        "desc": "转化成本",
+        "uiAliases": [
+          "分日转化成本",
+          "转化成本"
+        ]
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "desc": "分时转化成本"
+      },
+      {
+        "desc": "分时转化成本",
+        "uiAliases": [
+          "分时转化成本"
+        ]
+      }
+    ],
+    "bid_rate": [
+      {
+        "desc": "计费比"
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "desc": "分时计费比"
+      },
+      {
+        "desc": "分时计费比",
+        "uiAliases": [
+          "分时计费比",
+          "分时转化计费比"
+        ]
+      }
+    ],
+    "active_pay_intra_one_day_roi": [
+      {
+        "desc": "激活后24小时付费roi",
+        "uiAliases": [
+          "分日激活后24小时付费roi",
+          "激活后24小时付费roi"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": [
+      {
+        "desc": "分时激活后24小时付费roi",
+        "uiAliases": [
+          "分时激活后24小时付费roi"
+        ]
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "desc": "模型预测ROI",
+        "uiAliases": [
+          "模型预测ROI",
+          "模型预测ROI(仅投放方式=常规投放时可选)"
+        ]
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "desc": "全域ROI"
+      },
+      {
+        "desc": "全域ROI",
+        "uiAliases": [
+          "全域ROI"
+        ]
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "desc": "分时全域ROI"
+      },
+      {
+        "desc": "分时全域ROI",
+        "uiAliases": [
+          "分时全域ROI"
+        ]
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "desc": "全域成本"
+      },
+      {
+        "desc": "全域成本",
+        "uiAliases": [
+          "全域成本"
+        ]
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "desc": "分时全域24小时ROI"
+      },
+      {
+        "desc": "分时全域24小时ROI",
+        "uiAliases": [
+          "分时全域24小时ROI"
+        ]
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "desc": "全域24小时ROI"
+      },
+      {
+        "desc": "全域24小时ROI",
+        "uiAliases": [
+          "全域24小时ROI"
+        ]
+      }
+    ],
+    "cost": [
+      {
+        "desc": "全域成本（规则侧 legacy 列名 cost，写 all_stat_total_cost_trend）"
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "desc": "分时转化数",
+        "uiAliases": [
+          "分时转化数"
+        ]
+      }
+    ],
+    "hour_active_pay_intra_one_day_roi": [
+      {
+        "desc": "分时激活后24小时付费roi",
+        "uiAliases": [
+          "分时激活后24小时付费roi"
+        ]
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "desc": "分时全域成本",
+        "uiAliases": [
+          "分时全域成本"
+        ]
+      }
+    ]
+  },
+  "scopes": {
+    "cpsdy|channel|auction|1|0|total": {
+      "key": "cpsdy|channel|auction|1|0|total",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "releaseMode": "auction",
+      "releaseVers": [
+        1
+      ],
+      "timeType": "0",
+      "reduceType": "total",
+      "uiSelectableMetrics": [
+        "active_pay_intra_one_day_roi",
+        "consume",
+        "convert_cost",
+        "convert_num",
+        "hour_active_pay_intra_one_day_roi",
+        "hour_consume",
+        "hour_convert_cost",
+        "hour_convert_num"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    }
+  },
+  "scenarios": {
+    "cpsdy|project|auction|100|all|convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsdy|project|auction|99|anyone|convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsdy|project|auction|99|all|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|99|anyone|bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "计费比"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|99|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|model_pred_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|total|model_pred_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|2|total|hour_all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|1|all|hour_all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|3|anyone|hour_all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "计费比"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|2|total|hour_bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时计费比"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|100|total|bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "计费比"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|100|anyone|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|100|all|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "计费比"
+        }
+      }
+    },
+    "cpsdy|channel|auction|2|anyone|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|100|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|100|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|project|auction|2|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|100|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|3|first|hour_bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时计费比"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|99|all|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|2|anyone|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|channel|global|2|first|hour_all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|3|anyone|hour_all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|100|total|all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|100|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|channel|global|100|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|channel|global|100|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|project|global|2|all|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|project|global|99|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|project|global|99|total|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|project|global|99|total|all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|project|global|2|all|hour_all_roi_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域ROI"
+        }
+      }
+    },
+    "cpsdy|project|global|2|anyone|all_stat_total_cost_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "全域成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "全域成本"
+        }
+      }
+    },
+    "cpsdy|project|global|1|first|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|project|global|2|anyone|hour_all_roi_24h_trend": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时全域24小时ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时全域24小时ROI"
+        }
+      }
+    },
+    "cpsdy|project|global|3|all|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|active_pay_intra_one_day_roi": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|100|anyone|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|2|all|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|3|total|hour_convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时转化数"
+        }
+      }
+    },
+    "cpsdy|promotion|auction|0|total|convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsdy|channel|auction|0|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|2|first|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|channel|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|channel|auction|2|anyone|hour_convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时转化成本"
+        }
+      }
+    },
+    "cpsdy|channel|auction|1|all|hour_convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时转化数"
+        }
+      }
+    },
+    "cpsdy|channel|auction|99|total|convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsdy|project|auction|0|total|bid_rate": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "计费比"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "计费比"
+        }
+      }
+    },
+    "cpsdy|project|auction|2|anyone|hour_consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "cpsdy|project|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时激活后24h付费ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时激活后24h付费ROI"
+        }
+      }
+    },
+    "cpsdy|project|auction|1|first|hour_convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时转化成本"
+        }
+      }
+    },
+    "cpsdy|project|auction|1|all|hour_convert_num": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "分时转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时转化数"
+        }
+      }
+    },
+    "cpsdy|project|auction|100|total|consume": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsdy|project|auction|100|total|convert_cost": {
+      "businessLine": {
+        "name": "头条端原生-付费"
+      },
+      "metric": {
+        "name": "转化成本"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化成本"
+        }
+      }
+    }
+  }
+}

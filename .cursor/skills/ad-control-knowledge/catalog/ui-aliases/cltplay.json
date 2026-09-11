@@ -1,0 +1,256 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cltplay",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "roi_h12": [
+      {
+        "desc": "ROI_H12",
+        "uiAliases": [
+          "ROI_H12"
+        ]
+      },
+      {
+        "desc": "ROI_H12",
+        "uiAliases": [
+          "ROI_H12"
+        ]
+      }
+    ],
+    "active_cost": [
+      {
+        "desc": "激活成本",
+        "uiAliases": [
+          "激活成本"
+        ]
+      }
+    ],
+    "pay_cost": [
+      {
+        "desc": "付费成本",
+        "uiAliases": [
+          "付费成本",
+          "当日付费成本"
+        ]
+      }
+    ],
+    "n_recharge_uv": [
+      {
+        "desc": "充值UV",
+        "uiAliases": [
+          "充值UV"
+        ]
+      }
+    ],
+    "n_recharge_amount": [
+      {
+        "desc": "充值金额",
+        "uiAliases": [
+          "充值金额"
+        ]
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "desc": "退订率",
+        "uiAliases": [
+          "分日退订率",
+          "当日退订率",
+          "退订率"
+        ]
+      }
+    ],
+    "convert_cost": [
+      {
+        "desc": "转化成本",
+        "uiAliases": [
+          "转化成本"
+        ]
+      },
+      {
+        "desc": "转化成本",
+        "uiAliases": [
+          "分日转化成本",
+          "转化成本"
+        ]
+      }
+    ],
+    "conversion_subscribe_rate": [
+      {
+        "desc": "转订率",
+        "uiAliases": [
+          "转订率"
+        ]
+      }
+    ],
+    "ac_rate": [
+      {
+        "desc": "拉活占比",
+        "uiAliases": [
+          "拉活占比"
+        ]
+      }
+    ],
+    "bid_rate": [
+      {
+        "desc": "计费比",
+        "uiAliases": [
+          "计费比"
+        ]
+      }
+    ],
+    "predict_roi": [
+      {
+        "desc": "预估ROI",
+        "uiAliases": [
+          "分日预估ROI",
+          "当日的预估ROI",
+          "预估ROI"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_n_recharge_uv": [
+      {
+        "desc": "分时充值UV",
+        "uiAliases": [
+          "分时充值UV"
+        ]
+      }
+    ],
+    "hour_active_cost": [
+      {
+        "desc": "分时激活成本",
+        "uiAliases": [
+          "分时激活成本"
+        ]
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "desc": "分时付费成本",
+        "uiAliases": [
+          "分时付费成本"
+        ]
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "desc": "分时退订率",
+        "uiAliases": [
+          "分时退订率"
+        ]
+      },
+      {
+        "desc": "分时退订率",
+        "uiAliases": [
+          "分时退订率"
+        ]
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "desc": "分时转化成本",
+        "uiAliases": [
+          "分时转化成本"
+        ]
+      },
+      {
+        "desc": "分时转化成本",
+        "uiAliases": [
+          "分时转化成本"
+        ]
+      }
+    ],
+    "hour_conversion_subscribe_rate": [
+      {
+        "desc": "分时转订率",
+        "uiAliases": [
+          "分时转订率"
+        ]
+      }
+    ],
+    "hour_ac_rate": [
+      {
+        "desc": "分时拉活占比",
+        "uiAliases": [
+          "分时拉活占比"
+        ]
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "desc": "分时计费比",
+        "uiAliases": [
+          "分时计费比"
+        ]
+      },
+      {
+        "desc": "分时计费比",
+        "uiAliases": [
+          "分时计费比",
+          "分时转化计费比"
+        ]
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "desc": "分时预估ROI",
+        "uiAliases": [
+          "分时预估ROI"
+        ]
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "cltplay|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "客户端-付费短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cltplay|project|auction|207|total|consume": {
+      "businessLine": {
+        "name": "客户端-付费短剧"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    }
+  }
+}

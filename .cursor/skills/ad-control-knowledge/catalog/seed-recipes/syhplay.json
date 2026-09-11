@@ -1,0 +1,5619 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "syhplay",
+  "metrics": {
+    "consume": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(if(cdate = D0, consume, null))",
+            "D1": "sum(if(cdate = D1, consume, null))",
+            "D2": "sum(if(cdate = D2, consume, null))",
+            "RD2": "sum(if(cdate>=RD2_BEGIN and cdate <= RD2_END, consume, null))",
+            "RD3": "sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END, consume, null))",
+            "D3": "sum(if(cdate = D3, consume, null))",
+            "D4": "sum(if(cdate = D4, consume, null))",
+            "D5": "sum(if(cdate = D5, consume, null))",
+            "D6": "sum(if(cdate = D6, consume, null))",
+            "D7": "sum(if(cdate = D7, consume, null))",
+            "D8": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)",
+            "D9": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)",
+            "D10": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD5": "sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, consume, null))",
+            "RD7": "sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, consume, null))",
+            "RD4": "sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, null))",
+            "RD6": "sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, null))"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(consume),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate=D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D9",
+              "formula": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D10",
+              "formula": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, CAST(consume AS decimal(20,2)), null)),2)"
+            }
+          ]
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D9",
+              "formula": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D10",
+              "formula": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, CAST(consume AS decimal(20,2)), null)),2)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(consume)",
+            "D1": "ROUND(sum(if(cdate = D1, CAST(consume AS decimal(20,2)), null)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, CAST(consume AS decimal(20,2)), null)),2)",
+            "D3": "ROUND(sum(if(cdate=D3, CAST(consume AS decimal(20,2)), null)),2)",
+            "D4": "ROUND(sum(if(cdate=D4, CAST(consume AS decimal(20,2)), null)),2)",
+            "D5": "ROUND(sum(if(cdate=D5, CAST(consume AS decimal(20,2)), null)),2)",
+            "D6": "ROUND(sum(if(cdate=D6, CAST(consume AS decimal(20,2)), null)),2)",
+            "D7": "ROUND(sum(if(cdate=D7, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD2": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD3": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD4": "sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, null))",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD6": "sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, null))",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, CAST(consume AS decimal(20,2)), null)),2)",
+            "aggregate": "ROUND(sum(consume),2)",
+            "D8": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)",
+            "D9": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)",
+            "D10": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)"
+          }
+        }
+      }
+    ],
+    "n_uv": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(if(cdate=D0,n_uv_hour,0))",
+            "D1": "sum(if(cdate=D1,n_uv_hour,0))",
+            "D2": "ROUND(sum(if(cdate=D2,n_uv_hour,0)),2)",
+            "D3": "ROUND(sum(if(cdate=D3,n_uv_hour,0)),2)",
+            "D4": "ROUND(sum(if(cdate=D4,n_uv_hour,0)),2)",
+            "D5": "ROUND(sum(if(cdate=D5,n_uv_hour,0)),2)",
+            "D6": "ROUND(sum(if(cdate=D6,n_uv_hour,0)),2)",
+            "D7": "ROUND(sum(if(cdate=D7,n_uv_hour,0)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2)",
+            "aggregate": "sum(if(cdate=D0,n_uv_hour,0))"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "sum(r_uv_hour + uv_hour)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "sum(if(cdate=D0,n_uv_hour,0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "sum(if(cdate=D1,n_uv_hour,0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2)"
+            }
+          ]
+        }
+      }
+    ],
+    "cpa": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,consume,0)) / sum(if(cdate=D0,n_uv_hour,0)),2)",
+            "D1": "ROUND(sum(if(cdate=D1,consume,0)) / sum(if(cdate=D1,n_uv_hour,0)),2)",
+            "D2": "ROUND(sum(if(cdate=D2,consume,0)) / sum(if(cdate=D2,n_uv_hour,0)),2)",
+            "D3": "ROUND(sum(if(cdate=D3,consume,0)) / sum(if(cdate=D3,n_uv_hour,0)),2)",
+            "D4": "ROUND(sum(if(cdate=D4,consume,0)) / sum(if(cdate=D4,n_uv_hour,0)),2)",
+            "D5": "ROUND(sum(if(cdate=D5,consume,0)) / sum(if(cdate=D5,n_uv_hour,0)),2)",
+            "D6": "ROUND(sum(if(cdate=D6,consume,0)) / sum(if(cdate=D6,n_uv_hour,0)),2)",
+            "D7": "ROUND(sum(if(cdate=D7,consume,0)) / sum(if(cdate=D7,n_uv_hour,0)),2)",
+            "D8": "ROUND(sum(if(cdate=D8,consume,0)) / sum(if(cdate=D8,n_uv_hour,0)),2)",
+            "D9": "ROUND(sum(if(cdate=D9,consume,0)) / sum(if(cdate=D9,n_uv_hour,0)),2)",
+            "D10": "ROUND(sum(if(cdate=D10,consume,0)) / sum(if(cdate=D10,n_uv_hour,0)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,consume,0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,consume,0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,consume,0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2)",
+            "aggregate": "ROUND(sum(if(cdate=D0,consume,0)) / sum(if(cdate=D0,n_uv_hour,0)),2)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume) / sum(r_uv_hour + uv_hour),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0,consume,0)) / sum(if(cdate=D0,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1,consume,0)) / sum(if(cdate=D1,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,consume,0)) / sum(if(cdate=D2,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,consume,0)) / sum(if(cdate=D3,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,consume,0)) / sum(if(cdate=D4,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,consume,0)) / sum(if(cdate=D5,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,consume,0)) / sum(if(cdate=D6,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,consume,0)) / sum(if(cdate=D7,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8,consume,0)) / sum(if(cdate=D8,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D9",
+              "formula": "ROUND(sum(if(cdate=D9,consume,0)) / sum(if(cdate=D9,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D10",
+              "formula": "ROUND(sum(if(cdate=D10,consume,0)) / sum(if(cdate=D10,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,consume,0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,consume,0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,consume,0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2)"
+            }
+          ]
+        }
+      }
+    ],
+    "stay_1": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "stay_uv_a_1_total_hour",
+          "stay_uv_b_1"
+        ],
+        "numeratorColumn": "stay_uv_a_1_total_hour",
+        "denominatorColumn": "stay_uv_b_1",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D0,stay_uv_b_1,0)),4)",
+            "D1": "ROUND(sum(if(cdate=D1,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D1,stay_uv_b_1,0)),4)",
+            "D2": "ROUND(sum(if(cdate=D2,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D2,stay_uv_b_1,0)),4)",
+            "D3": "ROUND(sum(if(cdate=D3,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D3,stay_uv_b_1,0)),4)",
+            "D4": "ROUND(sum(if(cdate=D4,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D4,stay_uv_b_1,0)),4)",
+            "D5": "ROUND(sum(if(cdate=D5,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D5,stay_uv_b_1,0)),4)",
+            "D6": "ROUND(sum(if(cdate=D6,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D6,stay_uv_b_1,0)),4)",
+            "D7": "ROUND(sum(if(cdate=D7,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D7,stay_uv_b_1,0)),4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,stay_uv_b_1,0)),4)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,stay_uv_b_1,0)),4)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,stay_uv_b_1,0)),4)",
+            "aggregate": "ROUND(sum(if(cdate=D0,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D0,stay_uv_b_1,0)),4)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(stay_uv_a_1_hour) / max(stay_uv_b_1),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D0,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D1,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D2,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D3,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D4,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D5,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D6,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,stay_uv_a_1_total_hour,0)) / sum(if(cdate=D7,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,stay_uv_b_1,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,stay_uv_a_1_total_hour,0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,stay_uv_b_1,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d1_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d1_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D2": "ROUND(sum(if(cdate=D2,retention_d1_uv,0)) / sum(if(cdate=D2,n_uv_hour,0)),4)",
+            "D3": "ROUND(sum(if(cdate=D3,retention_d1_uv,0)) / sum(if(cdate=D3,n_uv_hour,0)),4)",
+            "D4": "ROUND(sum(if(cdate=D4,retention_d1_uv,0)) / sum(if(cdate=D4,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d1_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,retention_d1_uv,0)) / sum(if(cdate=D2,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,retention_d1_uv,0)) / sum(if(cdate=D3,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,retention_d1_uv,0)) / sum(if(cdate=D4,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d3_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d3_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D4": "ROUND(sum(if(cdate=D4,retention_d3_uv,0)) / sum(if(cdate=D4,n_uv_hour,0)),4)",
+            "D5": "ROUND(sum(if(cdate=D5,retention_d3_uv,0)) / sum(if(cdate=D5,n_uv_hour,0)),4)",
+            "D6": "ROUND(sum(if(cdate=D6,retention_d3_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d3_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,retention_d3_uv,0)) / sum(if(cdate=D4,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,retention_d3_uv,0)) / sum(if(cdate=D5,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,retention_d3_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d4_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d4_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D5": "ROUND(sum(if(cdate=D5,retention_d4_uv,0)) / sum(if(cdate=D5,n_uv_hour,0)),4)",
+            "D6": "ROUND(sum(if(cdate=D6,retention_d4_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)",
+            "D7": "ROUND(sum(if(cdate=D7,retention_d4_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d4_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,retention_d4_uv,0)) / sum(if(cdate=D5,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,retention_d4_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,retention_d4_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d5_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d5_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D6": "ROUND(sum(if(cdate=D6,retention_d5_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)",
+            "D7": "ROUND(sum(if(cdate=D7,retention_d5_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)",
+            "D8": "ROUND(sum(if(cdate=D8,retention_d5_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d5_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,retention_d5_uv,0)) / sum(if(cdate=D6,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,retention_d5_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8,retention_d5_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d6_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d6_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D7": "ROUND(sum(if(cdate=D7,retention_d6_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)",
+            "D8": "ROUND(sum(if(cdate=D8,retention_d6_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)",
+            "D9": "ROUND(sum(if(cdate=D9,retention_d6_uv,0)) / sum(if(cdate=D9,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d6_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,retention_d6_uv,0)) / sum(if(cdate=D7,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8,retention_d6_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D9",
+              "formula": "ROUND(sum(if(cdate=D9,retention_d6_uv,0)) / sum(if(cdate=D9,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "retention_d7_uv_ratio": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "retention_d7_uv",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D8": "ROUND(sum(if(cdate=D8,retention_d7_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)",
+            "D9": "ROUND(sum(if(cdate=D9,retention_d7_uv,0)) / sum(if(cdate=D9,n_uv_hour,0)),4)",
+            "D10": "ROUND(sum(if(cdate=D10,retention_d7_uv,0)) / sum(if(cdate=D10,n_uv_hour,0)),4)"
+          }
+        },
+        "numeratorColumn": "retention_d7_uv",
+        "denominatorColumn": "n_uv_hour",
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D8",
+              "formula": "ROUND(sum(if(cdate=D8,retention_d7_uv,0)) / sum(if(cdate=D8,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D9",
+              "formula": "ROUND(sum(if(cdate=D9,retention_d7_uv,0)) / sum(if(cdate=D9,n_uv_hour,0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D10",
+              "formula": "ROUND(sum(if(cdate=D10,retention_d7_uv,0)) / sum(if(cdate=D10,n_uv_hour,0)),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "avg_play_time_day": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "play_time_day_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,play_time_day_rh3,0)) / 60 / sum(if(cdate=D0,n_uv_hour_rh3,0)),2)",
+            "D1": "ROUND(sum(if(cdate=D1,play_time_day_rh3,0)) / 60 / sum(if(cdate=D1,n_uv_hour_rh3,0)),2)",
+            "aggregate": "ROUND(sum(if(cdate=D0,play_time_day_rh3,0)) / 60 / sum(if(cdate=D0,n_uv_hour_rh3,0)),2)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(play_time_day) / 60 / sum(r_uv_hour + uv_hour),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0,play_time_day_rh3,0)) / 60 / sum(if(cdate=D0,n_uv_hour_rh3,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1,play_time_day_rh3,0)) / 60 / sum(if(cdate=D1,n_uv_hour_rh3,0)),2)"
+            }
+          ]
+        }
+      }
+    ],
+    "hour_avg_play_time_day": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "play_time_day",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H3": "IFNULL(ROUND(sum(if(hour=H3,play_time_day,0)) / 60 / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end), 2), 0)",
+            "H4": "IFNULL(ROUND(sum(if(hour=H4,play_time_day,0)) / 60 / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end), 2), 0)",
+            "H5": "IFNULL(ROUND(sum(if(hour=H5,play_time_day,0)) / 60 / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end), 2), 0)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "IFNULL(ROUND(sum(if(hour=H3,play_time_day,0)) / 60 / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end), 2), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "IFNULL(ROUND(sum(if(hour=H4,play_time_day,0)) / 60 / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end), 2), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "IFNULL(ROUND(sum(if(hour=H5,play_time_day,0)) / 60 / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end), 2), 0)"
+            }
+          ]
+        }
+      }
+    ],
+    "stay_h3": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "stay_uv_h3_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "IFNULL(ROUND(sum(if(cdate=D0,stay_uv_h3_rh3,0)) / sum(if(cdate=D0,n_uv_hour_rh3,0)),4),0)",
+            "D1": "IFNULL(ROUND(sum(if(cdate=D1,stay_uv_h3_rh3,0)) / sum(if(cdate=D1,n_uv_hour_rh3,0)),4), 0)",
+            "aggregate": "IFNULL(ROUND(sum(if(cdate=D0,stay_uv_h3_rh3,0)) / sum(if(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "IFNULL(ROUND(sum(if(cdate=D0,stay_uv_h3_rh3,0)) / sum(if(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "IFNULL(ROUND(sum(if(cdate=D1,stay_uv_h3_rh3,0)) / sum(if(cdate=D1,n_uv_hour_rh3,0)),4), 0)"
+            }
+          ]
+        }
+      }
+    ],
+    "hour_stay_h3": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "stay_uv_h3",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H3": "ROUND(sum(if(hour=H3,stay_uv_h3,0)) / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,stay_uv_h3,0)) / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,stay_uv_h3,0)) / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end),4)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,stay_uv_h3,0)) / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,stay_uv_h3,0)) / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,stay_uv_h3,0)) / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end),4)"
+            }
+          ]
+        }
+      }
+    ],
+    "all_roi": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D0,consume,0)) , 4)",
+            "D1": "ROUND(sum(if(cdate=D1,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D1,consume,0)), 4)",
+            "D2": "ROUND(sum(if(cdate=D2,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D2,consume,0)), 4)",
+            "D3": "ROUND(sum(if(cdate=D3,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D3,consume,0)), 4)",
+            "D4": "ROUND(sum(if(cdate=D4,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D4,consume,0)), 4)",
+            "D5": "ROUND(sum(if(cdate=D5,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D5,consume,0)), 4)",
+            "D6": "ROUND(sum(if(cdate=D6,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D6,consume,0)), 4)",
+            "D7": "ROUND(sum(if(cdate=D7,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D7,consume,0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,consume,0)) , 4)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,consume,0)) , 4)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,consume,0)) , 4)",
+            "aggregate": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D0,consume,0)) , 4)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum((n_predict_income / 1000) + n_cz_money) / sum(consume) , 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D0,consume,0)) , 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D1,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D2,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D3,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D4",
+              "formula": "ROUND(sum(if(cdate=D4,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D4,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D5",
+              "formula": "ROUND(sum(if(cdate=D5,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D5,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D6",
+              "formula": "ROUND(sum(if(cdate=D6,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D6,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D7",
+              "formula": "ROUND(sum(if(cdate=D7,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D7,consume,0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,consume,0)) , 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,consume,0)) , 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,consume,0)) , 4)"
+            }
+          ]
+        }
+      }
+    ],
+    "hour_all_roi": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H3": "IFNULL(ROUND(SUM(if(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H3='--' then null when hour=H3 then ROUND(consume,2) else 0 end) , 4), 0)",
+            "H4": "IFNULL(ROUND(SUM(if(hour=H4,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end) , 4), 0)",
+            "H5": "IFNULL(ROUND(SUM(if(hour=H5,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end) , 4), 0)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H3='--' then null when hour=H3 then ROUND(consume,2) else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H4,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H5,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end) , 4), 0)"
+            }
+          ]
+        }
+      }
+    ],
+    "arpu": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "n_uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate=D0,n_uv_hour,0)),2), 2)",
+            "D1": "ROUND(sum(if(cdate=D1,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D1,n_uv_hour,0)),2)",
+            "D2": "ROUND(sum(if(cdate=D2,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D2,n_uv_hour,0)),2)",
+            "D3": "ROUND(sum(if(cdate=D3,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D3,n_uv_hour,0)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2), 2)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2), 2)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2), 2)",
+            "aggregate": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate=D0,n_uv_hour,0)),2), 2)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum((n_predict_income / 1000) + n_cz_money) / sum(r_uv_hour + uv_hour), 2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate=D0,n_uv_hour,0)),2), 2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate=D1,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D1,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate=D2,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D2,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D3",
+              "formula": "ROUND(sum(if(cdate=D3,((n_predict_income / 1000) + n_cz_money),0)) / sum(if(cdate=D3,n_uv_hour,0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END,n_uv_hour,0)),2), 2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD5",
+              "formula": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END,n_uv_hour,0)),2), 2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD7",
+              "formula": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END,n_uv_hour,0)),2), 2)"
+            }
+          ]
+        }
+      }
+    ],
+    "hour_arpu": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H3": "IFNULL(ROUND(SUM(if(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end),2),0)",
+            "H4": "IFNULL(ROUND(SUM(if(hour=H4,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end),2),0)",
+            "H5": "IFNULL(ROUND(SUM(if(hour=H5,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end),2),0)"
+          }
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end),2),0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H4,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end),2),0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "IFNULL(ROUND(SUM(if(hour=H5,((n_predict_income / 1000) + n_cz_money),0)) / sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end),2),0)"
+            }
+          ]
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "formulaByGrain": {
+          "hour": {
+            "H3": "sum(case when H3='--' then null when hour=H3 then ROUND(consume,2) else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end)"
+          }
+        },
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then ROUND(consume,2) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end)"
+            }
+          ]
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then ROUND(consume,2) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then consume else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then consume else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then consume else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end)",
+            "H6": "sum(case when H6='--' then null when hour=H6 then consume else 0 end)"
+          }
+        }
+      }
+    ],
+    "hour_n_uv": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "formulaByGrain": {
+          "hour": {
+            "H3": "sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end)"
+          }
+        },
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "syhplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then (r_uv_hour + uv_hour) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then (r_uv_hour + uv_hour) else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then (r_uv_hour + uv_hour) else 0 end)"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "syhplay|user|auction|0|total|stay_1": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(stay_uv_a_1_total_hour) / NULLIF(SUM(stay_uv_b_1), 0), 4)"
+        },
+        "writeColumns": [
+          "stay_uv_a_1_total_hour",
+          "stay_uv_b_1"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "stay_uv_a_1_total_hour",
+        "denominatorColumn": "stay_uv_b_1"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "stay_uv_a_1_total_hour",
+          "denominatorColumn": "stay_uv_b_1"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "media": "2"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "agent_user_name",
+            "main_body"
+          ]
+        }
+      },
+      "mapper": "scanData4HmDay"
+    },
+    "syhplay|project|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "ROUND(SUM(consume), 2)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "project_status": "启用中"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "media": "2"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "agent_user_name",
+            "main_body"
+          ]
+        }
+      },
+      "mapper": "DataControlMapper.scanHmTodayData"
+    },
+    "syhplay|channel|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0, CAST(consume AS DECIMAL(20,2)), NULL)),2)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|n_uv": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "SUM(IF(cdate=D0,n_uv_hour,0))"
+        },
+        "writeColumns": [
+          "n_uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|cpa": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,consume,0)) / SUM(IF(cdate=D0,n_uv_hour,0)),2)"
+        },
+        "writeColumns": [
+          "consume",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|stay_1": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,stay_uv_a_1_total_hour,0)) / SUM(IF(cdate=D0,stay_uv_b_1,0)),4)"
+        },
+        "writeColumns": [
+          "stay_uv_a_1_total_hour",
+          "stay_uv_b_1"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "stay_uv_a_1_total_hour",
+        "denominatorColumn": "stay_uv_b_1"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "stay_uv_a_1_total_hour",
+          "denominatorColumn": "stay_uv_b_1"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|all_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / SUM(IF(cdate=D0,consume,0)) , 4)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|arpu": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(SUM(IF(cdate=D0,n_uv_hour,0)),2), 2)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|avg_play_time_day": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,play_time_day_rh3,0)) / 60 / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),2)"
+        },
+        "writeColumns": [
+          "play_time_day_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|stay_h3": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "IFNULL(ROUND(SUM(IF(cdate=D0,stay_uv_h3_rh3,0)) / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+        },
+        "writeColumns": [
+          "stay_uv_h3_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|2|total|retention_d1_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D2": "ROUND(SUM(IF(cdate=D2,retention_d1_uv,0)) / SUM(IF(cdate=D2,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d1_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d1_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d1_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d1_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|4|total|retention_d3_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D4": "ROUND(SUM(IF(cdate=D4,retention_d3_uv,0)) / SUM(IF(cdate=D4,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d3_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d3_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d3_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d3_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|5|total|retention_d4_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D5": "ROUND(SUM(IF(cdate=D5,retention_d4_uv,0)) / SUM(IF(cdate=D5,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d4_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d4_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d4_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d4_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|6|total|retention_d5_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D6": "ROUND(SUM(IF(cdate=D6,retention_d5_uv,0)) / SUM(IF(cdate=D6,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d5_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d5_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d5_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d5_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|7|total|retention_d6_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D7": "ROUND(SUM(IF(cdate=D7,retention_d6_uv,0)) / SUM(IF(cdate=D7,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d6_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d6_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d6_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d6_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|8|total|retention_d7_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "D8": "ROUND(SUM(IF(cdate=D8,retention_d7_uv,0)) / SUM(IF(cdate=D8,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d7_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d7_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d7_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d7_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_consume": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_n_uv": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_stay_h3": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "ROUND(SUM(IF(hour=H3,stay_uv_h3,0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),4)"
+        },
+        "writeColumns": [
+          "stay_uv_h3",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_avg_play_time_day": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,play_time_day,0)) / 60 / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END), 2), 0)"
+        },
+        "writeColumns": [
+          "play_time_day",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_all_roi": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END) , 4), 0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_arpu": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "groupBy": [
+        "account",
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),2),0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|n_uv": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "SUM(IF(cdate=D0,n_uv_hour,0))"
+        },
+        "writeColumns": [
+          "n_uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|cpa": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,consume,0)) / SUM(IF(cdate=D0,n_uv_hour,0)),2)"
+        },
+        "writeColumns": [
+          "consume",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|stay_1": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,stay_uv_a_1_total_hour,0)) / SUM(IF(cdate=D0,stay_uv_b_1,0)),4)"
+        },
+        "writeColumns": [
+          "stay_uv_a_1_total_hour",
+          "stay_uv_b_1"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "stay_uv_a_1_total_hour",
+        "denominatorColumn": "stay_uv_b_1"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "stay_uv_a_1_total_hour",
+          "denominatorColumn": "stay_uv_b_1"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|all_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / SUM(IF(cdate=D0,consume,0)) , 4)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|arpu": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(SUM(IF(cdate=D0,n_uv_hour,0)),2), 2)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|avg_play_time_day": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,play_time_day_rh3,0)) / 60 / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),2)"
+        },
+        "writeColumns": [
+          "play_time_day_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|stay_h3": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "IFNULL(ROUND(SUM(IF(cdate=D0,stay_uv_h3_rh3,0)) / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+        },
+        "writeColumns": [
+          "stay_uv_h3_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|2|total|retention_d1_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D2": "ROUND(SUM(IF(cdate=D2,retention_d1_uv,0)) / SUM(IF(cdate=D2,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d1_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d1_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d1_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d1_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|4|total|retention_d3_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D4": "ROUND(SUM(IF(cdate=D4,retention_d3_uv,0)) / SUM(IF(cdate=D4,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d3_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d3_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d3_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d3_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|5|total|retention_d4_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D5": "ROUND(SUM(IF(cdate=D5,retention_d4_uv,0)) / SUM(IF(cdate=D5,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d4_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d4_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d4_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d4_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|6|total|retention_d5_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D6": "ROUND(SUM(IF(cdate=D6,retention_d5_uv,0)) / SUM(IF(cdate=D6,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d5_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d5_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d5_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d5_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|7|total|retention_d6_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D7": "ROUND(SUM(IF(cdate=D7,retention_d6_uv,0)) / SUM(IF(cdate=D7,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d6_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d6_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d6_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d6_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|8|total|retention_d7_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D8": "ROUND(SUM(IF(cdate=D8,retention_d7_uv,0)) / SUM(IF(cdate=D8,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d7_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d7_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d7_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d7_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_consume": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_n_uv": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_stay_h3": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "ROUND(SUM(IF(hour=H3,stay_uv_h3,0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),4)"
+        },
+        "writeColumns": [
+          "stay_uv_h3",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_avg_play_time_day": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,play_time_day,0)) / 60 / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END), 2), 0)"
+        },
+        "writeColumns": [
+          "play_time_day",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_all_roi": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END) , 4), 0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_arpu": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "account",
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),2),0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "project_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0, CAST(consume AS DECIMAL(20,2)), NULL)),2)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|n_uv": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "SUM(IF(cdate=D0,n_uv_hour,0))"
+        },
+        "writeColumns": [
+          "n_uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|cpa": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,consume,0)) / SUM(IF(cdate=D0,n_uv_hour,0)),2)"
+        },
+        "writeColumns": [
+          "consume",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|stay_1": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,stay_uv_a_1_total_hour,0)) / SUM(IF(cdate=D0,stay_uv_b_1,0)),4)"
+        },
+        "writeColumns": [
+          "stay_uv_a_1_total_hour",
+          "stay_uv_b_1"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "stay_uv_a_1_total_hour",
+        "denominatorColumn": "stay_uv_b_1"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "stay_uv_a_1_total_hour",
+          "denominatorColumn": "stay_uv_b_1"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|all_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / SUM(IF(cdate=D0,consume,0)) , 4)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|arpu": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(SUM(IF(cdate=D0,n_uv_hour,0)),2), 2)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|avg_play_time_day": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,play_time_day_rh3,0)) / 60 / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),2)"
+        },
+        "writeColumns": [
+          "play_time_day_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|stay_h3": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "IFNULL(ROUND(SUM(IF(cdate=D0,stay_uv_h3_rh3,0)) / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+        },
+        "writeColumns": [
+          "stay_uv_h3_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|2|total|retention_d1_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D2": "ROUND(SUM(IF(cdate=D2,retention_d1_uv,0)) / SUM(IF(cdate=D2,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d1_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d1_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d1_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d1_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|4|total|retention_d3_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D4": "ROUND(SUM(IF(cdate=D4,retention_d3_uv,0)) / SUM(IF(cdate=D4,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d3_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d3_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d3_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d3_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|5|total|retention_d4_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D5": "ROUND(SUM(IF(cdate=D5,retention_d4_uv,0)) / SUM(IF(cdate=D5,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d4_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d4_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d4_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d4_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|6|total|retention_d5_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D6": "ROUND(SUM(IF(cdate=D6,retention_d5_uv,0)) / SUM(IF(cdate=D6,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d5_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d5_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d5_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d5_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|7|total|retention_d6_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D7": "ROUND(SUM(IF(cdate=D7,retention_d6_uv,0)) / SUM(IF(cdate=D7,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d6_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d6_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d6_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d6_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|8|total|retention_d7_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "D8": "ROUND(SUM(IF(cdate=D8,retention_d7_uv,0)) / SUM(IF(cdate=D8,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d7_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d7_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d7_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d7_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_consume": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_n_uv": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_stay_h3": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "ROUND(SUM(IF(hour=H3,stay_uv_h3,0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),4)"
+        },
+        "writeColumns": [
+          "stay_uv_h3",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_avg_play_time_day": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,play_time_day,0)) / 60 / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END), 2), 0)"
+        },
+        "writeColumns": [
+          "play_time_day",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_all_roi": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END) , 4), 0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_arpu": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "groupBy": [
+        "account",
+        "plan_id"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),2),0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "plan_id",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0, CAST(consume AS DECIMAL(20,2)), NULL)),2)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|n_uv": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "SUM(IF(cdate=D0,n_uv_hour,0))"
+        },
+        "writeColumns": [
+          "n_uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|cpa": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,consume,0)) / SUM(IF(cdate=D0,n_uv_hour,0)),2)"
+        },
+        "writeColumns": [
+          "consume",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|all_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / SUM(IF(cdate=D0,consume,0)) , 4)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|arpu": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,((n_predict_income / 1000) + n_cz_money),0)) / ROUND(SUM(IF(cdate=D0,n_uv_hour,0)),2), 2)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|avg_play_time_day": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "ROUND(SUM(IF(cdate=D0,play_time_day_rh3,0)) / 60 / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),2)"
+        },
+        "writeColumns": [
+          "play_time_day_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|stay_h3": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D0": "IFNULL(ROUND(SUM(IF(cdate=D0,stay_uv_h3_rh3,0)) / SUM(IF(cdate=D0,n_uv_hour_rh3,0)),4),0)"
+        },
+        "writeColumns": [
+          "stay_uv_h3_rh3",
+          "n_uv_hour_rh3"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3_rh3",
+            "n_uv_hour_rh3"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|2|total|retention_d1_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D2": "ROUND(SUM(IF(cdate=D2,retention_d1_uv,0)) / SUM(IF(cdate=D2,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d1_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d1_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d1_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d1_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|4|total|retention_d3_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D4": "ROUND(SUM(IF(cdate=D4,retention_d3_uv,0)) / SUM(IF(cdate=D4,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d3_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d3_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d3_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d3_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|5|total|retention_d4_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D5": "ROUND(SUM(IF(cdate=D5,retention_d4_uv,0)) / SUM(IF(cdate=D5,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d4_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d4_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d4_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d4_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|6|total|retention_d5_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D6": "ROUND(SUM(IF(cdate=D6,retention_d5_uv,0)) / SUM(IF(cdate=D6,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d5_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d5_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d5_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d5_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|7|total|retention_d6_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D7": "ROUND(SUM(IF(cdate=D7,retention_d6_uv,0)) / SUM(IF(cdate=D7,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d6_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d6_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d6_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d6_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|8|total|retention_d7_uv_ratio": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "D8": "ROUND(SUM(IF(cdate=D8,retention_d7_uv,0)) / SUM(IF(cdate=D8,n_uv_hour,0)),4)"
+        },
+        "writeColumns": [
+          "retention_d7_uv",
+          "n_uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "retention_d7_uv",
+        "denominatorColumn": "n_uv_hour"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "retention_d7_uv",
+            "n_uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "retention_d7_uv",
+          "denominatorColumn": "n_uv_hour"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_consume": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_n_uv": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END)"
+        },
+        "writeColumns": [
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_stay_h3": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "ROUND(SUM(IF(hour=H3,stay_uv_h3,0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),4)"
+        },
+        "writeColumns": [
+          "stay_uv_h3",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "stay_uv_h3",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_avg_play_time_day": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,play_time_day,0)) / 60 / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END), 2), 0)"
+        },
+        "writeColumns": [
+          "play_time_day",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "play_time_day",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_all_roi": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN ROUND(consume,2) ELSE 0 END) , 4), 0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_arpu": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "groupBy": [
+        "agent_user_name"
+      ],
+      "metric": {
+        "expressions": {
+          "H3": "IFNULL(ROUND(SUM(IF(hour=H3,((n_predict_income / 1000) + n_cz_money),0)) / SUM(CASE WHEN H3='--' THEN NULL when hour=H3 THEN (r_uv_hour + uv_hour) ELSE 0 END),2),0)"
+        },
+        "writeColumns": [
+          "n_predict_income",
+          "n_cz_money",
+          "r_uv_hour",
+          "uv_hour"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_predict_income",
+            "n_cz_money",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "agent_user_name",
+            "account",
+            "channel_code",
+            "book_id",
+            "app_name",
+            "media"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cltplay",
+  "tables": [
+    {
+      "plineForm": "cltplay",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_client_pay_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h12": [
+      {
+        "column": "roi_h12",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "roi_h12",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "active_cost": [
+      {
+        "column": "active_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "pay_cost": [
+      {
+        "column": "pay_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "n_recharge_uv": [
+      {
+        "column": "n_recharge_uv",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "n_recharge_amount": [
+      {
+        "column": "n_recharge_amount",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "column": "unsubscribe_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "conversion_subscribe_rate": [
+      {
+        "column": "conversion_subscribe_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "ac_rate": [
+      {
+        "column": "ac_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "bid_rate": [
+      {
+        "column": "bid_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "predict_roi": [
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_n_recharge_uv": [
+      {
+        "column": "hour_n_recharge_uv",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_active_cost": [
+      {
+        "column": "hour_active_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "column": "hour_pay_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "column": "hour_unsubscribe_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_unsubscribe_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_conversion_subscribe_rate": [
+      {
+        "column": "hour_conversion_subscribe_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_ac_rate": [
+      {
+        "column": "hour_ac_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cltplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "cltplay|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cltplay|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "cltplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cltplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cltplay|project|0|consume",
+          "plineForm": "cltplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "用户请求 rule 17230；端付项目当天 consume；Job/schema/source 于 2026-08-27 核验"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanClientBookOrVideoDay",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-27"
+        },
+        {
+          "source": "test database SHOW COLUMNS and source-row query",
+          "table": "ad_advertiser_client_pay_project_day",
+          "checkedAt": "2026-08-27"
+        }
+      ]
+    },
+    "cltplay|project|auction|207|total|consume": {
+      "schemaVersion": 1,
+      "key": "cltplay|project|auction|207|total|consume",
+      "businessLine": {
+        "code": "cltplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "207",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cltplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cltplay|project|207|consume",
+          "plineForm": "cltplay",
+          "dataType": "project",
+          "timeType": "207",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "用户请求 rule 17232；端付项目近7天(不含当天) consume total；Job/schema 于 2026-08-27 核验"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanClientBookOrVideoDay recent7DayBegin/End",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-27"
+        },
+        {
+          "source": "test database SHOW COLUMNS and source-row query",
+          "table": "ad_advertiser_client_pay_project_day",
+          "checkedAt": "2026-08-27"
+        }
+      ]
+    }
+  }
+}

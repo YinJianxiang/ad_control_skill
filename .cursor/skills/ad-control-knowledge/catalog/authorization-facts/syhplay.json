@@ -1,0 +1,5349 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "syhplay",
+  "tables": [
+    {
+      "plineForm": "syhplay",
+      "dataType": "user",
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "entityIdColumn": "agent_user_name",
+      "entityNameColumn": "agent_user_name"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_channel_day",
+      "entityIdColumn": "channel_code",
+      "entityNameColumn": "channel_code"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "promotion",
+      "timeGrain": "day",
+      "table": "ad_advertiser_hm_plan_day",
+      "entityIdColumn": "plan_id",
+      "entityNameColumn": "plan_name"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_channel_hour",
+      "entityIdColumn": "channel_code",
+      "entityNameColumn": "channel_code"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "promotion",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_plan_hour",
+      "entityIdColumn": "plan_id",
+      "entityNameColumn": "plan_name"
+    },
+    {
+      "plineForm": "syhplay",
+      "dataType": "user",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_hm_project_hour",
+      "entityIdColumn": "agent_user_name",
+      "entityNameColumn": "agent_user_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "n_uv": [
+      {
+        "column": "n_uv",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "cpa": [
+      {
+        "column": "cpa",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "stay_1": [
+      {
+        "column": "stay_1",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d1_uv_ratio": [
+      {
+        "column": "retention_d1_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d3_uv_ratio": [
+      {
+        "column": "retention_d3_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d4_uv_ratio": [
+      {
+        "column": "retention_d4_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d5_uv_ratio": [
+      {
+        "column": "retention_d5_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d6_uv_ratio": [
+      {
+        "column": "retention_d6_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "retention_d7_uv_ratio": [
+      {
+        "column": "retention_d7_uv_ratio",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "avg_play_time_day": [
+      {
+        "column": "avg_play_time_day",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_avg_play_time_day": [
+      {
+        "column": "hour_avg_play_time_day",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "stay_h3": [
+      {
+        "column": "stay_h3",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_stay_h3": [
+      {
+        "column": "hour_stay_h3",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi": [
+      {
+        "column": "all_roi",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_roi": [
+      {
+        "column": "hour_all_roi",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "arpu": [
+      {
+        "column": "arpu",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_arpu": [
+      {
+        "column": "hour_arpu",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_n_uv": [
+      {
+        "column": "hour_n_uv",
+        "plines": [
+          "syhplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "syhplay|user|auction|0|total|stay_1": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|stay_1",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_1"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_1",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|0|stay_1",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "stay_1",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "Job比值公式和实库分子分母字段于2026-08-12核验"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "DataControlService.java:512 + DataControlMapper.xml:2552",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-12"
+        },
+        {
+          "source": "test database SHOW COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "checkedAt": "2026-08-12"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|0|consume",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            2
+          ],
+          "notes": "规则16278；Job路由、聚合公式、实库schema及骨架行均于2026-08-12核验"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanHmTodayData",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-12"
+        },
+        {
+          "source": "test database SHOW COLUMNS and source-row query",
+          "table": "ad_advertiser_hm_project_day",
+          "checkedAt": "2026-08-12"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|consume",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "consume",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|n_uv",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|cpa": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|cpa",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "cpa"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "cpa",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|cpa",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "cpa",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "consume",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|stay_1": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|stay_1",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_1"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_1",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|stay_1",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "stay_1",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "pline_form",
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|all_roi",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "consume",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|arpu",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_cz_money",
+            "n_predict_income",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour_rh3",
+            "play_time_day_rh3",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|0|total|stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|0|total|stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|0|total|stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour_rh3",
+            "pline_form",
+            "stay_uv_h3_rh3"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|2|total|retention_d1_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|2|total|retention_d1_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d1_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d1_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|2|total|retention_d1_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "retention_d1_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d1_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|4|total|retention_d3_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|4|total|retention_d3_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "4",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d3_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d3_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|4|total|retention_d3_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "4",
+          "column": "retention_d3_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d3_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|5|total|retention_d4_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|5|total|retention_d4_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "5",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d4_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d4_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|5|total|retention_d4_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "5",
+          "column": "retention_d4_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d4_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|6|total|retention_d5_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|6|total|retention_d5_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "6",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d5_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d5_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|6|total|retention_d5_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "6",
+          "column": "retention_d5_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d5_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|7|total|retention_d6_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|7|total|retention_d6_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "7",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d6_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d6_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|7|total|retention_d6_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "7",
+          "column": "retention_d6_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d6_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|8|total|retention_d7_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|8|total|retention_d7_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "8",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d7_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d7_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|8|total|retention_d7_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "8",
+          "column": "retention_d7_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_day",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d7_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_consume",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "consume",
+            "hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_n_uv",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "hour",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "hour",
+            "pline_form",
+            "r_uv_hour",
+            "stay_uv_h3",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "hour",
+            "play_time_day",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_all_roi",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "consume",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|channel|auction|3|total|hour_arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|channel|auction|3|total|hour_arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|channel|auction|3|total|hour_arpu",
+          "plineForm": "syhplay",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_channel_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "channel_code",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|n_uv",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|cpa": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|cpa",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "cpa"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "cpa",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|cpa",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "cpa",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "n_uv_hour",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|stay_1": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|stay_1",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_1"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_1",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|stay_1",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "stay_1",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "pline_form",
+            "project_id",
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|all_roi",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|arpu",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_cz_money",
+            "n_predict_income",
+            "n_uv_hour",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour_rh3",
+            "play_time_day_rh3",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|0|total|stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|0|total|stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|0|total|stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour_rh3",
+            "pline_form",
+            "project_id",
+            "stay_uv_h3_rh3"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|2|total|retention_d1_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|2|total|retention_d1_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d1_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d1_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|2|total|retention_d1_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "retention_d1_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d1_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|4|total|retention_d3_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|4|total|retention_d3_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "4",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d3_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d3_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|4|total|retention_d3_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "4",
+          "column": "retention_d3_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d3_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|5|total|retention_d4_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|5|total|retention_d4_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "5",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d4_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d4_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|5|total|retention_d4_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "5",
+          "column": "retention_d4_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d4_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|6|total|retention_d5_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|6|total|retention_d5_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "6",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d5_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d5_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|6|total|retention_d5_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "6",
+          "column": "retention_d5_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d5_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|7|total|retention_d6_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|7|total|retention_d6_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "7",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d6_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d6_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|7|total|retention_d6_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "7",
+          "column": "retention_d6_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d6_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|8|total|retention_d7_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|8|total|retention_d7_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "8",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d7_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d7_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|8|total|retention_d7_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "8",
+          "column": "retention_d7_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "project_id",
+            "retention_d7_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_consume",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "hour",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_n_uv",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "pline_form",
+            "project_id",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "pline_form",
+            "project_id",
+            "r_uv_hour",
+            "stay_uv_h3",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "play_time_day",
+            "pline_form",
+            "project_id",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_all_roi",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form",
+            "project_id"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|project|auction|3|total|hour_arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|project|auction|3|total|hour_arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|project|auction|3|total|hour_arpu",
+          "plineForm": "syhplay",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form",
+            "project_id",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|consume",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|n_uv",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|cpa": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|cpa",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "cpa"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "cpa",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|cpa",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "cpa",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|stay_1": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|stay_1",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_1"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_1",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|stay_1",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "stay_1",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "plan_id",
+            "pline_form",
+            "stay_uv_a_1_total_hour",
+            "stay_uv_b_1"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|all_roi",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "n_cz_money",
+            "n_predict_income",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|arpu",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_cz_money",
+            "n_predict_income",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour_rh3",
+            "plan_id",
+            "play_time_day_rh3",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|0|total|stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|0|total|stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|0|total|stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour_rh3",
+            "plan_id",
+            "pline_form",
+            "stay_uv_h3_rh3"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|2|total|retention_d1_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|2|total|retention_d1_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d1_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d1_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|2|total|retention_d1_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "2",
+          "column": "retention_d1_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d1_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|4|total|retention_d3_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|4|total|retention_d3_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "4",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d3_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d3_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|4|total|retention_d3_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "4",
+          "column": "retention_d3_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d3_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|5|total|retention_d4_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|5|total|retention_d4_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "5",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d4_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d4_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|5|total|retention_d4_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "5",
+          "column": "retention_d4_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d4_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|6|total|retention_d5_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|6|total|retention_d5_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "6",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d5_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d5_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|6|total|retention_d5_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "6",
+          "column": "retention_d5_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d5_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|7|total|retention_d6_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|7|total|retention_d6_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "7",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d6_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d6_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|7|total|retention_d6_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "7",
+          "column": "retention_d6_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d6_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|8|total|retention_d7_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|8|total|retention_d7_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "8",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d7_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d7_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|8|total|retention_d7_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "8",
+          "column": "retention_d7_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_day",
+          "columns": [
+            "account",
+            "cdate",
+            "n_uv_hour",
+            "plan_id",
+            "pline_form",
+            "retention_d7_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_consume",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "hour",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_n_uv",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "plan_id",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "plan_id",
+            "pline_form",
+            "r_uv_hour",
+            "stay_uv_h3",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "plan_id",
+            "play_time_day",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_all_roi",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "consume",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "plan_id",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|promotion|auction|3|total|hour_arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|promotion|auction|3|total|hour_arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|promotion|auction|3|total|hour_arpu",
+          "plineForm": "syhplay",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_plan_hour",
+          "columns": [
+            "account",
+            "cdate",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "plan_id",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|consume",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "consume",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|n_uv",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|cpa": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|cpa",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "cpa"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "cpa",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|cpa",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "cpa",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "consume",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|all_roi",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "consume",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|arpu",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_cz_money",
+            "n_predict_income",
+            "n_uv_hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour_rh3",
+            "play_time_day_rh3",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|0|total|stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|0|total|stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|0|total|stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "0",
+          "column": "stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour_rh3",
+            "pline_form",
+            "stay_uv_h3_rh3"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|2|total|retention_d1_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|2|total|retention_d1_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d1_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d1_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|2|total|retention_d1_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "2",
+          "column": "retention_d1_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d1_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|4|total|retention_d3_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|4|total|retention_d3_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "4",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d3_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d3_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|4|total|retention_d3_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "4",
+          "column": "retention_d3_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d3_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|5|total|retention_d4_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|5|total|retention_d4_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "5",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d4_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d4_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|5|total|retention_d4_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "5",
+          "column": "retention_d4_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d4_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|6|total|retention_d5_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|6|total|retention_d5_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "6",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d5_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d5_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|6|total|retention_d5_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "6",
+          "column": "retention_d5_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d5_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|7|total|retention_d6_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|7|total|retention_d6_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "7",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d6_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d6_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|7|total|retention_d6_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "7",
+          "column": "retention_d6_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d6_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|8|total|retention_d7_uv_ratio": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|8|total|retention_d7_uv_ratio",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "8",
+      "reduceType": "total",
+      "metric": {
+        "code": "retention_d7_uv_ratio"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "retention_d7_uv_ratio",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|8|total|retention_d7_uv_ratio",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "8",
+          "column": "retention_d7_uv_ratio",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_day",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "n_uv_hour",
+            "pline_form",
+            "retention_d7_uv"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_consume": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_consume",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_consume",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "consume",
+            "hour",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_n_uv": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_n_uv",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_n_uv"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_n_uv",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_n_uv",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_n_uv",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "hour",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_stay_h3": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_stay_h3",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_stay_h3"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_stay_h3",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_stay_h3",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_stay_h3",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "hour",
+            "pline_form",
+            "r_uv_hour",
+            "stay_uv_h3",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_avg_play_time_day": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_avg_play_time_day",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_avg_play_time_day"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_avg_play_time_day",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_avg_play_time_day",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_avg_play_time_day",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "hour",
+            "play_time_day",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_all_roi": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_all_roi",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_all_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_all_roi",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_all_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "consume",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    },
+    "syhplay|user|auction|3|total|hour_arpu": {
+      "schemaVersion": 1,
+      "key": "syhplay|user|auction|3|total|hour_arpu",
+      "businessLine": {
+        "code": "syhplay"
+      },
+      "dimension": "user",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_arpu"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_arpu",
+          "plines": [
+            "syhplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "batch-schema-verified-authorize",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "syhplay|user|auction|3|total|hour_arpu",
+          "plineForm": "syhplay",
+          "dataType": "user",
+          "timeType": "3",
+          "column": "hour_arpu",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "batch authorize 2026-09-08"
+        }
+      },
+      "source": "batch-schema-verified-authorize",
+      "evidence": [
+        {
+          "source": "information_schema.COLUMNS",
+          "table": "ad_advertiser_hm_project_hour",
+          "columns": [
+            "agent_user_name",
+            "cdate",
+            "hour",
+            "n_cz_money",
+            "n_predict_income",
+            "pline_form",
+            "r_uv_hour",
+            "uv_hour"
+          ],
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08",
+          "notes": "pending scenario had recipe; columns verified in test DB"
+        }
+      ]
+    }
+  }
+}

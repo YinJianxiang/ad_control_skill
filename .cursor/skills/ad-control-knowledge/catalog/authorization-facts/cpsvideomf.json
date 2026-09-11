@@ -1,0 +1,1109 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsvideomf",
+  "tables": [
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_free_channel_day",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_channel_day",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_free_channel_hour",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_free_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_free_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "promotion",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_free_promotion_day",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    },
+    {
+      "plineForm": "cpsvideomf",
+      "dataType": "promotion",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_free_promotion_hour",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_num": [
+      {
+        "column": "convert_num",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "predict_roi": [
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_roi_h1": [
+      {
+        "column": "hour_roi_h1",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "column": "model_pred_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h4": [
+      {
+        "column": "roi_h4",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h1": [
+      {
+        "column": "roi_h1",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "roi_h2": [
+      {
+        "column": "roi_h2",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "column": "hour_roi_h2",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h3": [
+      {
+        "column": "roi_h3",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_roi_h3": [
+      {
+        "column": "hour_roi_h3",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_roi_h4": [
+      {
+        "column": "hour_roi_h4",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "roi_h12": [
+      {
+        "column": "roi_h12",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "column": "hour_roi_h12",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "column": "hour_convert_num",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_num",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "column": "all_stat_total_cost_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "column": "all_roi_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "column": "all_roi_24h_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "column": "hour_all_stat_total_cost_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_all_stat_total_cost_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "column": "hour_all_roi_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "column": "hour_all_roi_24h_trend",
+        "plines": [
+          "cpsvideomf"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "cpsvideomf|promotion|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|promotion|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|promotion|0|consume",
+          "plineForm": "cpsvideomf",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "defaults 冒烟：免费短剧·广告·当天·消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_promotion_hour"
+        }
+      ]
+    },
+    "cpsvideomf|channel|auction|0|total|predict_roi": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|channel|auction|0|total|predict_roi",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "predict_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "predict_roi",
+          "plines": [
+            "cpsvideomf",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|channel|0|predict_roi",
+          "plineForm": "cpsvideomf",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "predict_roi",
+          "notes": "新媒体-免费短剧·渠道·当天预估ROI；临时扩白名单供 rule 16216"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_channel_hour"
+        }
+      ]
+    },
+    "cpsvideomf|channel|auction|2|total|hour_predict_roi": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|channel|auction|2|total|hour_predict_roi",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_predict_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_predict_roi",
+          "plines": [
+            "cpsvideomf",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|channel|2|hour_predict_roi",
+          "plineForm": "cpsvideomf",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_predict_roi",
+          "notes": "新媒体-免费短剧·渠道·近2小时·分时预估ROI；临时扩白名单供 rule 16219"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_channel_hour"
+        }
+      ]
+    },
+    "cpsvideomf|channel|auction|99|total|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|channel|auction|99|total|convert_num",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "xmtplay",
+            "cpsvideomf"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|channel|99|convert_num",
+          "plineForm": "cpsvideomf",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "convert_num",
+          "notes": "新媒体-免费短剧·渠道·近2天·转化数；临时扩白名单供 rule 16220"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_channel_day"
+        }
+      ]
+    },
+    "cpsvideomf|project|auction|2|total|hour_roi_h1": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|project|auction|2|total|hour_roi_h1",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_roi_h1"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_roi_h1",
+          "plines": [
+            "cpsvideomf",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|project|2|hour_roi_h1",
+          "plineForm": "cpsvideomf",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_roi_h1",
+          "notes": "新媒体-免费短剧·项目·近2小时·分时ROI_H1；临时扩白名单供 rule 16223"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "Mapper scanData4FreeVideo；与短篇 cz_h1 不同"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_project_hour"
+        }
+      ]
+    },
+    "cpsvideomf|project|auction|100|total|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|project|auction|100|total|convert_num",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "xmtplay",
+            "cpsvideomf"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|project|100|convert_num",
+          "plineForm": "cpsvideomf",
+          "dataType": "project",
+          "timeType": "100",
+          "column": "convert_num",
+          "notes": "新媒体-免费短剧·项目·近3天·转化数；临时扩白名单供 rule 16224"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_project_day"
+        }
+      ]
+    },
+    "cpsvideomf|promotion|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|promotion|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|promotion|0|model_pred_roi",
+          "plineForm": "cpsvideomf",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "新媒体-免费短剧·promotion·model_pred_roi；day 表常无「开启」骨架（多为「启用」），允许 synthetic"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_promotion_hour"
+        }
+      ]
+    },
+    "cpsvideomf|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|project|0|consume",
+          "plineForm": "cpsvideomf",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "新媒体-免费短剧·project·consume"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_project_hour"
+        }
+      ]
+    },
+    "cpsvideomf|project|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|project|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|project|0|model_pred_roi",
+          "plineForm": "cpsvideomf",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "新媒体-免费短剧·project·model_pred_roi"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_project_hour"
+        }
+      ]
+    },
+    "cpsvideomf|channel|auction|99|total|roi_h4": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|channel|auction|99|total|roi_h4",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "roi_h4"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "roi_h4",
+          "plines": [
+            "cpsvideomf"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|channel|99|roi_h4",
+          "plineForm": "cpsvideomf",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "roi_h4",
+          "notes": "rule 16262；近两天含当天累计；n_total_income_h4/consume；Mapper/schema核对完成"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "DataControlMapper.scanData4FreeVideoDay _data_rd2_roi_h4",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-31"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_free_channel_day"
+        }
+      ]
+    },
+    "cpsvideomf|project|auction|2|total|hour_predict_roi": {
+      "schemaVersion": 1,
+      "key": "cpsvideomf|project|auction|2|total|hour_predict_roi",
+      "businessLine": {
+        "code": "cpsvideomf"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_predict_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_predict_roi",
+          "plines": [
+            "cpsvideomf",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsvideomf|project|2|hour_predict_roi",
+          "plineForm": "cpsvideomf",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_predict_roi",
+          "releaseVers": [
+            2
+          ],
+          "notes": "用户请求扩白名单供 rule 16277；复用 verified 分时预估 ROI 公式及项目小时表路由"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "verified table route",
+          "table": "ad_advertiser_online_free_project_hour"
+        }
+      ]
+    }
+  }
+}

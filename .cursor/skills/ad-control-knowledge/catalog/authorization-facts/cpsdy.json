@@ -1,0 +1,5328 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsdy",
+  "tables": [
+    {
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_channel_day",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_channel_day",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_channel_hour",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "promotion",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_promotion_day",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    },
+    {
+      "plineForm": "cpsdy",
+      "dataType": "promotion",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_num": [
+      {
+        "column": "convert_num",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "bid_rate": [
+      {
+        "column": "bid_rate",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "active_pay_intra_one_day_roi": [
+      {
+        "column": "active_pay_intra_one_day_roi",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": [
+      {
+        "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "column": "model_pred_roi",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "column": "all_roi_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_roi_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "column": "hour_all_roi_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_all_roi_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "column": "all_stat_total_cost_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_stat_total_cost_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "column": "hour_all_roi_24h_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_all_roi_24h_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "column": "all_roi_24h_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_roi_24h_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "cost": [
+      {
+        "column": "cost",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "column": "hour_convert_num",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_active_pay_intra_one_day_roi": [
+      {
+        "column": "hour_active_pay_intra_one_day_roi",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "column": "hour_all_stat_total_cost_trend",
+        "plines": [
+          "cpsdy"
+        ],
+        "status": "unverified"
+      }
+    ]
+  },
+  "scenarios": {
+    "cpsdy|project|auction|100|all|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|100|all|convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "all",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|100|convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "100",
+          "column": "convert_num",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "Job完整分日公式和实库字段于2026-08-12核验"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "DataControlService.java:560 + DataControlMapper.xml:621",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-12"
+        },
+        {
+          "source": "test database SHOW COLUMNS",
+          "table": "ad_advertiser_online_pay_project_day",
+          "checkedAt": "2026-08-12"
+        }
+      ]
+    },
+    "cpsdy|project|auction|99|anyone|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|99|anyone|convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "convert_num",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17216；端付项目竞价近2天(含当天)转化数 anyone"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_d/_data_d1_convert_num",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_day",
+          "table": "ad_advertiser_online_pay_project_day",
+          "columns": [
+            "convert_num"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|project|auction|99|all|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|99|all|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "all",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17216；端付项目竞价近2天(含当天)激活后24h付费ROI all"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_d/_data_d1_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_day",
+          "table": "ad_advertiser_online_pay_project_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|project|auction|99|anyone|bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|99|anyone|bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "bid_rate",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17217；端付项目竞价近2天(含当天)计费比 anyone；与 ROI 共享 amount/consume"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_d/_data_d1_bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_day",
+          "table": "ad_advertiser_online_pay_project_day",
+          "columns": [
+            "roi_goal",
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "端付·项目·当天消耗；负责人不作为源行筛选，无骨架时可合成"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "all_stat_total_cost_trend",
+          "notes": "端付·项目·当天·全域成本；allowSynthetic 供 rule 17211（opt_status=不在投放时段 + external_action=IAP）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域成本；扫 ad_advertiser_online_pay_roi3_*（releaseVer=3）"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "all_roi_trend",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "all_roi_24h_trend",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域24hROI=sum(all_billing_gmv_24h_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "cpsdy|project|auction|99|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|99|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "all_roi_trend",
+          "notes": "端付·项目·近2天·全域ROI；临时扩白名单供 rule 16210"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_day"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|model_pred_roi",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|consume",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "端付·广告·当天；allowSynthetic 供 rule 17213"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "all_stat_total_cost_trend",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域成本；扫 ad_advertiser_online_pay_roi3_*（releaseVer=3）"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "all_roi_trend",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "all_roi_24h_trend",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域24hROI=sum(all_billing_gmv_24h_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|model_pred_roi",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|consume",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "consume",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17330；端付渠道竞价当天消耗（rv=1 小时表）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy consume; auction today rematerialize hour",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "all_stat_total_cost_trend",
+          "notes": "端付·当天; rule 17284：渠道表去掉错误的 project_status 默认",
+          "releaseVers": [
+            3
+          ]
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域成本；扫 ad_advertiser_online_pay_roi3_*（releaseVer=3）"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "all_roi_trend",
+          "notes": "端付·当天; rule 17284：渠道表去掉错误的 project_status 默认",
+          "releaseVers": [
+            3
+          ]
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "all_roi_24h_trend",
+          "notes": "端付·当天; rule 17284：渠道表去掉错误的 project_status 默认",
+          "releaseVers": [
+            3
+          ]
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域24hROI=sum(all_billing_gmv_24h_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|model_pred_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "端付·当天"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|consume",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "consume",
+          "notes": "端付·渠道·近2天消耗；channel_day 无 project_status；rule 17228 补 allowSynthetic",
+          "releaseVers": [
+            1
+          ]
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_day"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "all_stat_total_cost_trend",
+          "notes": "端付·渠道·timeType=99"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域成本；扫 ad_advertiser_online_pay_roi3_*（releaseVer=3）"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_day"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "all_roi_trend",
+          "notes": "端付·渠道·timeType=99"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_day"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "all_roi_24h_trend",
+          "notes": "端付·渠道·timeType=99"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域24hROI=sum(all_billing_gmv_24h_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_day"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|model_pred_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "model_pred_roi",
+          "notes": "端付·渠道·timeType=99"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_day"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|consume",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "consume",
+          "notes": "端付·渠道·timeType=1"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "all_stat_total_cost_trend",
+          "notes": "端付·渠道·timeType=1"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域成本；扫 ad_advertiser_online_pay_roi3_*（releaseVer=3）"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "all_roi_trend",
+          "notes": "端付·渠道·timeType=1"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域ROI=sum(all_gmv_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "all_roi_24h_trend",
+          "notes": "端付·渠道·timeType=1"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29",
+          "notes": "全域24hROI=sum(all_billing_gmv_24h_trend)/sum(all_stat_total_cost_trend)；roi3"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|total|model_pred_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|model_pred_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "model_pred_roi",
+          "notes": "端付·渠道·timeType=1"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|2|total|hour_all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|2|total|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|hour_all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_all_roi_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "用户批准扩白名单供 rule 16274；verified 小时全域 ROI 公式及 releaseVer=3 渠道小时表路由"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper hour all_roi_trend + UI hour_ prefix",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-31",
+          "notes": "UI 存 hour_all_roi_trend；Mapper 按小时聚合 all_gmv_trend/all_stat_total_cost_trend"
+        },
+        {
+          "source": "verified releaseVer=3 table route",
+          "table": "ad_advertiser_online_pay_roi3_channel_hour"
+        }
+      ]
+    },
+    "cpsdy|channel|global|1|all|hour_all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|1|all|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "1",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|hour_all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "hour_all_roi_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17218；端付渠道全域近1小时连续分时全域ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h1_all_roi_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema / verified releaseVer=3 table route",
+          "table": "ad_advertiser_online_pay_roi3_channel_hour",
+          "columns": [
+            "all_gmv_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|channel|global|3|anyone|hour_all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|3|anyone|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "3",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|3|hour_all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_all_roi_24h_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17218；端付渠道全域近3小时任一时段分时全域24hROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h1/_h2/_h3_all_roi_24h_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema / verified releaseVer=3 table route",
+          "table": "ad_advertiser_online_pay_roi3_channel_hour",
+          "columns": [
+            "all_billing_gmv_24h_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "bid_rate",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17172；端付广告当天计费比"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_hour",
+          "table": "ad_advertiser_online_pay_promotion_hour",
+          "columns": [
+            "roi_goal",
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|2|total|hour_bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|2|total|hour_bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|2|hour_bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "2",
+          "column": "hour_bid_rate",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17173；端付广告近两小时分时计费比"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h2_bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_hour",
+          "table": "ad_advertiser_online_pay_promotion_hour",
+          "columns": [
+            "roi_goal",
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|100|total|bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|100|total|bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|100|bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "100",
+          "column": "bid_rate",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17174；近三天广告 计费比"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_day",
+          "table": "ad_advertiser_online_pay_promotion_day",
+          "columns": [
+            "roi_goal",
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|100|anyone|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|100|anyone|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|100|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "100",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17174；近三天广告 激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_day",
+          "table": "ad_advertiser_online_pay_promotion_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|100|all|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|100|all|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "all",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|100|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "100",
+          "column": "convert_cost",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17174；近三天广告 转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_day",
+          "table": "ad_advertiser_online_pay_promotion_day",
+          "columns": [
+            "consume",
+            "convert_num"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17178；端付渠道 激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_hour",
+          "table": "ad_advertiser_online_pay_channel_hour",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "bid_rate",
+        "defaultRoiGoal": 1
+      },
+      "seedStatus": "rejected",
+      "authorization": {
+        "databaseVerified": false,
+        "metric": {
+          "column": "bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "defaultRoiGoal": 1,
+          "status": "unverified"
+        },
+        "rejectedAt": "2026-09-09",
+        "rejectedReason": "empirical: metric bid_rate is not in the /3232 condition tree",
+        "empirical": {
+          "status": "failed",
+          "creatable": false,
+          "executable": false,
+          "checkedAt": "2026-09-09T03:55:19Z",
+          "reason": "empirical: metric bid_rate is not in the /3232 condition tree",
+          "selectableMetrics": [
+            "active_pay_intra_one_day_roi",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_active_pay_intra_one_day_roi",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num"
+          ],
+          "ruleId": null,
+          "seedTable": null,
+          "jobStatus": null,
+          "hitMatchCount": 0,
+          "runId": "20260909T035519Z-36860a3d"
+        }
+      },
+      "availability": {
+        "uiSelectable": false
+      },
+      "source": "empirical-closed-loop"
+    },
+    "cpsdy|channel|auction|2|anyone|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|2|anyone|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17178；端付渠道 分时激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h2_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_hour",
+          "table": "ad_advertiser_online_pay_channel_hour",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|100|total|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|100|total|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "convert_cost",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17179；端付渠道近3天 转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_day",
+          "table": "ad_advertiser_online_pay_channel_day",
+          "columns": [
+            "consume",
+            "convert_num"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|100|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|100|total|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17179；端付渠道近3天 激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-24"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_day",
+          "table": "ad_advertiser_online_pay_channel_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-24"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17192；端付项目竞价当天；scanData4Cpsdy 小时表 GROUP BY account, project_id"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-25"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_hour",
+          "table": "ad_advertiser_online_pay_project_hour",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-25"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "convert_cost",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17192；端付项目竞价当天；scanData4Cpsdy 小时表 GROUP BY account, project_id"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-25"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_hour",
+          "table": "ad_advertiser_online_pay_project_hour",
+          "columns": [
+            "consume",
+            "convert_num"
+          ],
+          "checkedAt": "2026-08-25"
+        }
+      ]
+    },
+    "cpsdy|project|auction|2|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|2|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17193；端付项目竞价近2小时连续分时ROI；scanData4Cpsdy 小时表 GROUP BY account, project_id"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h1_active_pay_intra_one_day_roi / _data_h2_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-25"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_hour",
+          "table": "ad_advertiser_online_pay_project_hour",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-25"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|3|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17213；端付广告竞价近3小时连续分时ROI；scanData4Cpsdy 小时表 GROUP BY account, promotion_id"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h1/_data_h2/_data_h3_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_hour",
+          "table": "ad_advertiser_online_pay_promotion_hour",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|project|auction|100|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|100|total|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|100|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "100",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17194；端付项目竞价近3天累计 ROI；scanData4CpsdyDay GROUP BY account, project_id"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd3_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-25"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_day",
+          "table": "ad_advertiser_online_pay_project_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-25"
+        }
+      ]
+    },
+    "cpsdy|project|auction|3|first|hour_bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|3|first|hour_bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|3|hour_bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_bid_rate",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17195；端付项目竞价近3小时首个计费比；scanData4Cpsdy _data_h3_bid_rate"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h3_bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-25"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_project_hour",
+          "table": "ad_advertiser_online_pay_project_hour",
+          "columns": [
+            "roi_goal",
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-25"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "convert_cost",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17228；端付渠道近2天 转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd2_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_day",
+          "table": "ad_advertiser_online_pay_channel_day",
+          "columns": [
+            "consume",
+            "convert_num"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17228；端付渠道近2天 激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd2_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_channel_day",
+          "table": "ad_advertiser_online_pay_channel_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|99|all|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|99|all|active_pay_intra_one_day_roi",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "all",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|99|active_pay_intra_one_day_roi",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "99",
+          "column": "active_pay_intra_one_day_roi",
+          "releaseVers": [
+            1
+          ],
+          "notes": "用户请求扩白名单供 rule 17231；端付广告近2天 激活后24h付费ROI reduceType=all"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_rd2_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-26"
+        },
+        {
+          "source": "information_schema columns on ad_advertiser_online_pay_promotion_day",
+          "table": "ad_advertiser_online_pay_promotion_day",
+          "columns": [
+            "active_pay_intra_one_day_amount",
+            "consume"
+          ],
+          "checkedAt": "2026-08-26"
+        }
+      ]
+    },
+    "cpsdy|channel|global|2|anyone|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|2|anyone|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "all_stat_total_cost_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17287；端付渠道全域近2小时分时全域成本（UI hour_all_stat_total_cost_trend 由 seed 归一）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_all_stat_total_cost_trend; UI hour_all_stat_total_cost_trend 归一",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|2|first|hour_all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|2|first|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|hour_all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_all_roi_24h_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17287；端付渠道全域近2小时首个分时全域24h ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h2_all_roi_24h_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|3|anyone|hour_all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|3|anyone|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "3",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|3|hour_all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_all_roi_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17287；端付渠道全域近3小时任一 分时全域ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_all_roi_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|100|total|all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|100|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "all_roi_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17289；端付渠道全域近3天累计全域ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd3_all_roi_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|100|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|100|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "all_stat_total_cost_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17289；端付渠道全域近3天累计全域成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd3_all_stat_total_cost_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|100|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|100|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "all_roi_24h_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17289；端付渠道全域近3天累计全域24hROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd3_all_roi_24h_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|global|100|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|global|100|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|100|consume",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "100",
+          "column": "consume",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17289；端付渠道全域近3天累计消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd3_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|2|all|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|2|all|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_consume",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17290；端付项目全域近2小时连续分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|99|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|99|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "consume",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17293；端付项目全域近两天累计消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|99|total|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|99|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "all_stat_total_cost_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17293；端付项目全域近两天累计全域成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd2_all_stat_total_cost_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|99|total|all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|99|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|99|all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "99",
+          "column": "all_roi_24h_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17293；端付项目全域近两天累计全域24hROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd2_all_roi_24h_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|2|all|hour_all_roi_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|2|all|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_all_roi_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|hour_all_roi_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_all_roi_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17296；端付项目全域近2小时连续分时全域ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_all_roi_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|2|anyone|all_stat_total_cost_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|2|anyone|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "all_stat_total_cost_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|all_stat_total_cost_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "all_stat_total_cost_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17296；端付项目全域近2小时任一全域成本（UI hour_all_stat_total_cost_trend 由 seed 归一）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_all_stat_total_cost_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|1|first|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|1|first|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "1",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|1|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "1",
+          "column": "hour_consume",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17296；端付项目全域近1小时首个分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|2|anyone|hour_all_roi_24h_trend": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|2|anyone|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_all_roi_24h_trend"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|hour_all_roi_24h_trend",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_all_roi_24h_trend",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17303；端付项目全域近2小时任一分时全域24hROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_all_roi_24h_trend",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|global|3|all|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|global|3|all|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "3",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy",
+            "cpsdyfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|3|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_consume",
+          "releaseVers": [
+            3
+          ],
+          "notes": "rule 17303；端付项目全域近3小时连续分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Roi3Hour _data_h*_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|active_pay_intra_one_day_roi": {
+      "schemaVersion": 1,
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "seedStatus": "authorized",
+      "key": "cpsdy|promotion|auction|0|total|active_pay_intra_one_day_roi",
+      "metric": {
+        "code": "active_pay_intra_one_day_roi"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "active_pay_intra_one_day_roi",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "releaseVers": [
+            1
+          ],
+          "key": "cpsdy|promotion|0|active_pay_intra_one_day_roi",
+          "column": "active_pay_intra_one_day_roi",
+          "notes": "rule 17321；端付广告竞价当天激活后24h付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_active_pay_intra_one_day_roi",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|convert_cost": {
+      "schemaVersion": 1,
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "seedStatus": "authorized",
+      "key": "cpsdy|promotion|auction|0|total|convert_cost",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "releaseVers": [
+            1
+          ],
+          "key": "cpsdy|promotion|0|convert_cost",
+          "column": "convert_cost",
+          "notes": "rule 17321；端付广告竞价当天转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_d_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|100|anyone|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|100|anyone|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "100",
+          "releaseVers": [
+            1
+          ],
+          "key": "cpsdy|promotion|100|consume",
+          "column": "consume",
+          "notes": "rule 17323；端付广告竞价近3天消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay _data_d/_d1/_d2/_rd3_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|2|all|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|2|all|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|2|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "2",
+          "column": "hour_consume",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17324；端付广告竞价近2小时分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h*_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|3|total|hour_convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|3|total|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|3|hour_convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "3",
+          "column": "hour_convert_num",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17324/17325；端付广告竞价近3小时分时转化数"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy _data_h*_convert_num + schema convert_num",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|promotion|auction|0|total|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|promotion|auction|0|total|convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|promotion|0|convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "convert_num",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17325；端付广告竞价当天转化数（天小时混合落小时表）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay/_data_d_convert_num; rematerialize to hour with scanData4Cpsdy",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "convert_num",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17330；端付渠道竞价当天转化数（落小时表）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy convert_num; auction today rematerialize hour",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|0|total|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|0|total|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|0|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "convert_cost",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17330；端付渠道竞价当天转化成本（落小时表）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy convert_cost; auction today rematerialize hour",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|2|first|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|2|first|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_consume",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17331/17333；端付渠道竞价近2小时分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|3|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "3",
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17331；端付渠道竞价近3小时连续分时激活付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|2|anyone|hour_convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|2|anyone|hour_convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|2|hour_convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "2",
+          "column": "hour_convert_cost",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17331/17333；端付渠道竞价近2小时任一分时转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|1|all|hour_convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|1|all|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|1|hour_convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "1",
+          "column": "hour_convert_num",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17331/17333；端付渠道竞价近1小时连续分时转化数"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_convert_num",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|channel|auction|99|total|convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|channel|auction|99|total|convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|channel|99|convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "channel",
+          "timeType": "99",
+          "column": "convert_num",
+          "releaseVers": [
+            1
+          ],
+          "notes": "rule 17332；端付渠道竞价近2天转化数"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay convert_num",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|0|total|bid_rate": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|0|total|bid_rate",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "bid_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "bid_rate",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|0|bid_rate",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "bid_rate",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17338/17340；端付项目竞价当天计费比"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy bid_rate",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|2|anyone|hour_consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|2|anyone|hour_consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|2|hour_consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17339/17340；端付项目竞价近2小时任一分时消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "3",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|3|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "3",
+          "column": "hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17339/17340；端付项目竞价近3小时连续分时激活付费ROI"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|1|first|hour_convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|1|first|hour_convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|1|hour_convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "1",
+          "column": "hour_convert_cost",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17339；端付项目竞价近1小时首个分时转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|1|all|hour_convert_num": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|1|all|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "1",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_convert_num"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_convert_num",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|1|hour_convert_num",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "1",
+          "column": "hour_convert_num",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17339/17340；端付项目竞价近1小时连续分时转化数"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4Cpsdy hour_convert_num",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|100|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|100|total|consume",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|100|consume",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "100",
+          "column": "consume",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17341；端付项目竞价近3天消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay consume",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    },
+    "cpsdy|project|auction|100|total|convert_cost": {
+      "schemaVersion": 1,
+      "key": "cpsdy|project|auction|100|total|convert_cost",
+      "businessLine": {
+        "code": "cpsdy"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "convert_cost"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "convert_cost",
+          "plines": [
+            "cpsdy"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsdy|project|100|convert_cost",
+          "plineForm": "cpsdy",
+          "dataType": "project",
+          "timeType": "100",
+          "column": "convert_cost",
+          "releaseVers": [
+            1,
+            2
+          ],
+          "notes": "rule 17341；端付项目竞价近3天转化成本"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlMapper.scanData4CpsdyDay convert_cost",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-08-31"
+        }
+      ]
+    }
+  }
+}

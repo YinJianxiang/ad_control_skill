@@ -1,0 +1,409 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsvideomf",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "convert_num": [
+      {
+        "desc": "转化数",
+        "uiAliases": [
+          "转化数",
+          "分日转化数"
+        ]
+      }
+    ],
+    "predict_roi": [
+      {
+        "desc": "当日的预估ROI"
+      },
+      {
+        "desc": "预估ROI",
+        "uiAliases": [
+          "分日预估ROI",
+          "当日的预估ROI",
+          "预估ROI"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_roi_h1": [
+      {
+        "desc": "分时ROI_H1（免费短剧：n_total_income_h1/consume）",
+        "uiAliases": [
+          "分时ROI_H1"
+        ]
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "desc": "分时预估ROI"
+      },
+      {
+        "desc": "分时预估ROI",
+        "uiAliases": [
+          "分时预估ROI"
+        ]
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "desc": "模型预测ROI",
+        "uiAliases": [
+          "模型预测ROI",
+          "模型预测ROI(仅投放方式=常规投放时可选)"
+        ]
+      }
+    ],
+    "roi_h4": [
+      {
+        "desc": "ROI_H4",
+        "uiAliases": [
+          "ROI_H4"
+        ]
+      }
+    ],
+    "convert_cost": [
+      {
+        "desc": "转化成本",
+        "uiAliases": [
+          "分日转化成本",
+          "转化成本"
+        ]
+      }
+    ],
+    "roi_h1": [
+      {
+        "desc": "ROI_H1",
+        "uiAliases": [
+          "ROI_H1"
+        ]
+      }
+    ],
+    "roi_h2": [
+      {
+        "desc": "ROI_H2",
+        "uiAliases": [
+          "ROI_H2"
+        ]
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "desc": "分时ROI_H2",
+        "uiAliases": [
+          "分时ROI_H2"
+        ]
+      }
+    ],
+    "roi_h3": [
+      {
+        "desc": "ROI_H3",
+        "uiAliases": [
+          "ROI_H3"
+        ]
+      }
+    ],
+    "hour_roi_h3": [
+      {
+        "desc": "分时ROI_H3",
+        "uiAliases": [
+          "分时ROI_H3"
+        ]
+      }
+    ],
+    "hour_roi_h4": [
+      {
+        "desc": "分时ROI_H4",
+        "uiAliases": [
+          "分时ROI_H4"
+        ]
+      }
+    ],
+    "roi_h12": [
+      {
+        "desc": "ROI_H12",
+        "uiAliases": [
+          "ROI_H12"
+        ]
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "desc": "分时ROI_H12",
+        "uiAliases": [
+          "分时ROI_H12"
+        ]
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "desc": "分时转化数",
+        "uiAliases": [
+          "分时转化数"
+        ]
+      },
+      {
+        "desc": "分时转化数",
+        "uiAliases": [
+          "分时转化数"
+        ]
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "desc": "分时计费比",
+        "uiAliases": [
+          "分时计费比",
+          "分时转化计费比"
+        ]
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "desc": "分时转化成本",
+        "uiAliases": [
+          "分时转化成本"
+        ]
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      },
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "desc": "全域成本",
+        "uiAliases": [
+          "全域成本"
+        ]
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "desc": "全域ROI",
+        "uiAliases": [
+          "全域ROI"
+        ]
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "desc": "全域24小时ROI",
+        "uiAliases": [
+          "全域24小时ROI"
+        ]
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "desc": "分时全域成本",
+        "uiAliases": [
+          "分时全域成本"
+        ]
+      },
+      {
+        "desc": "分时全域成本",
+        "uiAliases": [
+          "分时全域成本"
+        ]
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "desc": "分时全域ROI",
+        "uiAliases": [
+          "分时全域ROI"
+        ]
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "desc": "分时全域24小时ROI",
+        "uiAliases": [
+          "分时全域24小时ROI"
+        ]
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "cpsvideomf|promotion|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsvideomf|channel|auction|0|total|predict_roi": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "当日的预估ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日的预估ROI"
+        }
+      }
+    },
+    "cpsvideomf|channel|auction|2|total|hour_predict_roi": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "分时预估ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时预估ROI"
+        }
+      }
+    },
+    "cpsvideomf|channel|auction|99|total|convert_num": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsvideomf|project|auction|2|total|hour_roi_h1": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "分时ROI_H1（免费短剧：n_total_income_h1/consume）"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时ROI_H1（免费短剧：n_total_income_h1/consume）"
+        }
+      }
+    },
+    "cpsvideomf|project|auction|100|total|convert_num": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "转化数"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "转化数"
+        }
+      }
+    },
+    "cpsvideomf|promotion|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsvideomf|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "cpsvideomf|project|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "cpsvideomf|channel|auction|99|total|roi_h4": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "ROI_H4"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "ROI_H4"
+        }
+      }
+    },
+    "cpsvideomf|project|auction|2|total|hour_predict_roi": {
+      "businessLine": {
+        "name": "新媒体-免费短剧"
+      },
+      "metric": {
+        "name": "分时预估ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时预估ROI"
+        }
+      }
+    }
+  }
+}

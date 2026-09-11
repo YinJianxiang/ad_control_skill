@@ -1,0 +1,436 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cltmain",
+  "tables": [],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h12": [
+      {
+        "column": "roi_h12",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "roi_h12",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "active_cost": [
+      {
+        "column": "active_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "active_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "pay_cost": [
+      {
+        "column": "pay_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "pay_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "n_recharge_uv": [
+      {
+        "column": "n_recharge_uv",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "n_recharge_uv",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "n_recharge_amount": [
+      {
+        "column": "n_recharge_amount",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "n_recharge_amount",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "column": "unsubscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "unsubscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "convert_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "conversion_subscribe_rate": [
+      {
+        "column": "conversion_subscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "conversion_subscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "ac_rate": [
+      {
+        "column": "ac_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "ac_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "bid_rate": [
+      {
+        "column": "bid_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "predict_roi": [
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_n_recharge_uv": [
+      {
+        "column": "hour_n_recharge_uv",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_n_recharge_uv",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_active_cost": [
+      {
+        "column": "hour_active_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_active_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "column": "hour_pay_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_pay_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "column": "hour_unsubscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_unsubscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_conversion_subscribe_rate": [
+      {
+        "column": "hour_conversion_subscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_conversion_subscribe_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_ac_rate": [
+      {
+        "column": "hour_ac_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_ac_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cltmain"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ]
+  },
+  "scenarios": {}
+}

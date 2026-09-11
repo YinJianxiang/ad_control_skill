@@ -1,0 +1,1219 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "syhplay",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "n_uv": [
+      {
+        "desc": "新回UV",
+        "uiAliases": [
+          "新回UV",
+          "分时新回UV"
+        ]
+      }
+    ],
+    "cpa": [
+      {
+        "desc": "CPA",
+        "uiAliases": [
+          "CPA"
+        ]
+      }
+    ],
+    "stay_1": [
+      {
+        "desc": "实时次留",
+        "uiAliases": [
+          "实时次留"
+        ]
+      }
+    ],
+    "retention_d1_uv_ratio": [
+      {
+        "desc": "次留",
+        "uiAliases": [
+          "次留"
+        ]
+      }
+    ],
+    "retention_d3_uv_ratio": [
+      {
+        "desc": "3留",
+        "uiAliases": [
+          "3留"
+        ]
+      }
+    ],
+    "retention_d4_uv_ratio": [
+      {
+        "desc": "4留",
+        "uiAliases": [
+          "4留"
+        ]
+      }
+    ],
+    "retention_d5_uv_ratio": [
+      {
+        "desc": "5留",
+        "uiAliases": [
+          "5留"
+        ]
+      }
+    ],
+    "retention_d6_uv_ratio": [
+      {
+        "desc": "6留",
+        "uiAliases": [
+          "6留"
+        ]
+      }
+    ],
+    "retention_d7_uv_ratio": [
+      {
+        "desc": "7留",
+        "uiAliases": [
+          "7留"
+        ]
+      }
+    ],
+    "avg_play_time_day": [
+      {
+        "desc": "人均观看时长",
+        "uiAliases": [
+          "人均观看时长"
+        ]
+      }
+    ],
+    "hour_avg_play_time_day": [
+      {
+        "desc": "分时人均观看时长",
+        "uiAliases": [
+          "分时人均观看时长"
+        ]
+      }
+    ],
+    "stay_h3": [
+      {
+        "desc": "H3留存",
+        "uiAliases": [
+          "H3留存"
+        ]
+      }
+    ],
+    "hour_stay_h3": [
+      {
+        "desc": "分时H3留存",
+        "uiAliases": [
+          "分时H3留存"
+        ]
+      }
+    ],
+    "all_roi": [
+      {
+        "desc": "整体ROI",
+        "uiAliases": [
+          "整体ROI"
+        ]
+      }
+    ],
+    "hour_all_roi": [
+      {
+        "desc": "分时整体ROI",
+        "uiAliases": [
+          "分时整体ROI"
+        ]
+      }
+    ],
+    "arpu": [
+      {
+        "desc": "arpu值",
+        "uiAliases": [
+          "arpu值"
+        ]
+      }
+    ],
+    "hour_arpu": [
+      {
+        "desc": "分时arpu值",
+        "uiAliases": [
+          "分时arpu值"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_n_uv": [
+      {
+        "desc": "分时新回UV",
+        "uiAliases": []
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "syhplay|user|auction|0|total|stay_1": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "实时次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "实时次留"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "新回UV"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|cpa": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "CPA"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "CPA"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|stay_1": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "实时次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "实时次留"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "整体ROI"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "arpu值"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "人均观看时长"
+        }
+      }
+    },
+    "syhplay|channel|auction|0|total|stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "H3留存"
+        }
+      }
+    },
+    "syhplay|channel|auction|2|total|retention_d1_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "次留"
+        }
+      }
+    },
+    "syhplay|channel|auction|4|total|retention_d3_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "3留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "3留"
+        }
+      }
+    },
+    "syhplay|channel|auction|5|total|retention_d4_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "4留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "4留"
+        }
+      }
+    },
+    "syhplay|channel|auction|6|total|retention_d5_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "5留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "5留"
+        }
+      }
+    },
+    "syhplay|channel|auction|7|total|retention_d6_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "6留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "6留"
+        }
+      }
+    },
+    "syhplay|channel|auction|8|total|retention_d7_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "7留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "7留"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时新回UV"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时H3留存"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时人均观看时长"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时整体ROI"
+        }
+      }
+    },
+    "syhplay|channel|auction|3|total|hour_arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时arpu值"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "新回UV"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|cpa": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "CPA"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "CPA"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|stay_1": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "实时次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "实时次留"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "整体ROI"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "arpu值"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "人均观看时长"
+        }
+      }
+    },
+    "syhplay|project|auction|0|total|stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "H3留存"
+        }
+      }
+    },
+    "syhplay|project|auction|2|total|retention_d1_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "次留"
+        }
+      }
+    },
+    "syhplay|project|auction|4|total|retention_d3_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "3留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "3留"
+        }
+      }
+    },
+    "syhplay|project|auction|5|total|retention_d4_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "4留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "4留"
+        }
+      }
+    },
+    "syhplay|project|auction|6|total|retention_d5_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "5留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "5留"
+        }
+      }
+    },
+    "syhplay|project|auction|7|total|retention_d6_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "6留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "6留"
+        }
+      }
+    },
+    "syhplay|project|auction|8|total|retention_d7_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "7留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "7留"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时新回UV"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时H3留存"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时人均观看时长"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时整体ROI"
+        }
+      }
+    },
+    "syhplay|project|auction|3|total|hour_arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时arpu值"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "新回UV"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|cpa": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "CPA"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "CPA"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|stay_1": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "实时次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "实时次留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "整体ROI"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "arpu值"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "人均观看时长"
+        }
+      }
+    },
+    "syhplay|promotion|auction|0|total|stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "H3留存"
+        }
+      }
+    },
+    "syhplay|promotion|auction|2|total|retention_d1_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "次留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|4|total|retention_d3_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "3留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "3留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|5|total|retention_d4_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "4留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "4留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|6|total|retention_d5_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "5留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "5留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|7|total|retention_d6_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "6留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "6留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|8|total|retention_d7_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "7留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "7留"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时新回UV"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时H3留存"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时人均观看时长"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时整体ROI"
+        }
+      }
+    },
+    "syhplay|promotion|auction|3|total|hour_arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时arpu值"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "消耗"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "新回UV"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|cpa": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "CPA"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "CPA"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "整体ROI"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "arpu值"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "人均观看时长"
+        }
+      }
+    },
+    "syhplay|user|auction|0|total|stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "H3留存"
+        }
+      }
+    },
+    "syhplay|user|auction|2|total|retention_d1_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "次留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "次留"
+        }
+      }
+    },
+    "syhplay|user|auction|4|total|retention_d3_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "3留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "3留"
+        }
+      }
+    },
+    "syhplay|user|auction|5|total|retention_d4_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "4留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "4留"
+        }
+      }
+    },
+    "syhplay|user|auction|6|total|retention_d5_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "5留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "5留"
+        }
+      }
+    },
+    "syhplay|user|auction|7|total|retention_d6_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "6留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "6留"
+        }
+      }
+    },
+    "syhplay|user|auction|8|total|retention_d7_uv_ratio": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "7留"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "7留"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_consume": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时消耗"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_n_uv": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时新回UV"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时新回UV"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_stay_h3": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时H3留存"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时H3留存"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_avg_play_time_day": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时人均观看时长"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时人均观看时长"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_all_roi": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时整体ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时整体ROI"
+        }
+      }
+    },
+    "syhplay|user|auction|3|total|hour_arpu": {
+      "businessLine": {
+        "name": "客户端-免费短剧"
+      },
+      "metric": {
+        "name": "分时arpu值"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时arpu值"
+        }
+      }
+    }
+  }
+}

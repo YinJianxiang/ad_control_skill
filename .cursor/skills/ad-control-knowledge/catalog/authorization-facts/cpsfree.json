@@ -1,0 +1,235 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsfree",
+  "tables": [
+    {
+      "plineForm": "cpsfree",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_book_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "cpsfree",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_book_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "predict_roi": [
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "predict_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_roi_h1": [
+      {
+        "column": "hour_roi_h1",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_predict_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "subsidies_roi": [
+      {
+        "column": "subsidies_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_subsidies_roi": [
+      {
+        "column": "hour_subsidies_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "cpsfree"
+        ],
+        "status": "unverified"
+      }
+    ]
+  },
+  "scenarios": {
+    "cpsfree|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "cpsfree|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "cpsfree"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "cpsfree|project|0|consume",
+          "plineForm": "cpsfree",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "新媒体-免费小说·project·当天 consume；JobMap/schema/source checked 2026-07-30"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_book_project_hour"
+        }
+      ]
+    }
+  }
+}

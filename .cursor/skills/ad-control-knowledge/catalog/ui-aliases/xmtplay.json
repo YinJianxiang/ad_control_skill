@@ -1,0 +1,423 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "xmtplay",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "roi_h2": [
+      {
+        "desc": "当日的ROI_H2"
+      },
+      {
+        "desc": "ROI_H2",
+        "uiAliases": [
+          "ROI_H2"
+        ]
+      }
+    ],
+    "roi_h12": [
+      {
+        "desc": "当日的ROI_H12"
+      },
+      {
+        "desc": "ROI_H12",
+        "uiAliases": [
+          "ROI_H12"
+        ]
+      }
+    ],
+    "convert_num": [
+      {
+        "desc": "转化数",
+        "uiAliases": [
+          "转化数",
+          "分日转化数"
+        ]
+      }
+    ],
+    "convert_cost": [
+      {
+        "desc": "转化成本"
+      },
+      {
+        "desc": "转化成本",
+        "uiAliases": [
+          "分日转化成本",
+          "转化成本"
+        ]
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "desc": "分时转化成本"
+      },
+      {
+        "desc": "分时转化成本",
+        "uiAliases": [
+          "分时转化成本"
+        ]
+      }
+    ],
+    "bid_rate": [
+      {
+        "desc": "计费比"
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "desc": "分时计费比"
+      },
+      {
+        "desc": "分时计费比",
+        "uiAliases": [
+          "分时计费比",
+          "分时转化计费比"
+        ]
+      }
+    ],
+    "pay_cost": [
+      {
+        "desc": "当日付费成本"
+      },
+      {
+        "desc": "付费成本",
+        "uiAliases": [
+          "付费成本",
+          "当日付费成本"
+        ]
+      }
+    ],
+    "n_auto_pay_cost": [
+      {
+        "desc": "订阅成本",
+        "uiAliases": [
+          "订阅成本",
+          "分日订阅成本"
+        ]
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "desc": "当日退订率"
+      },
+      {
+        "desc": "退订率",
+        "uiAliases": [
+          "分日退订率",
+          "当日退订率",
+          "退订率"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "desc": "分时ROI_H2"
+      },
+      {
+        "desc": "分时ROI_H2",
+        "uiAliases": [
+          "分时ROI_H2"
+        ]
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "desc": "分时ROI_H12"
+      },
+      {
+        "desc": "分时ROI_H12",
+        "uiAliases": [
+          "分时ROI_H12"
+        ]
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "desc": "分时付费成本"
+      },
+      {
+        "desc": "分时付费成本",
+        "uiAliases": [
+          "分时付费成本"
+        ]
+      }
+    ],
+    "hour_n_auto_pay_cost": [
+      {
+        "desc": "分时订阅成本",
+        "uiAliases": [
+          "分时订阅成本"
+        ]
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "desc": "模型预测ROI",
+        "uiAliases": [
+          "模型预测ROI",
+          "模型预测ROI(仅投放方式=常规投放时可选)"
+        ]
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "desc": "分时转化数",
+        "uiAliases": [
+          "分时转化数"
+        ]
+      },
+      {
+        "desc": "分时转化数",
+        "uiAliases": [
+          "分时转化数"
+        ]
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "desc": "分时退订率",
+        "uiAliases": [
+          "分时退订率"
+        ]
+      }
+    ],
+    "cost_diff": [
+      {
+        "desc": "cost_diff",
+        "uiAliases": [
+          "成本差值"
+        ]
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      },
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "desc": "全域成本",
+        "uiAliases": [
+          "全域成本"
+        ]
+      },
+      {
+        "desc": "全域成本",
+        "uiAliases": [
+          "全域成本"
+        ]
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "desc": "全域ROI",
+        "uiAliases": [
+          "全域ROI"
+        ]
+      },
+      {
+        "desc": "全域ROI",
+        "uiAliases": [
+          "全域ROI"
+        ]
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "desc": "全域24小时ROI",
+        "uiAliases": [
+          "全域24小时ROI"
+        ]
+      },
+      {
+        "desc": "全域24小时ROI",
+        "uiAliases": [
+          "全域24小时ROI"
+        ]
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "desc": "分时全域成本",
+        "uiAliases": [
+          "分时全域成本"
+        ]
+      },
+      {
+        "desc": "分时全域成本",
+        "uiAliases": [
+          "分时全域成本"
+        ]
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "desc": "分时全域ROI",
+        "uiAliases": [
+          "分时全域ROI"
+        ]
+      },
+      {
+        "desc": "分时全域ROI",
+        "uiAliases": [
+          "分时全域ROI"
+        ]
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "desc": "分时全域24小时ROI",
+        "uiAliases": [
+          "分时全域24小时ROI"
+        ]
+      },
+      {
+        "desc": "分时全域24小时ROI",
+        "uiAliases": [
+          "分时全域24小时ROI"
+        ]
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "xmtplay|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "xmtplay|promotion|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    },
+    "xmtplay|promotion|auction|0|total|roi_h12": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "当日的ROI_H12"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日的ROI_H12"
+        }
+      }
+    },
+    "xmtplay|promotion|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "xmtplay|promotion|auction|2|total|hour_roi_h12": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "分时ROI_H12"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时ROI_H12"
+        }
+      }
+    },
+    "xmtplay|project|auction|0|total|model_pred_roi": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "模型预测ROI"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "模型预测ROI"
+        }
+      }
+    },
+    "xmtplay|channel|auction|0|total|unsubscribe_rate": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "当日退订率"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日退订率"
+        }
+      }
+    },
+    "xmtplay|project|auction|2|total|hour_roi_h2": {
+      "businessLine": {
+        "name": "新媒体-短剧"
+      },
+      "metric": {
+        "name": "分时ROI_H2"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "分时ROI_H2"
+        }
+      }
+    }
+  }
+}

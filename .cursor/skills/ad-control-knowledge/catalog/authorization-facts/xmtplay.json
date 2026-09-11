@@ -1,0 +1,1074 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "xmtplay",
+  "tables": [
+    {
+      "plineForm": "xmtplay",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_channel_day",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "channel",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_channel_day",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_channel_hour",
+      "entityIdColumn": "channel_code"
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "channel",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "entityIdColumn": "channel_code",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "project",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name"
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "project",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_roi3_project_hour",
+      "entityIdColumn": "project_id",
+      "entityNameColumn": "project_name",
+      "releaseVer": 3
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "promotion",
+      "timeGrain": "day",
+      "table": "ad_advertiser_online_pay_promotion_day",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    },
+    {
+      "plineForm": "xmtplay",
+      "dataType": "promotion",
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "entityIdColumn": "promotion_id",
+      "entityNameColumn": "promotion_name"
+    }
+  ],
+  "metrics": {
+    "consume": [
+      {
+        "column": "consume",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "consume",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "roi_h2": [
+      {
+        "column": "roi_h2",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "roi_h2",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "roi_h12": [
+      {
+        "column": "roi_h12",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "roi_h12",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_num": [
+      {
+        "column": "convert_num",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "column": "convert_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "convert_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "bid_rate": [
+      {
+        "column": "bid_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_bid_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "pay_cost": [
+      {
+        "column": "pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "n_auto_pay_cost": [
+      {
+        "column": "n_auto_pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "column": "unsubscribe_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "unsubscribe_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "column": "hour_consume",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_consume",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "column": "hour_roi_h2",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_roi_h2",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "column": "hour_roi_h12",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_roi_h12",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "column": "hour_pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_n_auto_pay_cost": [
+      {
+        "column": "hour_n_auto_pay_cost",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "column": "model_pred_roi",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "column": "hour_convert_num",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_convert_num",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "column": "hour_unsubscribe_rate",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "cost_diff": [
+      {
+        "column": "cost_diff",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "pline_form_roi",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "column": "all_stat_total_cost_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_stat_total_cost_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "column": "all_roi_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_roi_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "column": "all_roi_24h_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "all_roi_24h_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "column": "hour_all_stat_total_cost_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      },
+      {
+        "column": "hour_all_stat_total_cost_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "unverified"
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "column": "hour_all_roi_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_all_roi_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "column": "hour_all_roi_24h_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      },
+      {
+        "column": "hour_all_roi_24h_trend",
+        "plines": [
+          "xmtplay"
+        ],
+        "status": "verified",
+        "evidence": {
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-09-08"
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "xmtplay|project|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "xmtplay|project|auction|0|total|consume",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|project|0|consume",
+          "plineForm": "xmtplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "smoke：新媒体-短剧·项目·当天·消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "xmtplay|promotion|auction|0|total|consume": {
+      "schemaVersion": 1,
+      "key": "xmtplay|promotion|auction|0|total|consume",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "consume",
+          "plines": [
+            "xmtplay",
+            "cpsvideomf",
+            "cpsshort",
+            "cpsdy",
+            "cpsdyfree",
+            "cpsfree"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|promotion|0|consume",
+          "plineForm": "xmtplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "consume",
+          "notes": "FLOW-DW / XF-AD：新媒体-短剧·广告·当天·消耗"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "xmtplay|promotion|auction|0|total|roi_h12": {
+      "schemaVersion": 1,
+      "key": "xmtplay|promotion|auction|0|total|roi_h12",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "roi_h12"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "roi_h12",
+          "plines": [
+            "xmtplay",
+            "cpsshort"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|promotion|0|roi_h12",
+          "plineForm": "xmtplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "roi_h12",
+          "notes": "新媒体-短剧·promotion·roi_h12；小时维 having（常与 model_pred_roi 天表后置成对）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "xmtplay|promotion|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "xmtplay|promotion|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|promotion|0|model_pred_roi",
+          "plineForm": "xmtplay",
+          "dataType": "promotion",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "新媒体-短剧·promotion·model_pred_roi"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "xmtplay|promotion|auction|2|total|hour_roi_h12": {
+      "schemaVersion": 1,
+      "key": "xmtplay|promotion|auction|2|total|hour_roi_h12",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "promotion",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_roi_h12"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_roi_h12",
+          "plines": [
+            "xmtplay",
+            "cpsshort"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|promotion|2|hour_roi_h12",
+          "plineForm": "xmtplay",
+          "dataType": "promotion",
+          "timeType": "2",
+          "column": "hour_roi_h12",
+          "notes": "新媒体-短剧·广告·近2小时·分时ROI_H12；扩白名单供 rule 16260（写 cz_h12/consume）"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_promotion_hour"
+        }
+      ]
+    },
+    "xmtplay|project|auction|0|total|model_pred_roi": {
+      "schemaVersion": 1,
+      "key": "xmtplay|project|auction|0|total|model_pred_roi",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "model_pred_roi"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "model_pred_roi",
+          "plines": [
+            "cpsdyfree",
+            "cpsdy",
+            "cpsvideomf",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|project|0|model_pred_roi",
+          "plineForm": "xmtplay",
+          "dataType": "project",
+          "timeType": "0",
+          "column": "model_pred_roi",
+          "notes": "新媒体-短剧·project·model_pred_roi"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job post-filter + existing dual-table seed logs",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    },
+    "xmtplay|channel|auction|0|total|unsubscribe_rate": {
+      "schemaVersion": 1,
+      "key": "xmtplay|channel|auction|0|total|unsubscribe_rate",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "channel",
+      "releaseMode": "auction",
+      "timeType": "0",
+      "reduceType": "total",
+      "metric": {
+        "code": "unsubscribe_rate"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "unsubscribe_rate",
+          "plines": [
+            "cpsshort",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|channel|0|unsubscribe_rate",
+          "plineForm": "xmtplay",
+          "dataType": "channel",
+          "timeType": "0",
+          "column": "unsubscribe_rate",
+          "notes": "新媒体-付费短剧·渠道·当天退订率；临时扩白名单供 rule 16221"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "market-job DataControlRule.ColumnEnum + Mapper",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-29"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_channel_hour"
+        }
+      ]
+    },
+    "xmtplay|project|auction|2|total|hour_roi_h2": {
+      "schemaVersion": 1,
+      "key": "xmtplay|project|auction|2|total|hour_roi_h2",
+      "businessLine": {
+        "code": "xmtplay"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "total",
+      "metric": {
+        "code": "hour_roi_h2"
+      },
+      "seedStatus": "authorized",
+      "authorization": {
+        "databaseVerified": true,
+        "metric": {
+          "column": "hour_roi_h2",
+          "plines": [
+            "cpsshort",
+            "xmtplay"
+          ],
+          "status": "verified",
+          "evidence": {
+            "source": "restored-from-demo-job-and-database-verified",
+            "formulaChecked": true,
+            "schemaChecked": true,
+            "checkedAt": "2026-09-08"
+          }
+        },
+        "legacyAllow": {
+          "key": "xmtplay|project|2|hour_roi_h2",
+          "plineForm": "xmtplay",
+          "dataType": "project",
+          "timeType": "2",
+          "column": "hour_roi_h2",
+          "notes": "rule 16261；近2小时所有时段；cz_h2/consume；Mapper/schema核对完成"
+        }
+      },
+      "source": "restored-from-demo-job-and-database-verified",
+      "evidence": [
+        {
+          "source": "DataControlMapper.scanData4PayVideo _data_h1/_data_h2_roi_h2",
+          "formulaChecked": true,
+          "schemaChecked": true,
+          "checkedAt": "2026-07-31"
+        },
+        {
+          "source": "legacy verified table route",
+          "table": "ad_advertiser_online_pay_project_hour"
+        }
+      ]
+    }
+  }
+}

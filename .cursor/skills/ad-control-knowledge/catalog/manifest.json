@@ -1,0 +1,29 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "catalogVersion": 1,
+  "sourceSha256": "9365c75b75951e8910d637e31f843ad0224f5bc70ec01e0bbff999237142672d",
+  "sourceGeneratedAt": "2026-09-11T08:51:15.000Z",
+  "businessLines": [
+    "cltmain",
+    "cltplay",
+    "cpsdy",
+    "cpsdyfree",
+    "cpsfree",
+    "cpsshort",
+    "cpsvideomf",
+    "syhplay",
+    "xmtplay"
+  ],
+  "counts": {
+    "tables": 53,
+    "metrics": 150,
+    "uiMetricScopes": 15,
+    "scenarios": 326
+  },
+  "layers": {
+    "authorizationFacts": "authorization-facts",
+    "uiAliases": "ui-aliases",
+    "seedRecipes": "seed-recipes",
+    "index": "index.json"
+  }
+}

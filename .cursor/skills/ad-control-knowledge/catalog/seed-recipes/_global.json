@@ -1,0 +1,166 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "seedDefaults": {
+    "biz": "ad-control",
+    "ruleTable": "ad_data_control_rule",
+    "entityIdColumn": "promotion_id",
+    "markerPrefix": "ad_control_dc_",
+    "defaultRowStrategy": "copy-then-patch",
+    "allowSynthetic": false,
+    "defaultReleaseVer": 2,
+    "supportedReleaseVers": [
+      1,
+      2,
+      3
+    ]
+  },
+  "filters": [
+    {
+      "id": "dimension-field:pline_form",
+      "name": "业务线",
+      "ruleField": "pline_form",
+      "status": "verified",
+      "unlimited": [],
+      "patchColumn": "pline_form",
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:data_type",
+      "name": "管控维度",
+      "ruleField": "data_type",
+      "status": "verified",
+      "unlimited": [],
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:release_ver",
+      "name": "管控版本",
+      "ruleField": "release_ver",
+      "status": "verified",
+      "unlimited": [
+        -1,
+        null
+      ],
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:external_action",
+      "name": "转化目标",
+      "ruleField": "external_action",
+      "status": "verified",
+      "unlimited": [
+        "",
+        "不限",
+        null
+      ],
+      "patchColumn": "external_action",
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:delivery_way",
+      "name": "投放方式",
+      "ruleField": "delivery_way",
+      "status": "verified",
+      "unlimited": [
+        "",
+        "不限",
+        0,
+        -1,
+        null
+      ],
+      "patchColumn": "delivery_way",
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:opt_status",
+      "name": "广告状态",
+      "ruleField": "opt_status",
+      "status": "verified",
+      "unlimited": [
+        -1,
+        null
+      ],
+      "patchColumn": "promotion_status",
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:project_status",
+      "name": "项目状态",
+      "ruleField": "project_status",
+      "status": "verified",
+      "unlimited": [
+        -1,
+        null
+      ],
+      "patchColumn": "project_status",
+      "confirmedAt": "2026-09-08T13:54:33.000Z"
+    },
+    {
+      "id": "dimension-field:channel_users",
+      "name": "负责人",
+      "ruleField": "channel_users",
+      "status": "verified",
+      "unlimited": [
+        "",
+        "不限",
+        null
+      ],
+      "constraints": [],
+      "patchColumn": "agent_user_name",
+      "evidenceRefs": [
+        "code-rule-model",
+        "database-schema",
+        "seed-v3-filter-map"
+      ],
+      "confirmedAt": "2026-09-08T13:54:33.000Z",
+      "notes": "规则 channel_users 映射事实列 agent_user_name；造数按该列涂/筛"
+    },
+    {
+      "id": "dimension-field:drama_type",
+      "name": "短剧类型",
+      "ruleField": "drama_type",
+      "status": "verified",
+      "unlimited": [
+        "",
+        "-1",
+        "不限",
+        null
+      ],
+      "constraints": [],
+      "patchColumn": "drama_type",
+      "evidenceRefs": [
+        "code-ruleBaseCondition2Where",
+        "database-schema",
+        "seed-scope-filter-parity"
+      ],
+      "confirmedAt": "2026-09-09T02:46:00.000Z",
+      "notes": "规则 drama_type 非不限时 Job WHERE 追加 drama_type in (...); 造数行不得为 NULL/空，须取名单内值。详见 knowledge/规则范围过滤-造数约束.md"
+    },
+    {
+      "id": "dimension-field:effect_scope",
+      "name": "主体范围",
+      "ruleField": "effect_scope",
+      "status": "unverified",
+      "unlimited": [
+        -1,
+        null
+      ],
+      "constraints": [
+        "尚未证明主体范围的事实表映射"
+      ]
+    },
+    {
+      "id": "dimension-field:account_type",
+      "name": "账户类型",
+      "ruleField": "account_type",
+      "status": "unverified",
+      "unlimited": [
+        -1,
+        null
+      ],
+      "constraints": [
+        "尚未证明账户类型的事实表映射"
+      ]
+    }
+  ]
+}

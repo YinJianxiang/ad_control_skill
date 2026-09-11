@@ -1,0 +1,111 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsfree",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "predict_roi": [
+      {
+        "desc": "当日的预估ROI"
+      },
+      {
+        "desc": "预估ROI",
+        "uiAliases": [
+          "分日预估ROI",
+          "当日的预估ROI",
+          "预估ROI"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_roi_h1": [
+      {
+        "desc": "分时ROI_H1（免费短剧：n_total_income_h1/consume）",
+        "uiAliases": [
+          "分时ROI_H1"
+        ]
+      }
+    ],
+    "hour_predict_roi": [
+      {
+        "desc": "分时预估ROI"
+      },
+      {
+        "desc": "分时预估ROI",
+        "uiAliases": [
+          "分时预估ROI"
+        ]
+      }
+    ],
+    "subsidies_roi": [
+      {
+        "desc": "补贴后ROI",
+        "uiAliases": [
+          "补贴后ROI"
+        ]
+      }
+    ],
+    "hour_subsidies_roi": [
+      {
+        "desc": "分时补贴后ROI",
+        "uiAliases": [
+          "分时补贴后ROI"
+        ]
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      },
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "cpsfree|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-免费小说"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    }
+  }
+}

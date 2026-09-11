@@ -1,0 +1,1161 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "scenarios": {
+    "cpsdy|project|auction|100|all|convert_num": "cpsdy",
+    "cpsdy|project|auction|99|anyone|convert_num": "cpsdy",
+    "cpsdy|project|auction|99|all|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|project|auction|99|anyone|bid_rate": "cpsdy",
+    "syhplay|user|auction|0|total|stay_1": "syhplay",
+    "syhplay|project|auction|0|total|consume": "syhplay",
+    "cpsvideomf|promotion|auction|0|total|consume": "cpsvideomf",
+    "xmtplay|project|auction|0|total|consume": "xmtplay",
+    "xmtplay|promotion|auction|0|total|consume": "xmtplay",
+    "cpsdyfree|project|auction|0|total|consume": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|model_pred_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|2|total|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|auction|1|total|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|model_pred_roi": "cpsdyfree",
+    "cpsdy|project|auction|0|total|consume": "cpsdy",
+    "cpsdy|project|auction|0|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|project|auction|0|total|all_roi_trend": "cpsdy",
+    "cpsdy|project|auction|0|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|project|auction|99|total|all_roi_trend": "cpsdy",
+    "cpsdy|project|auction|0|total|model_pred_roi": "cpsdy",
+    "cpsdy|promotion|auction|0|total|consume": "cpsdy",
+    "cpsdy|promotion|auction|0|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|promotion|auction|0|total|all_roi_trend": "cpsdy",
+    "cpsdy|promotion|auction|0|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|promotion|auction|0|total|model_pred_roi": "cpsdy",
+    "cpsdy|channel|auction|0|total|consume": "cpsdy",
+    "cpsdy|channel|auction|0|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|channel|auction|0|total|all_roi_trend": "cpsdy",
+    "cpsdy|channel|auction|0|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|channel|auction|0|total|model_pred_roi": "cpsdy",
+    "cpsdy|channel|auction|99|total|consume": "cpsdy",
+    "cpsdy|channel|auction|99|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|channel|auction|99|total|all_roi_trend": "cpsdy",
+    "cpsdy|channel|auction|99|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|channel|auction|99|total|model_pred_roi": "cpsdy",
+    "cpsdy|channel|auction|1|total|consume": "cpsdy",
+    "cpsdy|channel|auction|1|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|channel|auction|1|total|all_roi_trend": "cpsdy",
+    "cpsdy|channel|auction|1|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|channel|auction|1|total|model_pred_roi": "cpsdy",
+    "xmtplay|promotion|auction|0|total|roi_h12": "xmtplay",
+    "xmtplay|promotion|auction|0|total|model_pred_roi": "xmtplay",
+    "xmtplay|promotion|auction|2|total|hour_roi_h12": "xmtplay",
+    "xmtplay|project|auction|0|total|model_pred_roi": "xmtplay",
+    "cpsvideomf|channel|auction|0|total|predict_roi": "cpsvideomf",
+    "cpsvideomf|channel|auction|2|total|hour_predict_roi": "cpsvideomf",
+    "cpsvideomf|channel|auction|99|total|convert_num": "cpsvideomf",
+    "xmtplay|channel|auction|0|total|unsubscribe_rate": "xmtplay",
+    "cpsvideomf|project|auction|2|total|hour_roi_h1": "cpsvideomf",
+    "cpsvideomf|project|auction|100|total|convert_num": "cpsvideomf",
+    "cpsvideomf|promotion|auction|0|total|model_pred_roi": "cpsvideomf",
+    "cpsvideomf|project|auction|0|total|consume": "cpsvideomf",
+    "cpsvideomf|project|auction|0|total|model_pred_roi": "cpsvideomf",
+    "cpsfree|project|auction|0|total|consume": "cpsfree",
+    "xmtplay|project|auction|2|total|hour_roi_h2": "xmtplay",
+    "cpsvideomf|channel|auction|99|total|roi_h4": "cpsvideomf",
+    "cpsdy|channel|auction|2|total|hour_all_roi_trend": "cpsdy",
+    "cpsdy|channel|global|1|all|hour_all_roi_trend": "cpsdy",
+    "cpsdy|channel|global|3|anyone|hour_all_roi_24h_trend": "cpsdy",
+    "cpsdyfree|project|auction|99|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_roi_h24": "cpsdyfree",
+    "cpsvideomf|project|auction|2|total|hour_predict_roi": "cpsvideomf",
+    "cpsdyfree|project|global|99|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|total|convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdy|promotion|auction|0|total|bid_rate": "cpsdy",
+    "cpsdy|promotion|auction|2|total|hour_bid_rate": "cpsdy",
+    "cpsdy|promotion|auction|100|total|bid_rate": "cpsdy",
+    "cpsdy|promotion|auction|100|anyone|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|promotion|auction|100|all|convert_cost": "cpsdy",
+    "cpsdyfree|channel|auction|0|total|convert_num": "cpsdyfree",
+    "cpsdyfree|channel|auction|2|all|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|channel|auction|3|anyone|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|channel|auction|99|total|convert_num": "cpsdyfree",
+    "cpsdyfree|channel|auction|99|total|roi_h24": "cpsdyfree",
+    "cpsdy|channel|auction|0|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|channel|auction|0|total|bid_rate": "cpsdy",
+    "cpsdy|channel|auction|2|anyone|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": "cpsdy",
+    "cpsdy|channel|auction|100|total|convert_cost": "cpsdy",
+    "cpsdy|channel|auction|100|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdyfree|channel|global|0|total|cost": "cpsdyfree",
+    "cpsdyfree|channel|global|2|first|consume": "cpsdyfree",
+    "cpsdyfree|channel|global|0|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|0|total|consume": "cpsdyfree",
+    "cpsdyfree|channel|global|0|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|100|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|100|total|consume": "cpsdyfree",
+    "cpsdy|project|auction|0|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|project|auction|0|total|convert_cost": "cpsdy",
+    "cpsdy|project|auction|2|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": "cpsdy",
+    "cpsdy|promotion|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": "cpsdy",
+    "cpsdy|project|auction|100|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|project|auction|3|first|hour_bid_rate": "cpsdy",
+    "cpsdy|channel|auction|99|total|convert_cost": "cpsdy",
+    "cpsdy|channel|auction|99|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|promotion|auction|99|all|active_pay_intra_one_day_roi": "cpsdy",
+    "cltplay|project|auction|0|total|consume": "cltplay",
+    "cltplay|project|auction|207|total|consume": "cltplay",
+    "cpsdyfree|channel|auction|0|total|consume": "cpsdyfree",
+    "cpsdyfree|channel|global|0|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|1|first|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|cost": "cpsdyfree",
+    "cpsdyfree|channel|global|3|all|hour_all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|global|99|total|consume": "cpsdyfree",
+    "cpsdyfree|project|global|99|total|cost": "cpsdyfree",
+    "cpsdyfree|project|global|99|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|global|0|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|global|2|first|hour_all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|global|3|all|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|global|2|all|cost": "cpsdyfree",
+    "cpsdyfree|project|global|2|anyone|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|hour_consume": "cpsdyfree",
+    "cpsdyfree|channel|global|100|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|100|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|anyone|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|3|all|hour_consume": "cpsdyfree",
+    "cpsdyfree|channel|global|1|anyone|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdy|channel|global|2|anyone|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|channel|global|2|first|hour_all_roi_24h_trend": "cpsdy",
+    "cpsdy|channel|global|3|anyone|hour_all_roi_trend": "cpsdy",
+    "cpsdy|channel|global|100|total|all_roi_trend": "cpsdy",
+    "cpsdy|channel|global|100|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|channel|global|100|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|channel|global|100|total|consume": "cpsdy",
+    "cpsdy|project|global|2|all|hour_consume": "cpsdy",
+    "cpsdy|project|global|99|total|consume": "cpsdy",
+    "cpsdy|project|global|99|total|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|project|global|99|total|all_roi_24h_trend": "cpsdy",
+    "cpsdy|project|global|2|all|hour_all_roi_trend": "cpsdy",
+    "cpsdy|project|global|2|anyone|all_stat_total_cost_trend": "cpsdy",
+    "cpsdy|project|global|1|first|hour_consume": "cpsdy",
+    "cpsdy|project|global|2|anyone|hour_all_roi_24h_trend": "cpsdy",
+    "cpsdy|project|global|3|all|hour_consume": "cpsdy",
+    "cpsdyfree|promotion|auction|0|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|0|total|bid_rate": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|anyone|consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|all|roi_h24": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|all|bid_rate": "cpsdyfree",
+    "cpsshort|project|auction|0|total|consume": "cpsshort",
+    "cpsdyfree|channel|auction|100|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|channel|auction|100|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|channel|auction|100|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_bid_rate": "cpsdyfree",
+    "cpsdy|promotion|auction|0|total|active_pay_intra_one_day_roi": "cpsdy",
+    "cpsdy|promotion|auction|0|total|convert_cost": "cpsdy",
+    "cpsdy|promotion|auction|100|anyone|consume": "cpsdy",
+    "cpsdy|promotion|auction|2|all|hour_consume": "cpsdy",
+    "cpsdy|promotion|auction|3|total|hour_convert_num": "cpsdy",
+    "cpsdy|promotion|auction|0|total|convert_num": "cpsdy",
+    "cpsdyfree|channel|auction|0|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|channel|auction|0|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|channel|auction|0|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|channel|auction|3|first|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|channel|auction|2|all|hour_consume": "cpsdyfree",
+    "cpsdyfree|channel|auction|1|anyone|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|channel|auction|3|all|hour_convert_num": "cpsdyfree",
+    "cpsdy|channel|auction|0|total|convert_num": "cpsdy",
+    "cpsdy|channel|auction|0|total|convert_cost": "cpsdy",
+    "cpsdy|channel|auction|2|first|hour_consume": "cpsdy",
+    "cpsdy|channel|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": "cpsdy",
+    "cpsdy|channel|auction|2|anyone|hour_convert_cost": "cpsdy",
+    "cpsdy|channel|auction|1|all|hour_convert_num": "cpsdy",
+    "cpsdy|channel|auction|99|total|convert_num": "cpsdy",
+    "cpsdyfree|project|auction|0|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|0|total|bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|3|all|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|1|anyone|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|3|anyone|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|project|auction|99|total|roi_h24": "cpsdyfree",
+    "cpsdyfree|project|auction|99|total|convert_num": "cpsdyfree",
+    "cpsdyfree|project|auction|99|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|project|auction|99|total|consume": "cpsdyfree",
+    "cpsdy|project|auction|0|total|bid_rate": "cpsdy",
+    "cpsdy|project|auction|2|anyone|hour_consume": "cpsdy",
+    "cpsdy|project|auction|3|all|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": "cpsdy",
+    "cpsdy|project|auction|1|first|hour_convert_cost": "cpsdy",
+    "cpsdy|project|auction|1|all|hour_convert_num": "cpsdy",
+    "cpsdy|project|auction|100|total|consume": "cpsdy",
+    "cpsdy|project|auction|100|total|convert_cost": "cpsdy",
+    "cpsdyfree|promotion|auction|1|total|hour_consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|1|total|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|1|total|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|1|total|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|promotion|auction|1|total|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|promotion|auction|1|total|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|promotion|auction|2|total|hour_consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_consume": "cpsdyfree",
+    "cpsdyfree|promotion|auction|3|total|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|promotion|auction|99|total|convert_cost": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|convert_num": "cpsdyfree",
+    "cpsdyfree|promotion|auction|100|total|bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|1|anyone|hour_roi_h24": "cpsdyfree",
+    "syhplay|channel|auction|0|total|consume": "syhplay",
+    "syhplay|channel|auction|0|total|n_uv": "syhplay",
+    "syhplay|channel|auction|0|total|cpa": "syhplay",
+    "syhplay|channel|auction|0|total|stay_1": "syhplay",
+    "syhplay|channel|auction|0|total|all_roi": "syhplay",
+    "syhplay|channel|auction|0|total|arpu": "syhplay",
+    "syhplay|channel|auction|0|total|avg_play_time_day": "syhplay",
+    "syhplay|channel|auction|0|total|stay_h3": "syhplay",
+    "syhplay|channel|auction|2|total|retention_d1_uv_ratio": "syhplay",
+    "syhplay|channel|auction|4|total|retention_d3_uv_ratio": "syhplay",
+    "syhplay|channel|auction|5|total|retention_d4_uv_ratio": "syhplay",
+    "syhplay|channel|auction|6|total|retention_d5_uv_ratio": "syhplay",
+    "syhplay|channel|auction|7|total|retention_d6_uv_ratio": "syhplay",
+    "syhplay|channel|auction|8|total|retention_d7_uv_ratio": "syhplay",
+    "syhplay|channel|auction|3|total|hour_consume": "syhplay",
+    "syhplay|channel|auction|3|total|hour_n_uv": "syhplay",
+    "syhplay|channel|auction|3|total|hour_stay_h3": "syhplay",
+    "syhplay|channel|auction|3|total|hour_avg_play_time_day": "syhplay",
+    "syhplay|channel|auction|3|total|hour_all_roi": "syhplay",
+    "syhplay|channel|auction|3|total|hour_arpu": "syhplay",
+    "syhplay|project|auction|0|total|n_uv": "syhplay",
+    "syhplay|project|auction|0|total|cpa": "syhplay",
+    "syhplay|project|auction|0|total|stay_1": "syhplay",
+    "syhplay|project|auction|0|total|all_roi": "syhplay",
+    "syhplay|project|auction|0|total|arpu": "syhplay",
+    "syhplay|project|auction|0|total|avg_play_time_day": "syhplay",
+    "syhplay|project|auction|0|total|stay_h3": "syhplay",
+    "syhplay|project|auction|2|total|retention_d1_uv_ratio": "syhplay",
+    "syhplay|project|auction|4|total|retention_d3_uv_ratio": "syhplay",
+    "syhplay|project|auction|5|total|retention_d4_uv_ratio": "syhplay",
+    "syhplay|project|auction|6|total|retention_d5_uv_ratio": "syhplay",
+    "syhplay|project|auction|7|total|retention_d6_uv_ratio": "syhplay",
+    "syhplay|project|auction|8|total|retention_d7_uv_ratio": "syhplay",
+    "syhplay|project|auction|3|total|hour_consume": "syhplay",
+    "syhplay|project|auction|3|total|hour_n_uv": "syhplay",
+    "syhplay|project|auction|3|total|hour_stay_h3": "syhplay",
+    "syhplay|project|auction|3|total|hour_avg_play_time_day": "syhplay",
+    "syhplay|project|auction|3|total|hour_all_roi": "syhplay",
+    "syhplay|project|auction|3|total|hour_arpu": "syhplay",
+    "syhplay|promotion|auction|0|total|consume": "syhplay",
+    "syhplay|promotion|auction|0|total|n_uv": "syhplay",
+    "syhplay|promotion|auction|0|total|cpa": "syhplay",
+    "syhplay|promotion|auction|0|total|stay_1": "syhplay",
+    "syhplay|promotion|auction|0|total|all_roi": "syhplay",
+    "syhplay|promotion|auction|0|total|arpu": "syhplay",
+    "syhplay|promotion|auction|0|total|avg_play_time_day": "syhplay",
+    "syhplay|promotion|auction|0|total|stay_h3": "syhplay",
+    "syhplay|promotion|auction|2|total|retention_d1_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|4|total|retention_d3_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|5|total|retention_d4_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|6|total|retention_d5_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|7|total|retention_d6_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|8|total|retention_d7_uv_ratio": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_consume": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_n_uv": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_stay_h3": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_avg_play_time_day": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_all_roi": "syhplay",
+    "syhplay|promotion|auction|3|total|hour_arpu": "syhplay",
+    "syhplay|user|auction|0|total|consume": "syhplay",
+    "syhplay|user|auction|0|total|n_uv": "syhplay",
+    "syhplay|user|auction|0|total|cpa": "syhplay",
+    "syhplay|user|auction|0|total|all_roi": "syhplay",
+    "syhplay|user|auction|0|total|arpu": "syhplay",
+    "syhplay|user|auction|0|total|avg_play_time_day": "syhplay",
+    "syhplay|user|auction|0|total|stay_h3": "syhplay",
+    "syhplay|user|auction|2|total|retention_d1_uv_ratio": "syhplay",
+    "syhplay|user|auction|4|total|retention_d3_uv_ratio": "syhplay",
+    "syhplay|user|auction|5|total|retention_d4_uv_ratio": "syhplay",
+    "syhplay|user|auction|6|total|retention_d5_uv_ratio": "syhplay",
+    "syhplay|user|auction|7|total|retention_d6_uv_ratio": "syhplay",
+    "syhplay|user|auction|8|total|retention_d7_uv_ratio": "syhplay",
+    "syhplay|user|auction|3|total|hour_consume": "syhplay",
+    "syhplay|user|auction|3|total|hour_n_uv": "syhplay",
+    "syhplay|user|auction|3|total|hour_stay_h3": "syhplay",
+    "syhplay|user|auction|3|total|hour_avg_play_time_day": "syhplay",
+    "syhplay|user|auction|3|total|hour_all_roi": "syhplay",
+    "syhplay|user|auction|3|total|hour_arpu": "syhplay",
+    "cpsdyfree|project|auction|2|all|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|2|all|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|auction|2|all|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|project|auction|2|all|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|project|auction|2|all|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|2|all|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_convert_cost": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|2|anyone|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_bid_rate": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_convert_num": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_micro_game_0d_roi": "cpsdyfree",
+    "cpsdyfree|project|auction|2|first|hour_roi_h24": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|hour_all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|all|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|anyone|hour_all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|anyone|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|anyone|hour_consume": "cpsdyfree",
+    "cpsdyfree|channel|global|2|first|hour_all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|first|hour_all_roi_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|first|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|channel|global|2|first|hour_consume": "cpsdyfree",
+    "cpsdyfree|project|global|99|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|project|global|100|total|all_roi_24h_trend": "cpsdyfree",
+    "cpsdyfree|project|global|100|total|all_roi_trend": "cpsdyfree",
+    "cpsdyfree|project|global|100|total|all_stat_total_cost_trend": "cpsdyfree",
+    "cpsdyfree|project|global|100|total|consume": "cpsdyfree"
+  },
+  "uiScopes": {
+    "cpsdyfree|promotion|auction|1|0|total": "cpsdyfree",
+    "cpsdyfree|channel|global|3|0|total": "cpsdyfree",
+    "cpsdyfree|channel|global|3|1|anyone": "cpsdyfree",
+    "cpsdyfree|channel|global|3|1|first": "cpsdyfree",
+    "cpsdyfree|channel|global|3|100|total": "cpsdyfree",
+    "cpsdyfree|channel|global|3|2|all": "cpsdyfree",
+    "cpsdyfree|channel|global|3|2|anyone": "cpsdyfree",
+    "cpsdyfree|channel|global|3|3|all": "cpsdyfree",
+    "cpsdyfree|project|auction|1|2|all": "cpsdyfree",
+    "cpsdyfree|project|auction|1|2|anyone": "cpsdyfree",
+    "cpsdyfree|project|auction|1|2|first": "cpsdyfree",
+    "cpsdy|channel|auction|1|0|total": "cpsdy",
+    "cpsdyfree|channel|global|3|2|first": "cpsdyfree",
+    "cpsdyfree|project|global|3|99|total": "cpsdyfree",
+    "cpsdyfree|project|global|3|100|total": "cpsdyfree"
+  },
+  "metrics": {
+    "cltplay|consume": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cpsdy|consume": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|consume": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsfree|consume": [
+      "cpsfree",
+      "cpsfree"
+    ],
+    "cpsshort|consume": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsvideomf|consume": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "syhplay|consume": [
+      "syhplay",
+      "syhplay"
+    ],
+    "xmtplay|consume": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsshort|roi_h1": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsshort|roi_h2": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|roi_h2": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsshort|roi_h3": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsshort|roi_h12": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|roi_h12": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsdyfree|roi_h24": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|micro_game_0d_roi": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|ad_roi": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|hour_ad_roi": [
+      "cpsdyfree"
+    ],
+    "cpsdy|convert_num": [
+      "cpsdy"
+    ],
+    "cpsdyfree|convert_num": [
+      "cpsdyfree"
+    ],
+    "cpsvideomf|convert_num": [
+      "cpsvideomf"
+    ],
+    "xmtplay|convert_num": [
+      "xmtplay"
+    ],
+    "cpsdyfree|convert_cost": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|convert_cost": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "xmtplay|convert_cost": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsdyfree|hour_convert_cost": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|hour_convert_cost": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "xmtplay|hour_convert_cost": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsdyfree|bid_rate": [
+      "cpsdyfree"
+    ],
+    "cpsdy|bid_rate": [
+      "cpsdy"
+    ],
+    "xmtplay|bid_rate": [
+      "xmtplay"
+    ],
+    "cpsdyfree|hour_bid_rate": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|hour_bid_rate": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "xmtplay|hour_bid_rate": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsdy|active_pay_intra_one_day_roi": [
+      "cpsdy"
+    ],
+    "cpsfree|predict_roi": [
+      "cpsfree",
+      "cpsfree"
+    ],
+    "cpsvideomf|predict_roi": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "cpsshort|pay_cost": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|pay_cost": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|n_auto_pay_cost": [
+      "xmtplay"
+    ],
+    "cpsshort|unsubscribe_rate": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|unsubscribe_rate": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsdy|hour_consume": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|hour_consume": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsfree|hour_consume": [
+      "cpsfree",
+      "cpsfree"
+    ],
+    "cpsshort|hour_consume": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsvideomf|hour_consume": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "xmtplay|hour_consume": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsshort|hour_roi_h1": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsfree|hour_roi_h1": [
+      "cpsfree"
+    ],
+    "cpsvideomf|hour_roi_h1": [
+      "cpsvideomf"
+    ],
+    "cpsshort|hour_roi_h2": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|hour_roi_h2": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsshort|hour_roi_h3": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsshort|hour_roi_h12": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|hour_roi_h12": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsfree|hour_predict_roi": [
+      "cpsfree",
+      "cpsfree"
+    ],
+    "cpsvideomf|hour_predict_roi": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "cpsshort|hour_pay_cost": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "xmtplay|hour_pay_cost": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|hour_n_auto_pay_cost": [
+      "xmtplay"
+    ],
+    "cpsshort|hour_unsubscribe_rate": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsdy|hour_ACTIVE_PAY_INTRA_ONE_DAY_ROI": [
+      "cpsdy"
+    ],
+    "syhplay|n_uv": [
+      "syhplay"
+    ],
+    "syhplay|cpa": [
+      "syhplay"
+    ],
+    "syhplay|stay_1": [
+      "syhplay"
+    ],
+    "syhplay|retention_d1_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|retention_d3_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|retention_d4_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|retention_d5_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|retention_d6_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|retention_d7_uv_ratio": [
+      "syhplay"
+    ],
+    "syhplay|avg_play_time_day": [
+      "syhplay"
+    ],
+    "syhplay|hour_avg_play_time_day": [
+      "syhplay"
+    ],
+    "syhplay|stay_h3": [
+      "syhplay"
+    ],
+    "syhplay|hour_stay_h3": [
+      "syhplay"
+    ],
+    "syhplay|all_roi": [
+      "syhplay"
+    ],
+    "syhplay|hour_all_roi": [
+      "syhplay"
+    ],
+    "syhplay|arpu": [
+      "syhplay"
+    ],
+    "syhplay|hour_arpu": [
+      "syhplay"
+    ],
+    "cpsfree|subsidies_roi": [
+      "cpsfree"
+    ],
+    "cpsfree|hour_subsidies_roi": [
+      "cpsfree"
+    ],
+    "cpsdy|model_pred_roi": [
+      "cpsdy"
+    ],
+    "cpsdyfree|model_pred_roi": [
+      "cpsdyfree"
+    ],
+    "cpsvideomf|model_pred_roi": [
+      "cpsvideomf"
+    ],
+    "xmtplay|model_pred_roi": [
+      "xmtplay"
+    ],
+    "cpsdy|all_roi_trend": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|all_roi_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|hour_all_roi_trend": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|hour_all_roi_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|all_stat_total_cost_trend": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|all_stat_total_cost_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|hour_all_roi_24h_trend": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|hour_all_roi_24h_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|all_roi_24h_trend": [
+      "cpsdy",
+      "cpsdy"
+    ],
+    "cpsdyfree|all_roi_24h_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsvideomf|roi_h4": [
+      "cpsvideomf"
+    ],
+    "cpsdyfree|hour_roi_h24": [
+      "cpsdyfree"
+    ],
+    "cpsdy|cost": [
+      "cpsdy"
+    ],
+    "cpsdyfree|cost": [
+      "cpsdyfree"
+    ],
+    "syhplay|hour_consume": [
+      "syhplay",
+      "syhplay"
+    ],
+    "syhplay|hour_n_uv": [
+      "syhplay"
+    ],
+    "cltmain|consume": [
+      "cltmain"
+    ],
+    "cltmain|roi_h12": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|active_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|pay_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|n_recharge_uv": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|n_recharge_amount": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|unsubscribe_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|convert_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|conversion_subscribe_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|ac_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|bid_rate": [
+      "cltmain"
+    ],
+    "cltmain|predict_roi": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_consume": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_n_recharge_uv": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_active_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_pay_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_unsubscribe_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_convert_cost": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_conversion_subscribe_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_ac_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_bid_rate": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltmain|hour_predict_roi": [
+      "cltmain",
+      "cltmain"
+    ],
+    "cltplay|roi_h12": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cltplay|active_cost": [
+      "cltplay"
+    ],
+    "cltplay|pay_cost": [
+      "cltplay"
+    ],
+    "cltplay|n_recharge_uv": [
+      "cltplay"
+    ],
+    "cltplay|n_recharge_amount": [
+      "cltplay"
+    ],
+    "cltplay|unsubscribe_rate": [
+      "cltplay"
+    ],
+    "cltplay|convert_cost": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cltplay|conversion_subscribe_rate": [
+      "cltplay"
+    ],
+    "cltplay|ac_rate": [
+      "cltplay"
+    ],
+    "cltplay|bid_rate": [
+      "cltplay"
+    ],
+    "cltplay|predict_roi": [
+      "cltplay"
+    ],
+    "cltplay|hour_consume": [
+      "cltplay"
+    ],
+    "cltplay|hour_n_recharge_uv": [
+      "cltplay"
+    ],
+    "cltplay|hour_active_cost": [
+      "cltplay"
+    ],
+    "cltplay|hour_pay_cost": [
+      "cltplay"
+    ],
+    "cltplay|hour_unsubscribe_rate": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cltplay|hour_convert_cost": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cltplay|hour_conversion_subscribe_rate": [
+      "cltplay"
+    ],
+    "cltplay|hour_ac_rate": [
+      "cltplay"
+    ],
+    "cltplay|hour_bid_rate": [
+      "cltplay",
+      "cltplay"
+    ],
+    "cltplay|hour_predict_roi": [
+      "cltplay"
+    ],
+    "xmtplay|hour_convert_num": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|hour_unsubscribe_rate": [
+      "xmtplay"
+    ],
+    "xmtplay|cost_diff": [
+      "xmtplay"
+    ],
+    "xmtplay|pline_form_roi": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|all_stat_total_cost_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|all_roi_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|all_roi_24h_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|hour_all_stat_total_cost_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|hour_all_roi_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "xmtplay|hour_all_roi_24h_trend": [
+      "xmtplay",
+      "xmtplay"
+    ],
+    "cpsvideomf|convert_cost": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|roi_h1": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|roi_h2": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_roi_h2": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|roi_h3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_roi_h3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_roi_h4": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|roi_h12": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_roi_h12": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_convert_num": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_bid_rate": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_convert_cost": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|pline_form_roi": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "cpsvideomf|all_stat_total_cost_trend": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|all_roi_trend": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|all_roi_24h_trend": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_all_stat_total_cost_trend": [
+      "cpsvideomf",
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_all_roi_trend": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|hour_all_roi_24h_trend": [
+      "cpsvideomf"
+    ],
+    "cpsshort|pline_form_roi": [
+      "cpsshort",
+      "cpsshort"
+    ],
+    "cpsfree|pline_form_roi": [
+      "cpsfree",
+      "cpsfree"
+    ],
+    "cpsdyfree|hour_micro_game_0d_roi": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|hour_convert_num": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdyfree|pline_form_roi": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdyfree|hour_all_stat_total_cost_trend": [
+      "cpsdyfree",
+      "cpsdyfree"
+    ],
+    "cpsdy|hour_convert_num": [
+      "cpsdy"
+    ],
+    "cpsdy|hour_active_pay_intra_one_day_roi": [
+      "cpsdy"
+    ],
+    "cpsdy|pline_form_roi": [
+      "cpsdy"
+    ],
+    "cpsdy|hour_all_stat_total_cost_trend": [
+      "cpsdy"
+    ]
+  },
+  "tables": {
+    "syhplay|user|day|": [
+      "syhplay"
+    ],
+    "syhplay|project|day|": [
+      "syhplay"
+    ],
+    "cpsdy|channel|day|": [
+      "cpsdy"
+    ],
+    "cpsdy|channel|day|3": [
+      "cpsdy"
+    ],
+    "cpsdy|channel|hour|": [
+      "cpsdy"
+    ],
+    "cpsdy|channel|hour|3": [
+      "cpsdy"
+    ],
+    "cpsdy|project|day|": [
+      "cpsdy"
+    ],
+    "cpsdy|project|day|3": [
+      "cpsdy"
+    ],
+    "cpsdy|project|hour|": [
+      "cpsdy"
+    ],
+    "cpsdy|project|hour|3": [
+      "cpsdy"
+    ],
+    "cpsdy|promotion|day|": [
+      "cpsdy"
+    ],
+    "cpsdy|promotion|hour|": [
+      "cpsdy"
+    ],
+    "cpsdyfree|channel|day|": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|channel|day|3": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|channel|hour|": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|channel|hour|3": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|project|day|": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|project|day|3": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|project|hour|": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|project|hour|3": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|promotion|day|": [
+      "cpsdyfree"
+    ],
+    "cpsdyfree|promotion|hour|": [
+      "cpsdyfree"
+    ],
+    "cpsvideomf|channel|day|": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|channel|day|3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|channel|hour|": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|channel|hour|3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|project|day|": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|project|day|3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|project|hour|": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|project|hour|3": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|promotion|day|": [
+      "cpsvideomf"
+    ],
+    "cpsvideomf|promotion|hour|": [
+      "cpsvideomf"
+    ],
+    "xmtplay|channel|day|": [
+      "xmtplay"
+    ],
+    "xmtplay|channel|day|3": [
+      "xmtplay"
+    ],
+    "xmtplay|channel|hour|": [
+      "xmtplay"
+    ],
+    "xmtplay|channel|hour|3": [
+      "xmtplay"
+    ],
+    "xmtplay|project|day|": [
+      "xmtplay"
+    ],
+    "xmtplay|project|day|3": [
+      "xmtplay"
+    ],
+    "xmtplay|project|hour|": [
+      "xmtplay"
+    ],
+    "xmtplay|project|hour|3": [
+      "xmtplay"
+    ],
+    "xmtplay|promotion|day|": [
+      "xmtplay"
+    ],
+    "xmtplay|promotion|hour|": [
+      "xmtplay"
+    ],
+    "cpsfree|project|hour|": [
+      "cpsfree"
+    ],
+    "cpsfree|project|day|": [
+      "cpsfree"
+    ],
+    "cltplay|project|day|": [
+      "cltplay"
+    ],
+    "cpsshort|project|hour|": [
+      "cpsshort"
+    ],
+    "cpsshort|project|day|": [
+      "cpsshort"
+    ],
+    "syhplay|channel|day|": [
+      "syhplay"
+    ],
+    "syhplay|promotion|day|": [
+      "syhplay"
+    ],
+    "syhplay|channel|hour|": [
+      "syhplay"
+    ],
+    "syhplay|project|hour|": [
+      "syhplay"
+    ],
+    "syhplay|promotion|hour|": [
+      "syhplay"
+    ],
+    "syhplay|user|hour|": [
+      "syhplay"
+    ]
+  }
+}

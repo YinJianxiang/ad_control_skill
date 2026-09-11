@@ -1,0 +1,3027 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "xmtplay",
+  "metrics": {
+    "consume": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(if(cdate = D0, consume, null))",
+            "D1": "sum(if(cdate = D1, consume, null))",
+            "D2": "sum(if(cdate = D2, consume, null))",
+            "RD2": "sum(if(cdate>=RD2_BEGIN and cdate <= RD2_END, consume, null))",
+            "RD3": "sum(if(cdate>=RD3_BEGIN and cdate <= RD3_END, consume, null))",
+            "D3": "sum(if(cdate = D3, consume, null))",
+            "D4": "sum(if(cdate = D4, consume, null))",
+            "D5": "sum(if(cdate = D5, consume, null))",
+            "D6": "sum(if(cdate = D6, consume, null))",
+            "D7": "sum(if(cdate = D7, consume, null))",
+            "D8": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)",
+            "D9": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)",
+            "D10": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD5": "sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, consume, null))",
+            "RD7": "sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, consume, null))",
+            "RD4": "sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, null))",
+            "RD6": "sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, null))"
+          }
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "sum(consume)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(consume),2)"
+            }
+          ]
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "sum(`consume`)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume),2)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(consume)",
+            "D1": "ROUND(sum(if(cdate = D1, CAST(consume AS decimal(20,2)), null)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, CAST(consume AS decimal(20,2)), null)),2)",
+            "D3": "ROUND(sum(if(cdate=D3, CAST(consume AS decimal(20,2)), null)),2)",
+            "D4": "ROUND(sum(if(cdate=D4, CAST(consume AS decimal(20,2)), null)),2)",
+            "D5": "ROUND(sum(if(cdate=D5, CAST(consume AS decimal(20,2)), null)),2)",
+            "D6": "ROUND(sum(if(cdate=D6, CAST(consume AS decimal(20,2)), null)),2)",
+            "D7": "ROUND(sum(if(cdate=D7, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD2": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD3": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD4": "sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, null))",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, CAST(consume AS decimal(20,2)), null)),2)",
+            "RD6": "sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, null))",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, CAST(consume AS decimal(20,2)), null)),2)",
+            "aggregate": "ROUND(sum(consume),2)",
+            "D8": "ROUND(sum(if(cdate=D8, CAST(consume AS decimal(20,2)), null)),2)",
+            "D9": "ROUND(sum(if(cdate=D9, CAST(consume AS decimal(20,2)), null)),2)",
+            "D10": "ROUND(sum(if(cdate=D10, CAST(consume AS decimal(20,2)), null)),2)"
+          }
+        }
+      }
+    ],
+    "roi_h2": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h2",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h2",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(cz_h2)/sum(consume),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h2, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h2, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h2, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, cz_h2, 0)) / sum(if(cdate = D0, consume, 0)),4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "D1": "ROUND(sum(if(cdate = D1, cz_h2, 0)) / sum(if(cdate = D1, consume, 0)),4)",
+            "D2": "ROUND(sum(if(cdate = D2, cz_h2, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h2",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h2",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(cz_h2)/sum(consume),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h2, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h2, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h2, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,n_total_income_h2,0)) / sum(if(cdate=D0,consume,0)),4)",
+            "D1": "ROUND(sum(if(cdate=D1,n_total_income_h2,0)) / sum(if(cdate=D1,consume,0)),4)",
+            "D2": "ROUND(sum(if(cdate=D2,n_total_income_h2,0)) / sum(if(cdate=D2,consume,0)),4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h2, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, cz_h2, 0)) / sum(if(cdate = D0, consume, 0)), 4)"
+          }
+        }
+      }
+    ],
+    "roi_h12": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(cz_h12)/sum(consume),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4 )"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)), 4)",
+            "D1": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)",
+            "D2": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(cz_h12)/sum(consume),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4 )"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,n_total_income_h12,0)) / sum(if(cdate=D0,consume,0)),4)",
+            "D1": "ROUND(sum(if(cdate=D1,n_total_income_h12,0)) / sum(if(cdate=D1,consume,0)),4)",
+            "D2": "ROUND(sum(if(cdate=D2,n_total_income_h12,0)) / sum(if(cdate=D2,consume,0)),4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)), 4)"
+          }
+        }
+      }
+    ],
+    "convert_num": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "convert_num"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "sum(`convert_num`)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, CAST(convert_num AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, CAST(convert_num AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, CAST(convert_num AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "sum(if(cdate>=RD2_BEGIN and cdate <= D0, convert_num, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "sum(if(cdate>=RD3_BEGIN and cdate <= D0, convert_num, 0))"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "sum(convert_num)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "sum(convert_num)",
+            "D1": "ROUND(sum(if(cdate = D1, CAST(convert_num AS decimal(20,2)), null)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, CAST(convert_num AS decimal(20,2)), null)),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, CAST(convert_num AS decimal(20,2)), null)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, CAST(convert_num AS decimal(20,2)), null)),2)",
+            "aggregate": "ROUND(sum(if(cdate = D0, CAST(convert_num AS decimal(20,2)), null)),2)"
+          }
+        }
+      }
+    ],
+    "convert_cost": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num",
+        "aggregateExpression": "ROUND(SUM(consume) / NULLIF(SUM(convert_num), 0), 4)",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(consume)/sum(convert_num),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, convert_num, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, convert_num, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, convert_num, 0)),2)",
+            "D1": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, convert_num, 0)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, convert_num, 0)),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, convert_num, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, convert_num, 0)), 4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume)/sum(convert_num),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, convert_num, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, convert_num, 0)), 4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, convert_num, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate=D0,consume,0)) / sum(if(cdate=D0,convert_num,0)),4)",
+            "D1": "ROUND(sum(if(cdate = D1, consume, 0))/sum(if(cdate = D1, convert_num, 0)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, consume, 0))/sum(if(cdate = D2, convert_num, 0)),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, convert_num, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, convert_num, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, consume, 0))/sum(if(cdate = D0, convert_num, 0)),2)",
+            "D3": "ROUND(sum(if(cdate = D3, consume, 0)) / sum(if(cdate = D3, convert_num, 0)), 4)",
+            "D4": "ROUND(sum(if(cdate = D4, consume, 0)) / sum(if(cdate = D4, convert_num, 0)), 4)",
+            "D5": "ROUND(sum(if(cdate = D5, consume, 0)) / sum(if(cdate = D5, convert_num, 0)), 4)",
+            "D6": "ROUND(sum(if(cdate = D6, consume, 0)) / sum(if(cdate = D6, convert_num, 0)), 4)",
+            "D7": "ROUND(sum(if(cdate = D7, consume, 0)) / sum(if(cdate = D7, convert_num, 0)), 4)",
+            "RD4": "ROUND(sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, 0)) / sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, convert_num, 0)), 4)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, consume, 0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, convert_num, 0)), 4)",
+            "RD6": "ROUND(sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, 0)) / sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, convert_num, 0)), 4)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, consume, 0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, convert_num, 0)), 4)"
+          }
+        }
+      }
+    ],
+    "hour_convert_cost": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num",
+        "aggregateExpression": "ROUND(SUM(consume@hourN) / NULLIF(SUM(convert_num@hourN), 0), 4)",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then convert_num else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then convert_num else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then convert_num else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then convert_num else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then convert_num else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then convert_num else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then convert_num else 0 end),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then convert_num else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then convert_num else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then convert_num else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then convert_num else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then convert_num else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then convert_num else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then convert_num else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then convert_num else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "bid_rate": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "roi_goal",
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "aggregateExpression": "ROUND(latest(roi_goal) / (SUM(cz_h12) / NULLIF(SUM(consume), 0)), 4)",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / ( sum(cz_h12)/sum(consume) ),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D0, cz_h12, 0))/sum(if(cdate = D0, consume, 0))),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D1, cz_h12, 0))/sum(if(cdate = D1, consume, 0))),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D2, cz_h12, 0))/sum(if(cdate = D2, consume, 0))),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0))), 4 )"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0))), 4 )"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D0, cz_h12, 0))/sum(if(cdate = D0, consume, 0))),4)",
+            "D1": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D1, cz_h12, 0))/sum(if(cdate = D1, consume, 0))),4)",
+            "D2": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate = D2, cz_h12, 0))/sum(if(cdate = D2, consume, 0))),4)",
+            "RD2": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate>=RD2_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0))), 4 )",
+            "RD3": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY cdate DESC), ',', 1) AS double) / (sum(if(cdate>=RD3_BEGIN and cdate <= D0, cz_h12, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0))), 4 )"
+          }
+        }
+      }
+    ],
+    "hour_bid_rate": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "roi_goal",
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "aggregateExpression": "ROUND(latest(roi_goal) / (SUM(cz_h12@hourN) / NULLIF(SUM(consume@hourN), 0)), 4)",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end) ),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end) ),4)",
+            "H2": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end) ),4)",
+            "H3": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end) ),4)",
+            "H4": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end) ),4)",
+            "H5": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end) ),4)",
+            "H6": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end) ),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "roi_goal",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "numeratorColumn": "micro_game_0d_ltv",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end) ),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end) ),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H1,active_pay_intra_one_day_amount,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end)),4)",
+            "H2": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H2,active_pay_intra_one_day_amount,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end)),4)",
+            "H3": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H3,active_pay_intra_one_day_amount,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end)),4)",
+            "H4": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end) ),4)",
+            "H5": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end) ),4)",
+            "H6": "ROUND(CAST(SUBSTRING_INDEX(GROUP_CONCAT(roi_goal ORDER BY hour DESC), ',', 1) AS double) / (sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end) ),4)"
+          }
+        }
+      }
+    ],
+    "pay_cost": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "n_recharge_uv_day"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "n_recharge_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(consume)/sum(n_recharge_uv_day),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_recharge_uv_day, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_recharge_uv_day, 0)),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_recharge_uv_day, 0)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_recharge_uv_day, 0)), 4)",
+            "D1": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_recharge_uv_day, 0)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_recharge_uv_day, 0)),2)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "n_recharge_uv_day"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "n_recharge_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume)/sum(n_recharge_uv_day),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_recharge_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_recharge_uv_day, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_recharge_uv, 0)), 4)",
+            "D1": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_recharge_uv_day, 0)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_recharge_uv_day, 0)),2)",
+            "D3": "ROUND(sum(if(cdate = D3, consume, 0)) / sum(if(cdate = D3, n_recharge_uv, 0)), 4)",
+            "D4": "ROUND(sum(if(cdate = D4, consume, 0)) / sum(if(cdate = D4, n_recharge_uv, 0)), 4)",
+            "D5": "ROUND(sum(if(cdate = D5, consume, 0)) / sum(if(cdate = D5, n_recharge_uv, 0)), 4)",
+            "D6": "ROUND(sum(if(cdate = D6, consume, 0)) / sum(if(cdate = D6, n_recharge_uv, 0)), 4)",
+            "D7": "ROUND(sum(if(cdate = D7, consume, 0)) / sum(if(cdate = D7, n_recharge_uv, 0)), 4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_recharge_uv_day, 0)), 2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_recharge_uv_day, 0)), 2)",
+            "RD4": "ROUND(sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, consume, 0)) / sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, n_recharge_uv, 0)), 4)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, consume, 0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, n_recharge_uv, 0)), 4)",
+            "RD6": "ROUND(sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, consume, 0)) / sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, n_recharge_uv, 0)), 4)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, consume, 0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, n_recharge_uv, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_recharge_uv_day, 0)), 2)"
+          }
+        }
+      }
+    ],
+    "n_auto_pay_cost": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "n_auto_pay_cost"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(consume)/sum(n_auto_pay_uv_day),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0)),2)",
+            "D1": "ROUND(sum(if(cdate = D1, consume, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, consume, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0)),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)),2)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, consume, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, consume, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0)),2)"
+          }
+        }
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_unsubscribe_uv_day",
+          "n_auto_pay_uv_day"
+        ],
+        "numeratorColumn": "n_unsubscribe_uv_day",
+        "denominatorColumn": "n_auto_pay_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(n_unsubscribe_uv_day)/sum(n_auto_pay_uv_day),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 2 )"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0) ),2)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 2 )",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)),4)",
+            "D1": "ROUND(sum(if(cdate = D1, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0) ),2)",
+            "D2": "ROUND(sum(if(cdate = D2, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0) ),2)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_unsubscribe_uv_day",
+          "n_auto_pay_uv_day"
+        ],
+        "numeratorColumn": "n_unsubscribe_uv_day",
+        "denominatorColumn": "n_auto_pay_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(n_unsubscribe_uv_day)/sum(n_auto_pay_uv_day),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0) ),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 2 )"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D0, n_subscribe_uv, 0)), 4)",
+            "D1": "ROUND(sum(if(cdate = D1, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D1, n_auto_pay_uv_day, 0) ),2)",
+            "D2": "ROUND(sum(if(cdate = D2, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D2, n_auto_pay_uv_day, 0) ),2)",
+            "D3": "ROUND(sum(if(cdate = D3, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D3, n_subscribe_uv, 0)), 4)",
+            "D4": "ROUND(sum(if(cdate = D4, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D4, n_subscribe_uv, 0)), 4)",
+            "D5": "ROUND(sum(if(cdate = D5, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D5, n_subscribe_uv, 0)), 4)",
+            "D6": "ROUND(sum(if(cdate = D6, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D6, n_subscribe_uv, 0)), 4)",
+            "D7": "ROUND(sum(if(cdate = D7, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate = D7, n_subscribe_uv, 0)), 4)",
+            "RD2": "ROUND(sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD2_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 4)",
+            "RD3": "ROUND(sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate>=RD3_BEGIN and cdate <= D0, n_auto_pay_uv_day, 0)), 4)",
+            "RD4": "ROUND(sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate>=RD4_BEGIN and cdate <= RD4_END, n_subscribe_uv, 0)), 4)",
+            "RD5": "ROUND(sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate>=RD5_BEGIN and cdate <= RD5_END, n_subscribe_uv, 0)), 4)",
+            "RD6": "ROUND(sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate>=RD6_BEGIN and cdate <= RD6_END, n_subscribe_uv, 0)), 4)",
+            "RD7": "ROUND(sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, n_active_unsubscribe_uv + n_sign_failed_uv, 0)) / sum(if(cdate>=RD7_BEGIN and cdate <= RD7_END, n_subscribe_uv, 0)), 4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, n_unsubscribe_uv_day, 0)) / sum(if(cdate = D0, n_auto_pay_uv_day, 0)), 4)"
+          }
+        }
+      }
+    ],
+    "hour_consume": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "sum(case when H6='--' then null when hour=H6 then consume else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then consume else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then consume else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then consume else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then consume else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then consume else 0 end)",
+            "H6": "sum(case when H6='--' then null when hour=H6 then consume else 0 end)"
+          }
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then consume else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "sum(case when H6='--' then null when hour=H6 then consume else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then consume else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then consume else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then consume else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then ROUND(consume,2) else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then ROUND(consume,2) else 0 end)",
+            "H6": "sum(case when H6='--' then null when hour=H6 then consume else 0 end)"
+          }
+        }
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h2",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h2",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,cz_h2,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,cz_h2,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,cz_h2,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,cz_h2,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,cz_h2,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,cz_h2,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,cz_h2,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,cz_h2,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,cz_h2,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,cz_h2,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,cz_h2,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,cz_h2,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h2",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h2",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,cz_h2,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,cz_h2,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,cz_h2,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,cz_h2,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,cz_h2,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,cz_h2,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,cz_h2,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,cz_h2,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,cz_h2,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,cz_h2,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,cz_h2,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,cz_h2,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,cz_h12,0)) / sum(case when H1='--' then null when hour=H1 then consume else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,cz_h12,0)) / sum(case when H2='--' then null when hour=H2 then consume else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,cz_h12,0)) / sum(case when H3='--' then null when hour=H3 then consume else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,cz_h12,0)) / sum(case when H4='--' then null when hour=H4 then consume else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,cz_h12,0)) / sum(case when H5='--' then null when hour=H5 then consume else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,cz_h12,0)) / sum(case when H6='--' then null when hour=H6 then consume else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "n_recharge_uv_day"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "n_recharge_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_recharge_uv_day else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_recharge_uv_day else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_recharge_uv_day else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_recharge_uv_day else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_recharge_uv_day else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_recharge_uv_day else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_recharge_uv_day else 0 end),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "consume",
+          "n_recharge_uv_day"
+        ],
+        "numeratorColumn": "consume",
+        "denominatorColumn": "n_recharge_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_recharge_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_recharge_uv_day else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_recharge_uv_day else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_recharge_uv_day else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_recharge_uv_day else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_recharge_uv_day else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_recharge_uv_day else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_recharge_uv_day else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "hour_n_auto_pay_cost": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "hour_n_auto_pay_cost"
+        ],
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_auto_pay_uv_day else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,consume,0)) / sum(case when H1='--' then null when hour=H1 then n_auto_pay_uv_day else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,consume,0)) / sum(case when H2='--' then null when hour=H2 then n_auto_pay_uv_day else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,consume,0)) / sum(case when H3='--' then null when hour=H3 then n_auto_pay_uv_day else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,consume,0)) / sum(case when H4='--' then null when hour=H4 then n_auto_pay_uv_day else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,consume,0)) / sum(case when H5='--' then null when hour=H5 then n_auto_pay_uv_day else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,consume,0)) / sum(case when H6='--' then null when hour=H6 then n_auto_pay_uv_day else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "model_pred_roi": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "model_pred_roi"
+        ],
+        "seedPolicy": {
+          "forceGrain": "day",
+          "evaluationPhase": "post-filter",
+          "standaloneRule": "blocked"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "max(if(cdate = D0, model_pred_roi, null))"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "max(if(cdate = D0, model_pred_roi, null))",
+            "aggregate": "max(if(cdate = D0, model_pred_roi, null))"
+          }
+        }
+      }
+    ],
+    "hour_convert_num": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "hour",
+          "convert_num"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "sum(case when H6='--' then null when hour=H6 then convert_num else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then convert_num else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then convert_num else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then convert_num else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then convert_num else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then convert_num else 0 end)",
+            "H6": "sum(case when H6='--' then null when hour=H6 then convert_num else 0 end)"
+          }
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "hour",
+          "convert_num"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "sum(case when H4='--' then null when hour=H4 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "sum(case when H5='--' then null when hour=H5 then convert_num else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "sum(case when H6='--' then null when hour=H6 then convert_num else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then convert_num else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then convert_num else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then convert_num else 0 end)",
+            "H4": "sum(case when H4='--' then null when hour=H4 then convert_num else 0 end)",
+            "H5": "sum(case when H5='--' then null when hour=H5 then convert_num else 0 end)",
+            "H6": "sum(case when H6='--' then null when hour=H6 then convert_num else 0 end)"
+          }
+        }
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "n_unsubscribe_uv_day",
+          "n_auto_pay_uv_day"
+        ],
+        "numeratorColumn": "n_unsubscribe_uv_day",
+        "denominatorColumn": "n_auto_pay_uv_day",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ROUND(sum(if(hour=H1,n_unsubscribe_uv_day,0)) / sum(case when H1='--' then null when hour=H1 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ROUND(sum(if(hour=H2,n_unsubscribe_uv_day,0)) / sum(case when H2='--' then null when hour=H2 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ROUND(sum(if(hour=H3,n_unsubscribe_uv_day,0)) / sum(case when H3='--' then null when hour=H3 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H4",
+              "formula": "ROUND(sum(if(hour=H4,n_unsubscribe_uv_day,0)) / sum(case when H4='--' then null when hour=H4 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H5",
+              "formula": "ROUND(sum(if(hour=H5,n_unsubscribe_uv_day,0)) / sum(case when H5='--' then null when hour=H5 then n_auto_pay_uv_day else 0 end),4)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H6",
+              "formula": "ROUND(sum(if(hour=H6,n_unsubscribe_uv_day,0)) / sum(case when H6='--' then null when hour=H6 then n_auto_pay_uv_day else 0 end),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ROUND(sum(if(hour=H1,n_unsubscribe_uv_day,0)) / sum(case when H1='--' then null when hour=H1 then n_auto_pay_uv_day else 0 end),4)",
+            "H2": "ROUND(sum(if(hour=H2,n_unsubscribe_uv_day,0)) / sum(case when H2='--' then null when hour=H2 then n_auto_pay_uv_day else 0 end),4)",
+            "H3": "ROUND(sum(if(hour=H3,n_unsubscribe_uv_day,0)) / sum(case when H3='--' then null when hour=H3 then n_auto_pay_uv_day else 0 end),4)",
+            "H4": "ROUND(sum(if(hour=H4,n_unsubscribe_uv_day,0)) / sum(case when H4='--' then null when hour=H4 then n_auto_pay_uv_day else 0 end),4)",
+            "H5": "ROUND(sum(if(hour=H5,n_unsubscribe_uv_day,0)) / sum(case when H5='--' then null when hour=H5 then n_auto_pay_uv_day else 0 end),4)",
+            "H6": "ROUND(sum(if(hour=H6,n_unsubscribe_uv_day,0)) / sum(case when H6='--' then null when hour=H6 then n_auto_pay_uv_day else 0 end),4)"
+          }
+        }
+      }
+    ],
+    "cost_diff": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cdate",
+          "cost_diff"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, cost_diff, 0)),2)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, cost_diff, 0)),2)",
+            "aggregate": "ROUND(sum(if(cdate = D0, cost_diff, 0)),2)"
+          }
+        }
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cdate",
+          "cz_h12",
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)),4)",
+            "D1": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)",
+            "D2": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "cdate",
+          "active_pay_intra_one_day_amount",
+          "consume"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, cz_h12, 0)) / sum(if(cdate = D0, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, cz_h12, 0)) / sum(if(cdate = D1, consume, 0)),4)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, cz_h12, 0)) / sum(if(cdate = D2, consume, 0)),4)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(if(cdate = D0, active_pay_intra_one_day_amount, 0))/sum(if(cdate = D0, consume, 0)),4)",
+            "D1": "ROUND(sum(if(cdate = D1, active_pay_intra_one_day_amount, 0))/sum(if(cdate = D1, consume, 0)),4)",
+            "D2": "ROUND(sum(if(cdate = D2, active_pay_intra_one_day_amount, 0))/sum(if(cdate = D2, consume, 0)),4)",
+            "aggregate": "ROUND(sum(if(cdate = D0, active_pay_intra_one_day_amount, 0))/sum(if(cdate = D0, consume, 0)),4)"
+          }
+        }
+      }
+    ],
+    "all_stat_total_cost_trend": [
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ROUND(sum(all_stat_total_cost_trend),2)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(all_stat_total_cost_trend),2)",
+            "D1": "ROUND(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "RD2": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "RD3": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+          }
+        }
+      },
+      {
+        "metricKind": "sum",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ROUND(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ROUND(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ROUND(sum(all_stat_total_cost_trend),2)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ROUND(sum(all_stat_total_cost_trend),2)",
+            "D1": "ROUND(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "D2": "ROUND(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "RD2": "ROUND(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "RD3": "ROUND(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), null)),2)",
+            "aggregate": "ROUND(sum(all_stat_total_cost_trend),2)"
+          }
+        }
+      }
+    ],
+    "all_roi_trend": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_gmv_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_gmv_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)",
+            "D1": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "D2": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD2": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD3": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_gmv_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_gmv_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)",
+            "D1": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "D2": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD2": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD3": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_gmv_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "aggregate": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_gmv_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+          }
+        }
+      }
+    ],
+    "all_roi_24h_trend": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D0",
+              "formula": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_billing_gmv_24h_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_billing_gmv_24h_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)",
+            "D1": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "D2": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD2": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD3": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D1",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "D2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD2",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "RD3",
+              "formula": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)"
+            },
+            {
+              "timeGrain": "day",
+              "timeLabel": "aggregate",
+              "formula": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_billing_gmv_24h_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "day": {
+            "D0": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_billing_gmv_24h_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)",
+            "D1": "ifnull(ROUND(IF(sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D1, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D1, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "D2": "ifnull(ROUND(IF(sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate = D2, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate = D2, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD2": "ifnull(ROUND(IF(sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD2_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "RD3": "ifnull(ROUND(IF(sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) > 0, sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_billing_gmv_24h_trend AS decimal(20,2)), 0)), 0) / sum(if(cdate >= RD3_BEGIN and cdate <= D0, CAST(all_stat_total_cost_trend AS decimal(20,2)), 0)) , 4), 0)",
+            "aggregate": "ifnull(ROUND(IF(sum(all_stat_total_cost_trend) > 0, sum(all_billing_gmv_24h_trend), 0) / sum(all_stat_total_cost_trend) , 4), 0)"
+          }
+        }
+      }
+    ],
+    "hour_all_stat_total_cost_trend": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "hour",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "hour",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": null,
+        "denominatorColumn": null,
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end)",
+            "H2": "sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end)",
+            "H3": "sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end)"
+          }
+        }
+      }
+    ],
+    "hour_all_roi_trend": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_gmv_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_gmv_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_gmv_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_gmv_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H2": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_gmv_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H3": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_gmv_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_gmv_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_gmv_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_gmv_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_gmv_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H2": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_gmv_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H3": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_gmv_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+          }
+        }
+      }
+    ],
+    "hour_all_roi_24h_trend": [
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H2": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H3": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+          }
+        }
+      },
+      {
+        "metricKind": "ratio",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend",
+        "seedPolicy": {
+          "evaluationPhase": "aggregate",
+          "standaloneRule": "allowed"
+        },
+        "formulaByBusiness": {
+          "xmtplay": [
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H1",
+              "formula": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H2",
+              "formula": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            },
+            {
+              "timeGrain": "hour",
+              "timeLabel": "H3",
+              "formula": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+            }
+          ]
+        },
+        "formulaByGrain": {
+          "hour": {
+            "H1": "ifnull(ROUND(IF(sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H1='--' then null when hour=H1 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H1='--' then null when hour=H1 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H2": "ifnull(ROUND(IF(sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H2='--' then null when hour=H2 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H2='--' then null when hour=H2 then all_stat_total_cost_trend else 0 end) , 4), 0)",
+            "H3": "ifnull(ROUND(IF(sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) > 0, sum(case when H3='--' then null when hour=H3 then all_billing_gmv_24h_trend else 0 end), 0) / sum(case when H3='--' then null when hour=H3 then all_stat_total_cost_trend else 0 end) , 4), 0)"
+          }
+        }
+      }
+    ]
+  },
+  "scenarios": {
+    "xmtplay|project|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_project_hour",
+      "groupBy": [
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(consume)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "media",
+            "app_name",
+            "book_id",
+            "book_name"
+          ]
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|promotion|auction|0|total|consume": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "groupBy": [
+        "promotion_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(consume)"
+        },
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "promotion_status": "投放中",
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "video_type": "2"
+          }
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|promotion|auction|0|total|roi_h12": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "groupBy": [
+        "promotion_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(cz_h12) / NULLIF(SUM(consume), 0)"
+        },
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "cz_h12",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "cz_h12",
+          "denominatorColumn": "consume"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "promotion_status": "投放中",
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "video_type": "2"
+          }
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|promotion|auction|0|total|model_pred_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "groupBy": [
+        "promotion_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(model_pred_roi)"
+        },
+        "writeColumns": [
+          "model_pred_roi"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "model_pred_roi"
+          ],
+          "seedPolicy": {
+            "forceGrain": "day",
+            "evaluationPhase": "post-filter",
+            "standaloneRule": "blocked"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "promotion_status": "投放中",
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "video_type": "2"
+          }
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|promotion|auction|2|total|hour_roi_h12": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_promotion_hour",
+      "groupBy": [
+        "promotion_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(cz_h12) / NULLIF(SUM(consume), 0)"
+        },
+        "writeColumns": [
+          "cz_h12",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "cz_h12",
+        "denominatorColumn": "consume"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "cz_h12",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "cz_h12",
+          "denominatorColumn": "consume"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "promotion_status": "投放中",
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account",
+            "video_type": "2"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "media",
+            "app_name",
+            "book_id",
+            "book_name"
+          ]
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|project|auction|0|total|model_pred_roi": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_project_hour",
+      "groupBy": [
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(model_pred_roi)"
+        },
+        "writeColumns": [
+          "model_pred_roi"
+        ],
+        "kind": "sum",
+        "numeratorColumn": null,
+        "denominatorColumn": null
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "sum",
+          "writeColumns": [
+            "model_pred_roi"
+          ],
+          "seedPolicy": {
+            "forceGrain": "day",
+            "evaluationPhase": "post-filter",
+            "standaloneRule": "blocked"
+          }
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "media",
+            "app_name",
+            "book_id",
+            "book_name"
+          ]
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|channel|auction|0|total|unsubscribe_rate": {
+      "dates": [
+        "D0"
+      ],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_channel_hour",
+      "groupBy": [
+        "channel_code"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(n_unsubscribe_uv_day) / NULLIF(SUM(n_auto_pay_uv_day), 0)"
+        },
+        "writeColumns": [
+          "n_unsubscribe_uv_day",
+          "n_auto_pay_uv_day"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "n_unsubscribe_uv_day",
+        "denominatorColumn": "n_auto_pay_uv_day"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_unsubscribe_uv_day",
+            "n_auto_pay_uv_day"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "n_unsubscribe_uv_day",
+          "denominatorColumn": "n_auto_pay_uv_day"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "app_name",
+            "book_id",
+            "agent_user_name"
+          ]
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    },
+    "xmtplay|project|auction|2|total|hour_roi_h2": {
+      "dates": [],
+      "timeGrain": "hour",
+      "table": "ad_advertiser_online_pay_project_hour",
+      "groupBy": [
+        "project_id"
+      ],
+      "metric": {
+        "expressions": {
+          "aggregate": "SUM(cz_h2) / NULLIF(SUM(consume), 0)"
+        },
+        "writeColumns": [
+          "cz_h2",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "cz_h2",
+        "denominatorColumn": "consume"
+      },
+      "comparison": "按规则比较符比较聚合结果",
+      "authorization": {
+        "metric": {
+          "metricKind": "ratio",
+          "writeColumns": [
+            "cz_h2",
+            "consume"
+          ],
+          "seedPolicy": {
+            "evaluationPhase": "aggregate",
+            "standaloneRule": "allowed"
+          },
+          "numeratorColumn": "cz_h2",
+          "denominatorColumn": "consume"
+        },
+        "legacyAllow": {
+          "sourceFilter": {
+            "minConsume": 0
+          },
+          "statusDefaults": {
+            "project_status": "开启"
+          },
+          "fixedDefaults": {
+            "account": "ad_control_dc_account"
+          },
+          "skeletonColumns": [
+            "account",
+            "channel_code",
+            "media",
+            "app_name",
+            "book_id",
+            "book_name"
+          ]
+        }
+      },
+      "mapper": "legacy-verified-job-route"
+    }
+  }
+}

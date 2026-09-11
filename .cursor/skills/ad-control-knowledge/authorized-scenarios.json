@@ -5682,7 +5682,9 @@
       "column": "consume",
       "desc": "消耗",
       "uiAliases": [
-        "??"
+        "分日消耗",
+        "当日消耗",
+        "消耗"
       ],
       "plines": [
         "cltmain",
@@ -6314,7 +6316,6 @@
       "column": "active_cost",
       "desc": "激活成本",
       "uiAliases": [
-        "????",
         "激活成本"
       ],
       "plines": [
@@ -6435,7 +6436,7 @@
       "column": "pay_cost",
       "desc": "付费成本",
       "uiAliases": [
-        "????"
+        "付费成本"
       ],
       "plines": [
         "cltmain"
@@ -6554,7 +6555,6 @@
       "column": "n_recharge_uv",
       "desc": "充值UV",
       "uiAliases": [
-        "??UV",
         "充值UV"
       ],
       "plines": [
@@ -6674,7 +6674,6 @@
       "column": "n_recharge_amount",
       "desc": "充值金额",
       "uiAliases": [
-        "????",
         "充值金额"
       ],
       "plines": [
@@ -6716,7 +6715,7 @@
       "column": "unsubscribe_rate",
       "desc": "退订率",
       "uiAliases": [
-        "???"
+        "当日退订率"
       ],
       "plines": [
         "cltmain"
@@ -6840,7 +6839,7 @@
       "column": "convert_cost",
       "desc": "转化成本",
       "uiAliases": [
-        "????"
+        "转化成本"
       ],
       "plines": [
         "cltmain"
@@ -6964,7 +6963,6 @@
       "column": "conversion_subscribe_rate",
       "desc": "转订率",
       "uiAliases": [
-        "???",
         "转订率"
       ],
       "plines": [
@@ -7085,7 +7083,6 @@
       "column": "ac_rate",
       "desc": "拉活占比",
       "uiAliases": [
-        "????",
         "拉活占比"
       ],
       "plines": [
@@ -7206,7 +7203,8 @@
       "column": "bid_rate",
       "desc": "计费比",
       "uiAliases": [
-        "???"
+        "计费比",
+        "转化计费比"
       ],
       "plines": [
         "cltmain"
@@ -7331,7 +7329,7 @@
       "column": "predict_roi",
       "desc": "预估ROI",
       "uiAliases": [
-        "??ROI"
+        "当日的预估ROI"
       ],
       "plines": [
         "cltmain"
@@ -7419,7 +7417,7 @@
       "column": "hour_consume",
       "desc": "分时消耗",
       "uiAliases": [
-        "????"
+        "分时消耗"
       ],
       "plines": [
         "cltmain"
@@ -7489,7 +7487,6 @@
       "column": "hour_n_recharge_uv",
       "desc": "分时充值UV",
       "uiAliases": [
-        "????UV",
         "分时充值UV"
       ],
       "plines": [
@@ -7556,7 +7553,6 @@
       "column": "hour_active_cost",
       "desc": "分时激活成本",
       "uiAliases": [
-        "??????",
         "分时激活成本"
       ],
       "plines": [
@@ -7624,7 +7620,7 @@
       "column": "hour_pay_cost",
       "desc": "分时付费成本",
       "uiAliases": [
-        "??????"
+        "分时付费成本"
       ],
       "plines": [
         "cltmain"
@@ -7690,7 +7686,7 @@
       "column": "hour_unsubscribe_rate",
       "desc": "分时退订率",
       "uiAliases": [
-        "?????"
+        "分时退订率"
       ],
       "plines": [
         "cltmain"
@@ -7756,7 +7752,7 @@
       "column": "hour_convert_cost",
       "desc": "分时转化成本",
       "uiAliases": [
-        "??????"
+        "分时转化成本"
       ],
       "plines": [
         "cltmain"
@@ -7827,7 +7823,6 @@
       "column": "hour_conversion_subscribe_rate",
       "desc": "分时转订率",
       "uiAliases": [
-        "?????",
         "分时转订率"
       ],
       "plines": [
@@ -7895,7 +7890,6 @@
       "column": "hour_ac_rate",
       "desc": "分时拉活占比",
       "uiAliases": [
-        "??????",
         "分时拉活占比"
       ],
       "plines": [
@@ -7963,7 +7957,7 @@
       "column": "hour_bid_rate",
       "desc": "分时计费比",
       "uiAliases": [
-        "?????"
+        "分时计费比"
       ],
       "plines": [
         "cltmain"
@@ -8035,7 +8029,7 @@
       "column": "hour_predict_roi",
       "desc": "分时预估ROI",
       "uiAliases": [
-        "????ROI"
+        "分时预估ROI"
       ],
       "plines": [
         "cltmain"
@@ -8152,7 +8146,6 @@
       "column": "active_cost",
       "desc": "激活成本",
       "uiAliases": [
-        "????",
         "激活成本"
       ],
       "plines": [
@@ -8357,7 +8350,8 @@
       "column": "pay_cost",
       "desc": "付费成本",
       "uiAliases": [
-        "????"
+        "付费成本",
+        "当日付费成本"
       ],
       "plines": [
         "cltmain",
@@ -8611,7 +8605,6 @@
       "column": "n_recharge_uv",
       "desc": "充值UV",
       "uiAliases": [
-        "??UV",
         "充值UV"
       ],
       "plines": [
@@ -8815,7 +8808,6 @@
       "column": "n_recharge_amount",
       "desc": "充值金额",
       "uiAliases": [
-        "????",
         "充值金额"
       ],
       "plines": [
@@ -8876,7 +8868,9 @@
       "column": "unsubscribe_rate",
       "desc": "退订率",
       "uiAliases": [
-        "???"
+        "分日退订率",
+        "当日退订率",
+        "退订率"
       ],
       "plines": [
         "cltmain",
@@ -9135,7 +9129,7 @@
       "column": "convert_cost",
       "desc": "转化成本",
       "uiAliases": [
-        "????"
+        "转化成本"
       ],
       "plines": [
         "cltplay"
@@ -9259,7 +9253,6 @@
       "column": "conversion_subscribe_rate",
       "desc": "转订率",
       "uiAliases": [
-        "???",
         "转订率"
       ],
       "plines": [
@@ -9459,7 +9452,6 @@
       "column": "ac_rate",
       "desc": "拉活占比",
       "uiAliases": [
-        "????",
         "拉活占比"
       ],
       "plines": [
@@ -9664,7 +9656,7 @@
       "column": "bid_rate",
       "desc": "计费比",
       "uiAliases": [
-        "???"
+        "计费比"
       ],
       "plines": [
         "cltplay"
@@ -9789,7 +9781,9 @@
       "column": "predict_roi",
       "desc": "预估ROI",
       "uiAliases": [
-        "??ROI"
+        "分日预估ROI",
+        "当日的预估ROI",
+        "预估ROI"
       ],
       "plines": [
         "cltmain",
@@ -9984,7 +9978,7 @@
       "column": "hour_consume",
       "desc": "分时消耗",
       "uiAliases": [
-        "????"
+        "分时消耗"
       ],
       "plines": [
         "cltmain",
@@ -10228,7 +10222,6 @@
       "column": "hour_n_recharge_uv",
       "desc": "分时充值UV",
       "uiAliases": [
-        "????UV",
         "分时充值UV"
       ],
       "plines": [
@@ -10328,7 +10321,6 @@
       "column": "hour_active_cost",
       "desc": "分时激活成本",
       "uiAliases": [
-        "??????",
         "分时激活成本"
       ],
       "plines": [
@@ -10429,7 +10421,7 @@
       "column": "hour_pay_cost",
       "desc": "分时付费成本",
       "uiAliases": [
-        "??????"
+        "分时付费成本"
       ],
       "plines": [
         "cltmain",
@@ -10579,7 +10571,7 @@
       "column": "hour_unsubscribe_rate",
       "desc": "分时退订率",
       "uiAliases": [
-        "?????"
+        "分时退订率"
       ],
       "plines": [
         "cltplay"
@@ -10645,7 +10637,7 @@
       "column": "hour_convert_cost",
       "desc": "分时转化成本",
       "uiAliases": [
-        "??????"
+        "分时转化成本"
       ],
       "plines": [
         "cltplay"
@@ -10716,7 +10708,6 @@
       "column": "hour_conversion_subscribe_rate",
       "desc": "分时转订率",
       "uiAliases": [
-        "?????",
         "分时转订率"
       ],
       "plines": [
@@ -10817,7 +10808,6 @@
       "column": "hour_ac_rate",
       "desc": "分时拉活占比",
       "uiAliases": [
-        "??????",
         "分时拉活占比"
       ],
       "plines": [
@@ -10918,7 +10908,7 @@
       "column": "hour_bid_rate",
       "desc": "分时计费比",
       "uiAliases": [
-        "?????"
+        "分时计费比"
       ],
       "plines": [
         "cltplay"
@@ -10990,7 +10980,7 @@
       "column": "hour_predict_roi",
       "desc": "分时预估ROI",
       "uiAliases": [
-        "????ROI"
+        "分时预估ROI"
       ],
       "plines": [
         "cltmain",
@@ -11130,7 +11120,7 @@
       "column": "hour_convert_num",
       "desc": "分时转化数",
       "uiAliases": [
-        "?????"
+        "分时转化数"
       ],
       "plines": [
         "xmtplay"
@@ -11201,7 +11191,7 @@
       "column": "hour_unsubscribe_rate",
       "desc": "分时退订率",
       "uiAliases": [
-        "?????"
+        "分时退订率"
       ],
       "plines": [
         "cltmain",
@@ -11351,7 +11341,7 @@
       "column": "cost_diff",
       "desc": "cost_diff",
       "uiAliases": [
-        "????"
+        "成本差值"
       ],
       "plines": [
         "xmtplay"
@@ -11388,7 +11378,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -11438,7 +11427,7 @@
       "column": "all_stat_total_cost_trend",
       "desc": "全域成本",
       "uiAliases": [
-        "????"
+        "全域成本"
       ],
       "plines": [
         "xmtplay"
@@ -11507,7 +11496,7 @@
       "column": "all_roi_trend",
       "desc": "全域ROI",
       "uiAliases": [
-        "??ROI"
+        "全域ROI"
       ],
       "plines": [
         "xmtplay"
@@ -11577,7 +11566,7 @@
       "column": "all_roi_24h_trend",
       "desc": "全域24小时ROI",
       "uiAliases": [
-        "??24??ROI"
+        "全域24小时ROI"
       ],
       "plines": [
         "xmtplay"
@@ -11647,7 +11636,6 @@
       "column": "hour_all_stat_total_cost_trend",
       "desc": "分时全域成本",
       "uiAliases": [
-        "??????",
         "分时全域成本"
       ],
       "plines": [
@@ -11696,7 +11684,7 @@
       "column": "hour_all_roi_trend",
       "desc": "分时全域ROI",
       "uiAliases": [
-        "????ROI"
+        "分时全域ROI"
       ],
       "plines": [
         "xmtplay"
@@ -11749,7 +11737,7 @@
       "column": "hour_all_roi_24h_trend",
       "desc": "分时全域24小时ROI",
       "uiAliases": [
-        "????24??ROI"
+        "分时全域24小时ROI"
       ],
       "plines": [
         "xmtplay"
@@ -11802,7 +11790,8 @@
       "column": "convert_cost",
       "desc": "转化成本",
       "uiAliases": [
-        "????"
+        "分日转化成本",
+        "转化成本"
       ],
       "plines": [
         "cltmain",
@@ -12348,7 +12337,7 @@
       "column": "hour_roi_h2",
       "desc": "分时ROI_H2",
       "uiAliases": [
-        "??ROI_H2"
+        "分时ROI_H2"
       ],
       "plines": [
         "cpsshort",
@@ -12544,7 +12533,7 @@
       "column": "hour_roi_h3",
       "desc": "分时ROI_H3",
       "uiAliases": [
-        "??ROI_H3"
+        "分时ROI_H3"
       ],
       "plines": [
         "cpsshort",
@@ -12610,7 +12599,7 @@
       "column": "hour_roi_h4",
       "desc": "分时ROI_H4",
       "uiAliases": [
-        "??ROI_H4"
+        "分时ROI_H4"
       ],
       "plines": [
         "cpsvideomf"
@@ -12812,7 +12801,7 @@
       "column": "hour_roi_h12",
       "desc": "分时ROI_H12",
       "uiAliases": [
-        "??ROI_H12"
+        "分时ROI_H12"
       ],
       "plines": [
         "cpsshort",
@@ -12919,7 +12908,7 @@
       "column": "hour_convert_num",
       "desc": "分时转化数",
       "uiAliases": [
-        "?????"
+        "分时转化数"
       ],
       "plines": [
         "cpsvideomf"
@@ -12972,7 +12961,8 @@
       "column": "hour_bid_rate",
       "desc": "分时计费比",
       "uiAliases": [
-        "?????"
+        "分时计费比",
+        "分时转化计费比"
       ],
       "plines": [
         "cltmain",
@@ -13164,7 +13154,7 @@
       "column": "hour_convert_cost",
       "desc": "分时转化成本",
       "uiAliases": [
-        "??????"
+        "分时转化成本"
       ],
       "plines": [
         "cltmain",
@@ -13355,7 +13345,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -13405,7 +13394,7 @@
       "column": "all_stat_total_cost_trend",
       "desc": "全域成本",
       "uiAliases": [
-        "????"
+        "全域成本"
       ],
       "plines": [
         "cpsdy",
@@ -13574,7 +13563,7 @@
       "column": "all_roi_trend",
       "desc": "全域ROI",
       "uiAliases": [
-        "??ROI"
+        "全域ROI"
       ],
       "plines": [
         "cpsdy",
@@ -13744,7 +13733,7 @@
       "column": "all_roi_24h_trend",
       "desc": "全域24小时ROI",
       "uiAliases": [
-        "??24??ROI"
+        "全域24小时ROI"
       ],
       "plines": [
         "cpsdy",
@@ -13914,7 +13903,6 @@
       "column": "hour_all_stat_total_cost_trend",
       "desc": "分时全域成本",
       "uiAliases": [
-        "??????",
         "分时全域成本"
       ],
       "plines": [
@@ -13963,7 +13951,7 @@
       "column": "hour_all_roi_trend",
       "desc": "分时全域ROI",
       "uiAliases": [
-        "????ROI"
+        "分时全域ROI"
       ],
       "plines": [
         "cpsdy",
@@ -14070,7 +14058,7 @@
       "column": "hour_all_roi_24h_trend",
       "desc": "分时全域24小时ROI",
       "uiAliases": [
-        "????24??ROI"
+        "分时全域24小时ROI"
       ],
       "plines": [
         "cpsdy",
@@ -14177,7 +14165,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -14227,7 +14214,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -14266,7 +14252,7 @@
       "column": "hour_micro_game_0d_roi",
       "desc": "分时广告变现ROI",
       "uiAliases": [
-        "??????ROI"
+        "分时广告变现ROI"
       ],
       "plines": [
         "cpsdyfree"
@@ -14320,7 +14306,7 @@
       "column": "hour_convert_num",
       "desc": "分时转化数",
       "uiAliases": [
-        "?????"
+        "分时转化数"
       ],
       "plines": [
         "cpsdyfree"
@@ -14373,7 +14359,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -14423,7 +14408,6 @@
       "column": "hour_all_stat_total_cost_trend",
       "desc": "分时全域成本",
       "uiAliases": [
-        "??????",
         "分时全域成本"
       ],
       "plines": [
@@ -14472,7 +14456,7 @@
       "column": "hour_convert_num",
       "desc": "分时转化数",
       "uiAliases": [
-        "?????"
+        "分时转化数"
       ],
       "plines": [
         "cpsdy",
@@ -14646,7 +14630,6 @@
       "column": "pline_form_roi",
       "desc": "分线ROI",
       "uiAliases": [
-        "???ROI",
         "分线ROI"
       ],
       "plines": [
@@ -14777,7 +14760,6 @@
       "column": "hour_all_stat_total_cost_trend",
       "desc": "分时全域成本",
       "uiAliases": [
-        "??????",
         "分时全域成本"
       ],
       "plines": [
@@ -14881,18 +14863,18 @@
     {
       "key": "cpsdyfree|promotion|auction|1|0|total",
       "plineForm": "cpsdyfree",
-      "businessLineName": "?????-??",
+      "businessLineName": "头条端原生-免费",
       "dataType": "promotion",
-      "dimensionName": "??",
+      "dimensionName": "广告",
       "releaseMode": "auction",
       "deliveryType": "auction",
       "releaseVers": [
         1
       ],
       "timeType": "0",
-      "timeName": "??",
+      "timeName": "当天",
       "reduceType": "total",
-      "reduceName": "??",
+      "reduceName": "累计",
       "uiSelectableMetrics": [
         "consume",
         "micro_game_0d_roi",
@@ -14929,7 +14911,7 @@
     {
       "key": "cpsdyfree|channel|global|3|1|anyone",
       "source": "empirical-condition-tree",
-      "confirmedAt": "2026-09-08",
+      "confirmedAt": "2026-09-09",
       "plineForm": "cpsdyfree",
       "dataType": "channel",
       "releaseMode": "global",
@@ -14998,7 +14980,7 @@
     {
       "key": "cpsdyfree|channel|global|3|2|all",
       "source": "empirical-condition-tree",
-      "confirmedAt": "2026-09-08",
+      "confirmedAt": "2026-09-09",
       "plineForm": "cpsdyfree",
       "dataType": "channel",
       "releaseMode": "global",
@@ -15021,7 +15003,7 @@
     {
       "key": "cpsdyfree|channel|global|3|2|anyone",
       "source": "empirical-condition-tree",
-      "confirmedAt": "2026-09-08",
+      "confirmedAt": "2026-09-09",
       "plineForm": "cpsdyfree",
       "dataType": "channel",
       "releaseMode": "global",
@@ -15044,7 +15026,7 @@
     {
       "key": "cpsdyfree|channel|global|3|3|all",
       "source": "empirical-condition-tree",
-      "confirmedAt": "2026-09-08",
+      "confirmedAt": "2026-09-09",
       "plineForm": "cpsdyfree",
       "dataType": "channel",
       "releaseMode": "global",
@@ -15061,6 +15043,185 @@
         "hour_all_roi_24h_trend",
         "hour_all_roi_trend",
         "hour_consume"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|project|auction|1|2|all",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdyfree",
+      "dataType": "project",
+      "releaseMode": "auction",
+      "releaseVers": [
+        1
+      ],
+      "timeType": "2",
+      "reduceType": "all",
+      "uiSelectableMetrics": [
+        "bid_rate",
+        "consume",
+        "convert_cost",
+        "convert_num",
+        "hour_bid_rate",
+        "hour_consume",
+        "hour_convert_cost",
+        "hour_convert_num",
+        "hour_micro_game_0d_roi",
+        "hour_roi_h24",
+        "micro_game_0d_roi",
+        "roi_h24"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|project|auction|1|2|anyone",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdyfree",
+      "dataType": "project",
+      "releaseMode": "auction",
+      "releaseVers": [
+        1
+      ],
+      "timeType": "2",
+      "reduceType": "anyone",
+      "uiSelectableMetrics": [
+        "bid_rate",
+        "consume",
+        "convert_cost",
+        "convert_num",
+        "hour_bid_rate",
+        "hour_consume",
+        "hour_convert_cost",
+        "hour_convert_num",
+        "hour_micro_game_0d_roi",
+        "hour_roi_h24",
+        "micro_game_0d_roi",
+        "roi_h24"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|project|auction|1|2|first",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdyfree",
+      "dataType": "project",
+      "releaseMode": "auction",
+      "releaseVers": [
+        1
+      ],
+      "timeType": "2",
+      "reduceType": "first",
+      "uiSelectableMetrics": [
+        "bid_rate",
+        "consume",
+        "convert_cost",
+        "convert_num",
+        "hour_bid_rate",
+        "hour_consume",
+        "hour_convert_cost",
+        "hour_convert_num",
+        "hour_micro_game_0d_roi",
+        "hour_roi_h24",
+        "micro_game_0d_roi",
+        "roi_h24"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdy|channel|auction|1|0|total",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdy",
+      "dataType": "channel",
+      "releaseMode": "auction",
+      "releaseVers": [
+        1
+      ],
+      "timeType": "0",
+      "reduceType": "total",
+      "uiSelectableMetrics": [
+        "active_pay_intra_one_day_roi",
+        "consume",
+        "convert_cost",
+        "convert_num",
+        "hour_active_pay_intra_one_day_roi",
+        "hour_consume",
+        "hour_convert_cost",
+        "hour_convert_num"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|channel|global|3|2|first",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-09",
+      "plineForm": "cpsdyfree",
+      "dataType": "channel",
+      "releaseMode": "global",
+      "releaseVers": [
+        3
+      ],
+      "timeType": "2",
+      "reduceType": "first",
+      "uiSelectableMetrics": [
+        "all_roi_24h_trend",
+        "all_roi_trend",
+        "all_stat_total_cost_trend",
+        "consume",
+        "hour_all_roi_24h_trend",
+        "hour_all_roi_trend",
+        "hour_consume"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|project|global|3|99|total",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-11",
+      "plineForm": "cpsdyfree",
+      "dataType": "project",
+      "releaseMode": "global",
+      "releaseVers": [
+        3
+      ],
+      "timeType": "99",
+      "reduceType": "total",
+      "uiSelectableMetrics": [
+        "all_roi_24h_trend",
+        "all_roi_trend",
+        "all_stat_total_cost_trend",
+        "consume",
+        "hour_all_roi_24h_trend",
+        "hour_all_roi_trend",
+        "hour_consume",
+        "model_pred_roi"
+      ],
+      "notes": "实测闭环：来自 /3232 条件树的可选项"
+    },
+    {
+      "key": "cpsdyfree|project|global|3|100|total",
+      "source": "empirical-condition-tree",
+      "confirmedAt": "2026-09-11",
+      "plineForm": "cpsdyfree",
+      "dataType": "project",
+      "releaseMode": "global",
+      "releaseVers": [
+        3
+      ],
+      "timeType": "100",
+      "reduceType": "total",
+      "uiSelectableMetrics": [
+        "all_roi_24h_trend",
+        "all_roi_trend",
+        "all_stat_total_cost_trend",
+        "consume",
+        "hour_all_roi_24h_trend",
+        "hour_all_roi_trend",
+        "hour_consume",
+        "model_pred_roi"
       ],
       "notes": "实测闭环：来自 /3232 条件树的可选项"
     }
@@ -17447,7 +17608,10 @@
             "media",
             "app_name",
             "book_id",
-            "book_name"
+            "book_name",
+            "delivery_mode",
+            "hour",
+            "agent_user_name"
           ],
           "notes": "端付·项目·当天消耗；负责人不作为源行筛选，无骨架时可合成",
           "allowSynthetic": true
@@ -22356,10 +22520,32 @@
             3
           ],
           "allowSynthetic": true
+        },
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T07:40:57Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17905",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T074047Z-d42ff21d"
         }
       },
       "mapper": "scanData4Roi3",
-      "source": "restored-from-demo-job-and-database-verified",
+      "source": "empirical-closed-loop",
       "evidence": [
         {
           "file": "src/main/java/com/dz/glory/job/mapper/xml/DataControlMapper.xml",
@@ -22415,7 +22601,10 @@
           "formulaChecked": true,
           "schemaChecked": true
         }
-      ]
+      ],
+      "availability": {
+        "uiSelectable": true
+      }
     },
     {
       "schemaVersion": 1,
@@ -24063,7 +24252,7 @@
         "defaultRoiGoal": 1
       },
       "comparison": "按规则比较符比较聚合结果",
-      "seedStatus": "pending",
+      "seedStatus": "rejected",
       "authorization": {
         "databaseVerified": false,
         "metric": {
@@ -24086,8 +24275,36 @@
             "evaluationPhase": "aggregate",
             "standaloneRule": "allowed"
           }
+        },
+        "rejectedAt": "2026-09-09",
+        "rejectedReason": "empirical: metric bid_rate is not in the /3232 condition tree",
+        "empirical": {
+          "status": "failed",
+          "creatable": false,
+          "executable": false,
+          "checkedAt": "2026-09-09T03:55:19Z",
+          "reason": "empirical: metric bid_rate is not in the /3232 condition tree",
+          "selectableMetrics": [
+            "active_pay_intra_one_day_roi",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_active_pay_intra_one_day_roi",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num"
+          ],
+          "ruleId": null,
+          "seedTable": null,
+          "jobStatus": null,
+          "hitMatchCount": 0,
+          "runId": "20260909T035519Z-36860a3d"
         }
-      }
+      },
+      "availability": {
+        "uiSelectable": false
+      },
+      "source": "empirical-closed-loop"
     },
     {
       "schemaVersion": 1,
@@ -25426,7 +25643,10 @@
             "media",
             "app_name",
             "book_id",
-            "book_name"
+            "book_name",
+            "delivery_mode",
+            "hour",
+            "agent_user_name"
           ],
           "allowSynthetic": true,
           "notes": "rule 17192；端付项目竞价当天；scanData4Cpsdy 小时表 GROUP BY account, project_id"
@@ -27238,10 +27458,32 @@
           ],
           "allowSynthetic": true,
           "notes": "rule 17262；端免项目全域近两天累计消耗"
+        },
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T07:41:01Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17906",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T074047Z-d42ff21d"
         }
       },
       "mapper": "scanData4Roi3",
-      "source": "restored-from-demo-job-and-database-verified",
+      "source": "empirical-closed-loop",
       "evidence": [
         {
           "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd2_consume",
@@ -27249,7 +27491,10 @@
           "schemaChecked": true,
           "checkedAt": "2026-08-31"
         }
-      ]
+      ],
+      "availability": {
+        "uiSelectable": true
+      }
     },
     {
       "schemaVersion": 1,
@@ -27446,10 +27691,32 @@
           ],
           "allowSynthetic": true,
           "notes": "rule 17262；端免项目全域近两天累计全域24hROI（UI roi_24h_trend 由 seed 归一）"
+        },
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T07:40:51Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17903",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T074047Z-d42ff21d"
         }
       },
       "mapper": "scanData4Roi3",
-      "source": "restored-from-demo-job-and-database-verified",
+      "source": "empirical-closed-loop",
       "evidence": [
         {
           "source": "market-job DataControlMapper.scanData4Roi3Day _data_rd2_all_roi_24h_trend",
@@ -27457,7 +27724,10 @@
           "schemaChecked": true,
           "checkedAt": "2026-08-31"
         }
-      ]
+      ],
+      "availability": {
+        "uiSelectable": true
+      }
     },
     {
       "schemaVersion": 1,
@@ -28013,9 +28283,9 @@
         "denominatorColumn": null
       },
       "comparison": "近2小时连续各时段按规则比较符比较",
-      "seedStatus": "rejected",
+      "seedStatus": "authorized",
       "authorization": {
-        "databaseVerified": false,
+        "databaseVerified": true,
         "metric": {
           "column": "hour_consume",
           "desc": "分时消耗",
@@ -28033,14 +28303,12 @@
             "standaloneRule": "allowed"
           }
         },
-        "rejectedAt": "2026-09-08",
-        "rejectedReason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
         "empirical": {
-          "status": "failed",
+          "status": "verified",
           "creatable": true,
-          "executable": false,
-          "checkedAt": "2026-09-08T12:03:47Z",
-          "reason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:24Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
           "selectableMetrics": [
             "all_roi_24h_trend",
             "all_roi_trend",
@@ -28050,11 +28318,11 @@
             "hour_all_roi_trend",
             "hour_consume"
           ],
-          "ruleId": "17779",
+          "ruleId": "17882",
           "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
           "jobStatus": 200,
-          "hitMatchCount": 0,
-          "runId": "20260908T115503Z-b63e239b"
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
         }
       },
       "availability": {
@@ -28378,7 +28646,7 @@
           "status": "verified",
           "creatable": true,
           "executable": true,
-          "checkedAt": "2026-09-08T12:03:51Z",
+          "checkedAt": "2026-09-09T12:07:29Z",
           "reason": "empirical: condition tree selectable and HIT log matched",
           "selectableMetrics": [
             "all_roi_24h_trend",
@@ -28389,11 +28657,11 @@
             "hour_all_roi_trend",
             "hour_consume"
           ],
-          "ruleId": "17781",
+          "ruleId": "17884",
           "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
           "jobStatus": 200,
           "hitMatchCount": 1,
-          "runId": "20260908T115503Z-b63e239b"
+          "runId": "20260909T120715Z-eda354da"
         },
         "legacyAllow": {
           "key": "cpsdyfree|channel|global|2|anyone|hour_all_roi_trend",
@@ -28469,9 +28737,9 @@
         "denominatorColumn": null
       },
       "comparison": "近3小时每个时段按规则比较符比较",
-      "seedStatus": "rejected",
+      "seedStatus": "authorized",
       "authorization": {
-        "databaseVerified": false,
+        "databaseVerified": true,
         "metric": {
           "column": "hour_consume",
           "desc": "分时消耗",
@@ -28489,14 +28757,12 @@
             "standaloneRule": "allowed"
           }
         },
-        "rejectedAt": "2026-09-08",
-        "rejectedReason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
         "empirical": {
-          "status": "failed",
+          "status": "verified",
           "creatable": true,
-          "executable": false,
-          "checkedAt": "2026-09-08T12:04:59Z",
-          "reason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
+          "executable": true,
+          "checkedAt": "2026-09-09T03:55:28Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
           "selectableMetrics": [
             "all_roi_24h_trend",
             "all_roi_trend",
@@ -28506,11 +28772,11 @@
             "hour_all_roi_trend",
             "hour_consume"
           ],
-          "ruleId": "17791",
+          "ruleId": "17875",
           "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
           "jobStatus": 200,
-          "hitMatchCount": 0,
-          "runId": "20260908T115503Z-b63e239b"
+          "hitMatchCount": 1,
+          "runId": "20260909T035524Z-8408f6be"
         }
       },
       "availability": {
@@ -28550,9 +28816,9 @@
         "denominatorColumn": null
       },
       "comparison": "近1小时任一时段按规则比较符比较",
-      "seedStatus": "rejected",
+      "seedStatus": "authorized",
       "authorization": {
-        "databaseVerified": false,
+        "databaseVerified": true,
         "metric": {
           "column": "all_stat_total_cost_trend",
           "desc": "全域成本",
@@ -28571,14 +28837,12 @@
             "standaloneRule": "allowed"
           }
         },
-        "rejectedAt": "2026-09-08",
-        "rejectedReason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
         "empirical": {
-          "status": "failed",
+          "status": "verified",
           "creatable": true,
-          "executable": false,
-          "checkedAt": "2026-09-08T12:02:30Z",
-          "reason": "empirical: no HIT log within timeout (HIT log did not appear within 60.0s)",
+          "executable": true,
+          "checkedAt": "2026-09-09T03:55:30Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
           "selectableMetrics": [
             "all_roi_24h_trend",
             "all_roi_trend",
@@ -28588,11 +28852,11 @@
             "hour_all_roi_trend",
             "hour_consume"
           ],
-          "ruleId": "17766",
+          "ruleId": "17876",
           "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
           "jobStatus": 200,
-          "hitMatchCount": 0,
-          "runId": "20260908T115503Z-b63e239b"
+          "hitMatchCount": 1,
+          "runId": "20260909T035529Z-529887d3"
         }
       },
       "availability": {
@@ -35137,10 +35401,36 @@
           ],
           "allowSynthetic": true,
           "notes": "rule 17335/17337；端免项目竞价近2小时首个分时转化成本"
+        },
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:52:53Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17870",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
         }
       },
       "mapper": "scanCpsDyFreeVideo",
-      "source": "restored-from-demo-job-and-database-verified",
+      "source": "empirical-closed-loop",
       "evidence": [
         {
           "source": "market-job DataControlMapper scanCpsDyFreeVideo hour_convert_cost",
@@ -35148,7 +35438,10 @@
           "schemaChecked": true,
           "checkedAt": "2026-08-31"
         }
-      ]
+      ],
+      "availability": {
+        "uiSelectable": true
+      }
     },
     {
       "schemaVersion": 1,
@@ -46126,8 +46419,2234 @@
           "notes": "pending scenario had recipe; columns verified in test DB"
         }
       ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_bid_rate",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_bid_rate",
+        "name": "分时计费比",
+        "writeColumns": [
+          "roi_goal",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "micro_game_0d_ltv",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:43:17Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17850",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034313Z-b4789bc8"
+        },
+        "metric": {
+          "column": "hour_bid_rate",
+          "desc": "分时计费比",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "roi_goal",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": "micro_game_0d_ltv",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_consume",
+        "name": "分时消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:43:33Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17851",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_consume",
+          "desc": "分时消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_convert_cost",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_convert_cost",
+        "name": "分时转化成本",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:43:40Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17852",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_convert_cost",
+          "desc": "分时转化成本",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "convert_num"
+          ],
+          "numeratorColumn": "consume",
+          "denominatorColumn": "convert_num"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_convert_num",
+        "name": "分时转化数",
+        "writeColumns": [
+          "hour",
+          "convert_num"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:43:50Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17853",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_convert_num",
+          "desc": "分时转化数",
+          "metricKind": "sum",
+          "writeColumns": [
+            "hour",
+            "convert_num"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_micro_game_0d_roi",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_micro_game_0d_roi",
+        "name": "分时广告变现ROI",
+        "writeColumns": [
+          "hour",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:00Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17854",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_micro_game_0d_roi",
+          "desc": "分时广告变现ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "hour",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|all|hour_roi_h24",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_roi_h24",
+        "name": "分时ROI_h24",
+        "writeColumns": [
+          "n_total_income_h24",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "n_total_income_h24",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:07Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17855",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_roi_h24",
+          "desc": "分时ROI_h24",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_total_income_h24",
+            "consume"
+          ],
+          "numeratorColumn": "n_total_income_h24",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_bid_rate",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_bid_rate",
+        "name": "分时计费比",
+        "writeColumns": [
+          "roi_goal",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "micro_game_0d_ltv",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:14Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17856",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_bid_rate",
+          "desc": "分时计费比",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "roi_goal",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": "micro_game_0d_ltv",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_consume",
+        "name": "分时消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:20Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17857",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_consume",
+          "desc": "分时消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_convert_cost",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_convert_cost",
+        "name": "分时转化成本",
+        "writeColumns": [
+          "consume",
+          "convert_num"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "consume",
+        "denominatorColumn": "convert_num"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:27Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17858",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_convert_cost",
+          "desc": "分时转化成本",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "consume",
+            "convert_num"
+          ],
+          "numeratorColumn": "consume",
+          "denominatorColumn": "convert_num"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_convert_num",
+        "name": "分时转化数",
+        "writeColumns": [
+          "hour",
+          "convert_num"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:34Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17859",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_convert_num",
+          "desc": "分时转化数",
+          "metricKind": "sum",
+          "writeColumns": [
+            "hour",
+            "convert_num"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_micro_game_0d_roi",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_micro_game_0d_roi",
+        "name": "分时广告变现ROI",
+        "writeColumns": [
+          "hour",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:41Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17860",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_micro_game_0d_roi",
+          "desc": "分时广告变现ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "hour",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|anyone|hour_roi_h24",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_roi_h24",
+        "name": "分时ROI_h24",
+        "writeColumns": [
+          "n_total_income_h24",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "n_total_income_h24",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:44:48Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17861",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T034329Z-a1fe4bff"
+        },
+        "metric": {
+          "column": "hour_roi_h24",
+          "desc": "分时ROI_h24",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_total_income_h24",
+            "consume"
+          ],
+          "numeratorColumn": "n_total_income_h24",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|first|hour_bid_rate",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_bid_rate",
+        "name": "分时计费比",
+        "writeColumns": [
+          "roi_goal",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "micro_game_0d_ltv",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:52:39Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17868",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
+        },
+        "metric": {
+          "column": "hour_bid_rate",
+          "desc": "分时计费比",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "roi_goal",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": "micro_game_0d_ltv",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|first|hour_consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_consume",
+        "name": "分时消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:52:46Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17869",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
+        },
+        "metric": {
+          "column": "hour_consume",
+          "desc": "分时消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|first|hour_convert_num",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_convert_num",
+        "name": "分时转化数",
+        "writeColumns": [
+          "hour",
+          "convert_num"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:53:00Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17871",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
+        },
+        "metric": {
+          "column": "hour_convert_num",
+          "desc": "分时转化数",
+          "metricKind": "sum",
+          "writeColumns": [
+            "hour",
+            "convert_num"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|first|hour_micro_game_0d_roi",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_micro_game_0d_roi",
+        "name": "分时广告变现ROI",
+        "writeColumns": [
+          "hour",
+          "micro_game_0d_ltv",
+          "consume"
+        ],
+        "kind": "ratio"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:53:10Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17872",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
+        },
+        "metric": {
+          "column": "hour_micro_game_0d_roi",
+          "desc": "分时广告变现ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "hour",
+            "micro_game_0d_ltv",
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|auction|2|first|hour_roi_h24",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "auction",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_roi_h24",
+        "name": "分时ROI_h24",
+        "writeColumns": [
+          "n_total_income_h24",
+          "consume"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "n_total_income_h24",
+        "denominatorColumn": "consume"
+      },
+      "authorization": {
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T03:53:17Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "bid_rate",
+            "consume",
+            "convert_cost",
+            "convert_num",
+            "hour_bid_rate",
+            "hour_consume",
+            "hour_convert_cost",
+            "hour_convert_num",
+            "hour_micro_game_0d_roi",
+            "hour_roi_h24",
+            "micro_game_0d_roi",
+            "roi_h24"
+          ],
+          "ruleId": "17873",
+          "seedTable": "ad_advertiser_online_free_project_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T035236Z-06c5a245"
+        },
+        "metric": {
+          "column": "hour_roi_h24",
+          "desc": "分时ROI_h24",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "n_total_income_h24",
+            "consume"
+          ],
+          "numeratorColumn": "n_total_income_h24",
+          "denominatorColumn": "consume"
+        }
+      },
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      },
+      "table": "ad_advertiser_online_free_project_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "project_id"
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|all|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_all_roi_24h_trend",
+        "name": "分时全域24小时ROI",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "desc": "分时全域24小时ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_billing_gmv_24h_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_billing_gmv_24h_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:19Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17879",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|all|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "hour_all_roi_trend",
+        "name": "分时全域ROI",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "desc": "分时全域ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_gmv_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_gmv_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:20Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17880",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|all|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "all",
+      "metric": {
+        "code": "all_stat_total_cost_trend",
+        "name": "全域成本",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "desc": "全域成本",
+          "metricKind": "sum",
+          "writeColumns": [
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:21Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17881",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|anyone|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_all_roi_24h_trend",
+        "name": "分时全域24小时ROI",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "desc": "分时全域24小时ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_billing_gmv_24h_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_billing_gmv_24h_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:28Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17883",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|anyone|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "all_stat_total_cost_trend",
+        "name": "全域成本",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "desc": "全域成本",
+          "metricKind": "sum",
+          "writeColumns": [
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:30Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17885",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|anyone|hour_consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "anyone",
+      "metric": {
+        "code": "hour_consume",
+        "name": "分时消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_consume",
+          "desc": "分时消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:30Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17886",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|first|hour_all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_all_roi_24h_trend",
+        "name": "分时全域24小时ROI",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_all_roi_24h_trend",
+          "desc": "分时全域24小时ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_billing_gmv_24h_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_billing_gmv_24h_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:31Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17887",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|first|hour_all_roi_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_all_roi_trend",
+        "name": "分时全域ROI",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_all_roi_trend",
+          "desc": "分时全域ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_gmv_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_gmv_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:32Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17888",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|first|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "all_stat_total_cost_trend",
+        "name": "全域成本",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "desc": "全域成本",
+          "metricKind": "sum",
+          "writeColumns": [
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:32Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17889",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|channel|global|2|first|hour_consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "channel",
+      "releaseMode": "global",
+      "timeType": "2",
+      "reduceType": "first",
+      "metric": {
+        "code": "hour_consume",
+        "name": "分时消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "hour_consume",
+          "desc": "分时消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-09T12:07:33Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume"
+          ],
+          "ruleId": "17890",
+          "seedTable": "ad_advertiser_online_pay_roi3_channel_hour",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260909T120715Z-eda354da"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_channel_hour",
+      "timeGrain": "hour",
+      "groupBy": [
+        "channel_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|global|99|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "99",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend",
+        "name": "全域ROI",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_roi_trend",
+          "desc": "全域ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_gmv_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_gmv_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T07:40:56Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17904",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T074047Z-d42ff21d"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "timeGrain": "day",
+      "groupBy": [
+        "project_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|global|100|total|all_roi_24h_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_24h_trend",
+        "name": "全域24小时ROI",
+        "writeColumns": [
+          "all_billing_gmv_24h_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_billing_gmv_24h_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_roi_24h_trend",
+          "desc": "全域24小时ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_billing_gmv_24h_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_billing_gmv_24h_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T08:51:08Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17907",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T085103Z-97b89126"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "timeGrain": "day",
+      "groupBy": [
+        "project_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|global|100|total|all_roi_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_roi_trend",
+        "name": "全域ROI",
+        "writeColumns": [
+          "all_gmv_trend",
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "ratio",
+        "numeratorColumn": "all_gmv_trend",
+        "denominatorColumn": "all_stat_total_cost_trend"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_roi_trend",
+          "desc": "全域ROI",
+          "metricKind": "ratio",
+          "writeColumns": [
+            "all_gmv_trend",
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": "all_gmv_trend",
+          "denominatorColumn": "all_stat_total_cost_trend"
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T08:51:09Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17908",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T085103Z-97b89126"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "timeGrain": "day",
+      "groupBy": [
+        "project_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|global|100|total|all_stat_total_cost_trend",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "all_stat_total_cost_trend",
+        "name": "全域成本",
+        "writeColumns": [
+          "all_stat_total_cost_trend"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "all_stat_total_cost_trend",
+          "desc": "全域成本",
+          "metricKind": "sum",
+          "writeColumns": [
+            "all_stat_total_cost_trend"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T08:51:13Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17909",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T085103Z-97b89126"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "timeGrain": "day",
+      "groupBy": [
+        "project_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
+    },
+    {
+      "schemaVersion": 1,
+      "source": "empirical-closed-loop",
+      "key": "cpsdyfree|project|global|100|total|consume",
+      "businessLine": {
+        "code": "cpsdyfree",
+        "name": "头条端原生-免费"
+      },
+      "dimension": "project",
+      "releaseMode": "global",
+      "timeType": "100",
+      "reduceType": "total",
+      "metric": {
+        "code": "consume",
+        "name": "消耗",
+        "writeColumns": [
+          "consume"
+        ],
+        "kind": "sum"
+      },
+      "authorization": {
+        "metric": {
+          "column": "consume",
+          "desc": "消耗",
+          "metricKind": "sum",
+          "writeColumns": [
+            "consume"
+          ],
+          "numeratorColumn": null,
+          "denominatorColumn": null
+        },
+        "databaseVerified": true,
+        "empirical": {
+          "status": "verified",
+          "creatable": true,
+          "executable": true,
+          "checkedAt": "2026-09-11T08:51:15Z",
+          "reason": "empirical: condition tree selectable and HIT log matched",
+          "selectableMetrics": [
+            "all_roi_24h_trend",
+            "all_roi_trend",
+            "all_stat_total_cost_trend",
+            "consume",
+            "hour_all_roi_24h_trend",
+            "hour_all_roi_trend",
+            "hour_consume",
+            "model_pred_roi"
+          ],
+          "ruleId": "17910",
+          "seedTable": "ad_advertiser_online_pay_roi3_project_day",
+          "jobStatus": 200,
+          "hitMatchCount": 1,
+          "runId": "20260911T085103Z-97b89126"
+        }
+      },
+      "table": "ad_advertiser_online_pay_roi3_project_day",
+      "timeGrain": "day",
+      "groupBy": [
+        "project_id"
+      ],
+      "seedStatus": "authorized",
+      "availability": {
+        "uiSelectable": true
+      }
     }
   ],
-  "generatedAt": "2026-09-08T13:54:33.000Z",
-  "source": "restored-demo-auth+batch-schema-authorize"
+  "generatedAt": "2026-09-11T08:51:15.000Z",
+  "source": "restored-demo-auth+batch-schema-authorize+empirical-closed-loop"
 }

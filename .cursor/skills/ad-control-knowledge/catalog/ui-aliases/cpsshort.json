@@ -1,0 +1,198 @@
+{
+  "schema": "ad-control.authorized-knowledge-catalog/v1",
+  "businessLine": "cpsshort",
+  "metrics": {
+    "consume": [
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "全域消耗"
+        ]
+      },
+      {
+        "desc": "消耗",
+        "uiAliases": [
+          "分日消耗",
+          "当日消耗",
+          "消耗"
+        ]
+      }
+    ],
+    "roi_h1": [
+      {
+        "desc": "当日的ROI_H1"
+      },
+      {
+        "desc": "ROI_H1",
+        "uiAliases": [
+          "ROI_H1"
+        ]
+      }
+    ],
+    "roi_h2": [
+      {
+        "desc": "当日的ROI_H2"
+      },
+      {
+        "desc": "ROI_H2",
+        "uiAliases": [
+          "ROI_H2"
+        ]
+      }
+    ],
+    "roi_h3": [
+      {
+        "desc": "当日的ROI_H3"
+      },
+      {
+        "desc": "ROI_H3",
+        "uiAliases": [
+          "ROI_H3"
+        ]
+      }
+    ],
+    "roi_h12": [
+      {
+        "desc": "当日的ROI_H12"
+      },
+      {
+        "desc": "ROI_H12",
+        "uiAliases": [
+          "ROI_H12"
+        ]
+      }
+    ],
+    "pay_cost": [
+      {
+        "desc": "当日付费成本"
+      },
+      {
+        "desc": "付费成本",
+        "uiAliases": [
+          "付费成本",
+          "当日付费成本"
+        ]
+      }
+    ],
+    "unsubscribe_rate": [
+      {
+        "desc": "当日退订率"
+      },
+      {
+        "desc": "退订率",
+        "uiAliases": [
+          "分日退订率",
+          "当日退订率",
+          "退订率"
+        ]
+      }
+    ],
+    "hour_consume": [
+      {
+        "desc": "分时消耗"
+      },
+      {
+        "desc": "分时消耗",
+        "uiAliases": [
+          "分时消耗"
+        ]
+      }
+    ],
+    "hour_roi_h1": [
+      {
+        "desc": "分时ROI_H1"
+      },
+      {
+        "desc": "分时ROI_H1（免费短剧：n_total_income_h1/consume）",
+        "uiAliases": [
+          "分时ROI_H1"
+        ]
+      }
+    ],
+    "hour_roi_h2": [
+      {
+        "desc": "分时ROI_H2"
+      },
+      {
+        "desc": "分时ROI_H2",
+        "uiAliases": [
+          "分时ROI_H2"
+        ]
+      }
+    ],
+    "hour_roi_h3": [
+      {
+        "desc": "分时ROI_H3"
+      },
+      {
+        "desc": "分时ROI_H3",
+        "uiAliases": [
+          "分时ROI_H3"
+        ]
+      }
+    ],
+    "hour_roi_h12": [
+      {
+        "desc": "分时ROI_H12"
+      },
+      {
+        "desc": "分时ROI_H12",
+        "uiAliases": [
+          "分时ROI_H12"
+        ]
+      }
+    ],
+    "hour_pay_cost": [
+      {
+        "desc": "分时付费成本"
+      },
+      {
+        "desc": "分时付费成本",
+        "uiAliases": [
+          "分时付费成本"
+        ]
+      }
+    ],
+    "hour_unsubscribe_rate": [
+      {
+        "desc": "分时退订率"
+      },
+      {
+        "desc": "分时退订率",
+        "uiAliases": [
+          "分时退订率"
+        ]
+      }
+    ],
+    "pline_form_roi": [
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      },
+      {
+        "desc": "分线ROI",
+        "uiAliases": [
+          "分线ROI"
+        ]
+      }
+    ]
+  },
+  "scopes": {},
+  "scenarios": {
+    "cpsshort|project|auction|0|total|consume": {
+      "businessLine": {
+        "name": "新媒体-短篇"
+      },
+      "metric": {
+        "name": "当日消耗"
+      },
+      "authorization": {
+        "metric": {
+          "desc": "当日消耗"
+        }
+      }
+    }
+  }
+}
